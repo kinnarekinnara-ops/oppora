@@ -1,0 +1,14 @@
+[
+  { "name": "Cybersecurity", "faculty": "Computing", "field": "Computing", "related": ["Computer Science", "Information Technology", "Software Engineering"] },
+  { "name": "Computer Science", "faculty": "Computing", "field": "Computing", "related": ["Software Engineering", "Artificial Intelligence", "Cybersecurity", "Information Technology", "Data Science"] },
+  { "name": "Software Engineering", "faculty": "Computing", "field": "Computing", "related": ["Computer Science", "Information Technology"] },
+  { "name": "Artificial Intelligence", "faculty": "Computing", "field": "Computing", "related": ["Computer Science", "Data Science"] },
+  { "name": "Data Science", "faculty": "Computing", "field": "Computing", "related": ["Artificial Intelligence", "Computer Science"] },
+  { "name": "Information Technology", "faculty": "Computing", "field": "Computing", "related": ["Computer Science", "Cybersecurity", "Software Engineering"] },
+  { "name": "Computer Engineering", "faculty": "Engineering", "field": "Engineering", "related": ["Computer Science", "Electrical Engineering"] },
+  { "name": "Electrical Engineering", "faculty": "Engineering", "field": "Engineering", "related": ["Computer Engineering"] },
+  { "name": "Multimedia & Design", "faculty": "Design", "field": "Design", "related": ["Software Engineering"] },
+  { "name": "Business Management", "faculty": "Business", "field": "Business", "related": ["Accounting & Finance"] },
+  { "name": "Accounting & Finance", "faculty": "Business", "field": "Business", "related": ["Business Management"] },
+  { "name": "Psychology", "faculty": "Social Sciences", "field": "Social Sciences", "related": [] }
+]

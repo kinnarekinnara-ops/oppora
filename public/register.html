@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create your account · OPPORA</title>
+  <link rel="icon" href="/assets/images/logo.svg">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/student.css">
+</head>
+<body>
+  <div class="auth">
+    <aside class="auth-side">
+      <a class="brand" href="/"><img src="/assets/images/logo.svg" alt=""><span><span class="name">OPPOR<span>A</span></span><span class="tag">Opportunities find their people</span></span></a>
+      <div>
+        <h1>Your campus journey <em>starts here.</em></h1>
+        <p>Tell us what you know and what excites you — we'll bring the right opportunities to you, even ones outside your programme.</p>
+        <ul class="benefits">
+          <li><span>✨</span>Personalised opportunities</li>
+          <li><span>🎓</span>Professional development</li>
+          <li><span>🤝</span>Student communities</li>
+        </ul>
+      </div>
+      <p class="small" style="color:#9FB6DE">Your profile is private. Other students never see your details.</p>
+    </aside>
+
+    <main class="auth-main">
+      <div class="auth-card">
+        <h1 id="stepTitle">Create your account</h1>
+        <p class="muted" style="margin-top:6px">Already have one? <a href="/login.html">Log in</a></p>
+        <div class="stepper" id="stepper" aria-label="Registration progress"></div>
+        <div id="formAlert"></div>
+
+        <form id="regForm" novalidate>
+          <!-- Step 1: Account -->
+          <section data-step="1" class="stack">
+            <div class="field"><label for="name">Full name</label><input class="input" id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="email">University email</label><input class="input" id="email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="password">Password</label><input class="input" id="password" name="password" type="password" autocomplete="new-password" minlength="6" required><span class="hint">At least 6 characters.</span></div>
+            <div class="field"><label for="university">University</label><input class="input" id="university" name="university" value="OPPORA Demo University" required></div>
+          </section>
+
+          <!-- Step 2: Academic profile -->
+          <section data-step="2" class="stack hidden">
+            <div class="form-grid">
+              <div class="field full"><label for="programme">Academic programme</label><select class="input" id="programme" name="programme" required></select></div>
+              <div class="field"><label for="year">Year of study</label>
+                <select class="input" id="year" name="year"><option value="1">Year 1</option><option value="2">Year 2</option><option value="3">Year 3</option><option value="4">Year 4</option><option value="5">Year 5+</option></select></div>
+              <div class="field"><label for="studyLevel">Study level</label><select class="input" id="studyLevel" name="studyLevel"></select></div>
+            </div>
+          </section>
+
+          <!-- Step 3: Skills & interests -->
+          <section data-step="3" class="stack hidden">
+            <div class="field" data-field="skills">
+              <label>Your skills</label>
+              <div id="skillsInput"></div>
+              <span class="hint">Start typing — e.g. Linux, Python, Leadership. Click a skill to change its level.</span>
+            </div>
+            <div class="field" data-field="interests">
+              <label>Areas of interest <span class="muted">(pick at least one)</span></label>
+              <div class="interest-grid" id="interestGrid"></div>
+            </div>
+          </section>
+
+          <!-- Step 4: Goals & experience (optional) -->
+          <section data-step="4" class="stack hidden">
+            <div class="alert info">These are optional — but they make your matches more accurate.</div>
+            <div class="field"><label for="careerGoals">Career goals</label><textarea class="input" id="careerGoals" name="careerGoals" rows="3" placeholder="e.g. Get a cybersecurity internship next year"></textarea></div>
+            <div class="field">
+              <label>Experience & achievements</label>
+              <div id="expList" class="stack"></div>
+              <button type="button" class="btn outline sm" id="addExp" style="align-self:flex-start">+ Add experience</button>
+            </div>
+          </section>
+
+          <div class="row between" style="margin-top:26px">
+            <button type="button" class="btn outline" id="backBtn">← Back</button>
+            <button type="submit" class="btn green" id="nextBtn">Continue →</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/components.js"></script>
+  <script src="/assets/js/auth.js"></script>
+  <script>initRegister();</script>
+</body>
+</html>

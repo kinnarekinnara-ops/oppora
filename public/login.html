@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in · OPPORA</title>
+  <link rel="icon" href="/assets/images/logo.svg">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/student.css">
+</head>
+<body>
+  <div class="auth">
+    <aside class="auth-side">
+      <a class="brand" href="/"><img src="/assets/images/logo.svg" alt=""><span><span class="name">OPPOR<span>A</span></span><span class="tag">Opportunities find their people</span></span></a>
+      <div>
+        <h1>Welcome <em>back.</em></h1>
+        <p>Your personalised opportunities, match explanations and deadlines are waiting.</p>
+        <ul class="benefits">
+          <li><span>✨</span>Personalised recommendations</li>
+          <li><span>🎯</span>Explainable match scores</li>
+          <li><span>⏳</span>Never miss a deadline</li>
+        </ul>
+      </div>
+      <p class="small" style="color:#9FB6DE">Students and administrators use the same login.</p>
+    </aside>
+
+    <main class="auth-main">
+      <div class="auth-card narrow">
+        <h1>Log in</h1>
+        <p class="muted" style="margin-top:6px">New student? <a href="/register.html">Create an account</a></p>
+        <div id="formAlert" style="margin-top:16px"></div>
+        <form id="loginForm" class="stack" style="margin-top:18px" novalidate>
+          <div class="field">
+            <label for="email">Email</label>
+            <input class="input" id="email" name="email" type="email" autocomplete="username" required>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input class="input" id="password" name="password" type="password" autocomplete="current-password" required>
+          </div>
+          <button class="btn primary block lg" type="submit" style="margin-top:20px">Log in</button>
+        </form>
+
+        <div class="demo-logins">
+          <b class="strong">Demo accounts</b> — click to fill in:
+          <div class="row wrap" style="margin-top:8px;gap:6px">
+            <button type="button" data-e="alex@student.oppora.edu" data-p="student123">🎓 Alex (student)</button>
+            <button type="button" data-e="priya@student.oppora.edu" data-p="student123">🎓 Priya (student)</button>
+            <button type="button" data-e="mei@student.oppora.edu" data-p="student123">🎓 Mei (new profile)</button>
+            <button type="button" data-e="admin@oppora.edu" data-p="admin123">🛡 Super admin</button>
+            <button type="button" data-e="staff@oppora.edu" data-p="staff123">🗂 Staff admin</button>
+            <button type="button" data-e="club@oppora.edu" data-p="club123">🏛 Club rep</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/js/api.js"></script>
+  <script src="/assets/js/components.js"></script>
+  <script src="/assets/js/auth.js"></script>
+  <script>initLogin();</script>
+</body>
+</html>

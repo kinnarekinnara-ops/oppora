@@ -1,0 +1,387 @@
+[
+  {
+    "id": "stu_alex",
+    "university": "OPPORA Demo University",
+    "programme": "Cybersecurity",
+    "faculty": "Computing",
+    "year": 2,
+    "studyLevel": "Undergraduate",
+    "skills": [
+      {
+        "name": "Linux",
+        "level": "Beginner"
+      },
+      {
+        "name": "Networking",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Python",
+        "level": "Beginner"
+      },
+      {
+        "name": "Web Security",
+        "level": "Beginner"
+      },
+      {
+        "name": "Teamwork",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Problem Solving",
+        "level": "Intermediate"
+      }
+    ],
+    "interests": [
+      "Cybersecurity",
+      "Cloud & Infrastructure",
+      "Software Engineering"
+    ],
+    "experience": [
+      {
+        "type": "competition",
+        "title": "Inter-varsity CTF 2025",
+        "year": "2025"
+      }
+    ],
+    "certifications": [
+      "CompTIA IT Fundamentals"
+    ],
+    "careerGoals": "Become a security engineer and get a cybersecurity internship next year.",
+    "notificationPrefs": {
+      "newMatches": true,
+      "general": true,
+      "deadlines": true,
+      "updates": true
+    },
+    "createdAt": "2026-09-26T02:00:00.000Z",
+    "updatedAt": "2026-10-26T02:00:00.000Z"
+  },
+  {
+    "id": "stu_priya",
+    "university": "OPPORA Demo University",
+    "programme": "Artificial Intelligence",
+    "faculty": "Computing",
+    "year": 3,
+    "studyLevel": "Undergraduate",
+    "skills": [
+      {
+        "name": "Python",
+        "level": "Advanced"
+      },
+      {
+        "name": "Machine Learning",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Data Analysis",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Research",
+        "level": "Beginner"
+      },
+      {
+        "name": "Public Speaking",
+        "level": "Intermediate"
+      }
+    ],
+    "interests": [
+      "Artificial Intelligence",
+      "Research",
+      "Data Science"
+    ],
+    "experience": [
+      {
+        "type": "hackathon",
+        "title": "GenAI Hackathon 2025",
+        "year": "2025"
+      },
+      {
+        "type": "project",
+        "title": "Sign-language recognition app",
+        "year": "2025"
+      }
+    ],
+    "certifications": [
+      "Google Data Analytics"
+    ],
+    "careerGoals": "Pursue AI research and publish a paper before graduating.",
+    "notificationPrefs": {
+      "newMatches": true,
+      "general": true,
+      "deadlines": true,
+      "updates": true
+    },
+    "createdAt": "2026-09-26T02:00:00.000Z",
+    "updatedAt": "2026-10-26T02:00:00.000Z"
+  },
+  {
+    "id": "stu_daniel",
+    "university": "OPPORA Demo University",
+    "programme": "Software Engineering",
+    "faculty": "Computing",
+    "year": 1,
+    "studyLevel": "Undergraduate",
+    "skills": [
+      {
+        "name": "JavaScript",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Web Development",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Database Management",
+        "level": "Beginner"
+      },
+      {
+        "name": "UI/UX Design",
+        "level": "Beginner"
+      }
+    ],
+    "interests": [
+      "Software Engineering",
+      "Entrepreneurship",
+      "Design & Creativity"
+    ],
+    "experience": [
+      {
+        "type": "project",
+        "title": "Personal portfolio website",
+        "year": "2026"
+      }
+    ],
+    "certifications": [],
+    "careerGoals": "Build my own startup.",
+    "notificationPrefs": {
+      "newMatches": true,
+      "general": true,
+      "deadlines": true,
+      "updates": true
+    },
+    "createdAt": "2026-09-26T02:00:00.000Z",
+    "updatedAt": "2026-10-26T02:00:00.000Z"
+  },
+  {
+    "id": "stu_siti",
+    "university": "OPPORA Demo University",
+    "programme": "Business Management",
+    "faculty": "Business",
+    "year": 2,
+    "studyLevel": "Undergraduate",
+    "skills": [
+      {
+        "name": "Communication",
+        "level": "Advanced"
+      },
+      {
+        "name": "Leadership",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Event Management",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Digital Marketing",
+        "level": "Beginner"
+      }
+    ],
+    "interests": [
+      "Leadership",
+      "Entrepreneurship",
+      "Community & Volunteering"
+    ],
+    "experience": [
+      {
+        "type": "club",
+        "title": "Treasurer, Business Society",
+        "year": "2025"
+      },
+      {
+        "type": "volunteering",
+        "title": "Food bank volunteer",
+        "year": "2025"
+      }
+    ],
+    "certifications": [],
+    "careerGoals": "Lead a social enterprise.",
+    "notificationPrefs": {
+      "newMatches": true,
+      "general": true,
+      "deadlines": true,
+      "updates": true
+    },
+    "createdAt": "2026-09-26T02:00:00.000Z",
+    "updatedAt": "2026-10-26T02:00:00.000Z"
+  },
+  {
+    "id": "stu_marcus",
+    "university": "OPPORA Demo University",
+    "programme": "Computer Science",
+    "faculty": "Computing",
+    "year": 4,
+    "studyLevel": "Undergraduate",
+    "skills": [
+      {
+        "name": "Linux",
+        "level": "Advanced"
+      },
+      {
+        "name": "Cloud Computing",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Java",
+        "level": "Advanced"
+      },
+      {
+        "name": "Networking",
+        "level": "Intermediate"
+      },
+      {
+        "name": "System Administration",
+        "level": "Intermediate"
+      }
+    ],
+    "interests": [
+      "Cloud & Infrastructure",
+      "Software Engineering",
+      "Career Development"
+    ],
+    "experience": [
+      {
+        "type": "internship",
+        "title": "DevOps intern, local fintech",
+        "year": "2025"
+      },
+      {
+        "type": "hackathon",
+        "title": "Campus Hack 2024",
+        "year": "2024"
+      }
+    ],
+    "certifications": [
+      "AWS Cloud Practitioner"
+    ],
+    "careerGoals": "Land a graduate cloud engineering role.",
+    "notificationPrefs": {
+      "newMatches": true,
+      "general": true,
+      "deadlines": true,
+      "updates": true
+    },
+    "createdAt": "2026-09-26T02:00:00.000Z",
+    "updatedAt": "2026-10-26T02:00:00.000Z"
+  },
+  {
+    "id": "stu_iman",
+    "university": "OPPORA Demo University",
+    "programme": "Computer Engineering",
+    "faculty": "Engineering",
+    "year": 3,
+    "studyLevel": "Undergraduate",
+    "skills": [
+      {
+        "name": "IoT",
+        "level": "Intermediate"
+      },
+      {
+        "name": "C/C++",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Python",
+        "level": "Beginner"
+      },
+      {
+        "name": "Robotics",
+        "level": "Beginner"
+      }
+    ],
+    "interests": [
+      "Hardware & IoT",
+      "Research",
+      "Artificial Intelligence"
+    ],
+    "experience": [
+      {
+        "type": "project",
+        "title": "Smart parking sensor prototype",
+        "year": "2025"
+      }
+    ],
+    "certifications": [],
+    "careerGoals": "Work on embedded AI systems.",
+    "notificationPrefs": {
+      "newMatches": true,
+      "general": true,
+      "deadlines": true,
+      "updates": true
+    },
+    "createdAt": "2026-09-26T02:00:00.000Z",
+    "updatedAt": "2026-10-26T02:00:00.000Z"
+  },
+  {
+    "id": "stu_jason",
+    "university": "OPPORA Demo University",
+    "programme": "Multimedia & Design",
+    "faculty": "Design",
+    "year": 2,
+    "studyLevel": "Undergraduate",
+    "skills": [
+      {
+        "name": "UI/UX Design",
+        "level": "Advanced"
+      },
+      {
+        "name": "Graphic Design",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Web Development",
+        "level": "Beginner"
+      }
+    ],
+    "interests": [
+      "Design & Creativity",
+      "Entrepreneurship"
+    ],
+    "experience": [],
+    "certifications": [],
+    "careerGoals": "",
+    "notificationPrefs": {
+      "newMatches": true,
+      "general": true,
+      "deadlines": true,
+      "updates": true
+    },
+    "createdAt": "2026-09-26T02:00:00.000Z",
+    "updatedAt": "2026-10-26T02:00:00.000Z"
+  },
+  {
+    "id": "stu_mei",
+    "university": "OPPORA Demo University",
+    "programme": "Accounting & Finance",
+    "faculty": "Business",
+    "year": 1,
+    "studyLevel": "Undergraduate",
+    "skills": [],
+    "interests": [
+      "Business"
+    ],
+    "experience": [],
+    "certifications": [],
+    "careerGoals": "",
+    "notificationPrefs": {
+      "newMatches": true,
+      "general": true,
+      "deadlines": true,
+      "updates": true
+    },
+    "createdAt": "2026-09-26T02:00:00.000Z",
+    "updatedAt": "2026-10-26T02:00:00.000Z"
+  }
+]

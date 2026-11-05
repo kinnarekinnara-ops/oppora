@@ -1,0 +1,68 @@
+/* =============================================================
+   tokens.css — OPPORA design tokens (from the UI/UX spec)
+   Blue = trust & navigation · Green = growth & success
+   Yellow = opportunities & highlights · White = clean surfaces
+   ============================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Brand */
+  --navy: #071D49;
+  --blue: #0754B8;
+  --blue-bright: #1677E8;
+  --green: #10B956;
+  --green-dark: #08783B;
+  --yellow: #FFD52A;
+  --amber: #F2AD00;
+  --teal: #0F8F8A;
+  --red: #DC2626;
+
+  /* Surfaces */
+  --white: #FFFFFF;
+  --bg: #F6F9FD;
+  --border: #E2EAF3;
+  --border-strong: #CBD5E1;
+  --tint-blue: #E8F2FF;
+  --tint-green: #E8F8EE;
+  --tint-green-2: #F0FBF5;
+  --tint-yellow: #FFF5D6;
+  --tint-red: #FDECEC;
+
+  /* Text */
+  --text: #334767;
+  --text-strong: var(--navy);
+  --muted: #64748B;
+
+  /* Match tones */
+  --tone-strong: var(--green);
+  --tone-good: var(--blue-bright);
+  --tone-potential: var(--amber);
+  --tone-low: #94A3B8;
+
+  /* Type */
+  --font: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fs-xs: 11px;
+  --fs-sm: 13px;
+  --fs-base: 15px;
+  --fs-md: 17px;
+  --fs-lg: 22px;
+  --fs-xl: 28px;
+  --fs-hero: 48px;
+
+  /* Shape & depth */
+  --r-sm: 8px;
+  --r: 12px;
+  --r-card: 16px;
+  --r-panel: 20px;
+  --r-pill: 999px;
+  --shadow-sm: 0 2px 8px rgba(7, 29, 73, 0.06);
+  --shadow: 0 4px 16px rgba(7, 29, 73, 0.08);
+  --shadow-lg: 0 12px 30px rgba(7, 29, 73, 0.12);
+
+  /* Spacing */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 20px; --s6: 24px; --s8: 32px; --s10: 40px; --s12: 48px;
+
+  --header-h: 72px;
+  --max-w: 1320px;
+  --brand-gradient: linear-gradient(90deg, var(--blue), var(--green), var(--yellow));
+}

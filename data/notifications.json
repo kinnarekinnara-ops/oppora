@@ -1,0 +1,233 @@
+[
+  {
+    "id": "ntf_mw3bliym13ee78",
+    "studentId": "stu_alex",
+    "type": "deadline",
+    "opportunityId": "opp_green",
+    "title": "Deadline in 3 days: Campus Green Volunteering Day",
+    "message": "Registration for \"Campus Green Volunteering Day\" closes in 3 days. Don't miss it!",
+    "read": false,
+    "dedupeKey": "deadline:opp_green:stu_alex",
+    "createdAt": "2026-11-05T09:05:23.518Z"
+  },
+  {
+    "id": "ntf_mw3bliyib9ad57",
+    "studentId": "stu_mei",
+    "type": "new_match",
+    "opportunityId": "opp_cloud",
+    "title": "60% Good Match: Tech Talk: Careers in Cloud Computing",
+    "message": "A new opportunity matches your profile. It aligns with your interest in Business.",
+    "read": false,
+    "dedupeKey": "match:opp_cloud:stu_mei",
+    "createdAt": "2026-11-05T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3bliyhe888fa",
+    "studentId": "stu_jason",
+    "type": "general",
+    "opportunityId": "opp_cloud",
+    "title": "Open to everyone: Tech Talk: Careers in Cloud Computing",
+    "message": "Faculty of Computing has published an opportunity open to all students.",
+    "read": false,
+    "dedupeKey": "match:opp_cloud:stu_jason",
+    "createdAt": "2026-11-05T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3bliyh323235",
+    "studentId": "stu_iman",
+    "type": "general",
+    "opportunityId": "opp_cloud",
+    "title": "Open to everyone: Tech Talk: Careers in Cloud Computing",
+    "message": "Faculty of Computing has published an opportunity open to all students.",
+    "read": false,
+    "dedupeKey": "match:opp_cloud:stu_iman",
+    "createdAt": "2026-11-05T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3bliyga1a9d2",
+    "studentId": "stu_marcus",
+    "type": "new_match",
+    "opportunityId": "opp_cloud",
+    "title": "87% Strong Match: Tech Talk: Careers in Cloud Computing",
+    "message": "A new opportunity matches your profile. Your Cloud Computing and Linux skills are directly relevant to this opportunity.",
+    "read": false,
+    "dedupeKey": "match:opp_cloud:stu_marcus",
+    "createdAt": "2026-11-05T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3bliyg6877e8",
+    "studentId": "stu_siti",
+    "type": "general",
+    "opportunityId": "opp_cloud",
+    "title": "Open to everyone: Tech Talk: Careers in Cloud Computing",
+    "message": "Faculty of Computing has published an opportunity open to all students.",
+    "read": false,
+    "dedupeKey": "match:opp_cloud:stu_siti",
+    "createdAt": "2026-11-05T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3bliyfaba98d",
+    "studentId": "stu_daniel",
+    "type": "general",
+    "opportunityId": "opp_cloud",
+    "title": "Open to everyone: Tech Talk: Careers in Cloud Computing",
+    "message": "Faculty of Computing has published an opportunity open to all students.",
+    "read": false,
+    "dedupeKey": "match:opp_cloud:stu_daniel",
+    "createdAt": "2026-11-05T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3bliyf1a246e",
+    "studentId": "stu_priya",
+    "type": "general",
+    "opportunityId": "opp_cloud",
+    "title": "Open to everyone: Tech Talk: Careers in Cloud Computing",
+    "message": "Faculty of Computing has published an opportunity open to all students.",
+    "read": false,
+    "dedupeKey": "match:opp_cloud:stu_priya",
+    "createdAt": "2026-11-05T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3bliye8bbf13",
+    "studentId": "stu_alex",
+    "type": "new_match",
+    "opportunityId": "opp_cloud",
+    "title": "68% Good Match: Tech Talk: Careers in Cloud Computing",
+    "message": "A new opportunity matches your profile. Your Linux skill is directly relevant to this opportunity.",
+    "read": false,
+    "dedupeKey": "match:opp_cloud:stu_alex",
+    "createdAt": "2026-11-05T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3bliy9e9c685",
+    "studentId": "stu_marcus",
+    "type": "new_match",
+    "opportunityId": "opp_linux",
+    "title": "79% Good Match: Linux Systems Challenge 2026",
+    "message": "A new opportunity matches your profile. Although it's promoted to Software Engineering students, your skills and interests make you a strong candidate.",
+    "read": false,
+    "dedupeKey": "match:opp_linux:stu_marcus",
+    "createdAt": "2026-11-04T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3bliy993fe86",
+    "studentId": "stu_alex",
+    "type": "new_match",
+    "opportunityId": "opp_linux",
+    "title": "84% Strong Match: Linux Systems Challenge 2026",
+    "message": "A new opportunity matches your profile. Although it's promoted to Software Engineering students, your skills and interests make you a strong candidate.",
+    "read": false,
+    "dedupeKey": "match:opp_linux:stu_alex",
+    "createdAt": "2026-11-04T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3bliy68bda6b",
+    "studentId": "stu_mei",
+    "type": "new_match",
+    "opportunityId": "opp_council",
+    "title": "60% Good Match: Student Council Committee Recruitment",
+    "message": "A new opportunity matches your profile. It aligns with your interest in Business.",
+    "read": false,
+    "dedupeKey": "match:opp_council:stu_mei",
+    "createdAt": "2026-11-03T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3bliy3eceb7b",
+    "studentId": "stu_siti",
+    "type": "new_match",
+    "opportunityId": "opp_council",
+    "title": "81% Strong Match: Student Council Committee Recruitment",
+    "message": "A new opportunity matches your profile. Your Leadership, Communication, Event Management and Digital Marketing skills are directly relevant to this opportunity.",
+    "read": false,
+    "dedupeKey": "match:opp_council:stu_siti",
+    "createdAt": "2026-11-03T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3bliy0e3812c",
+    "studentId": "stu_priya",
+    "type": "new_match",
+    "opportunityId": "opp_ai",
+    "title": "89% Strong Match: AI Innovation Challenge",
+    "message": "A new opportunity matches your profile. Your Python, Machine Learning, Data Analysis and Public Speaking skills are directly relevant to this opportunity.",
+    "read": false,
+    "dedupeKey": "match:opp_ai:stu_priya",
+    "createdAt": "2026-11-02T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3blixx49e6c5",
+    "studentId": "stu_alex",
+    "type": "new_match",
+    "opportunityId": "opp_green",
+    "title": "67% Good Match: Campus Green Volunteering Day",
+    "message": "A new opportunity matches your profile. Your Teamwork skill is directly relevant to this opportunity.",
+    "read": true,
+    "dedupeKey": "match:opp_green:stu_alex",
+    "createdAt": "2026-11-01T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3blixu92d941",
+    "studentId": "stu_iman",
+    "type": "new_match",
+    "opportunityId": "opp_ra",
+    "title": "78% Good Match: Research Assistant — Smart Campus IoT Lab",
+    "message": "A new opportunity matches your profile. Your IoT, Python and C/C++ skills are directly relevant to this opportunity.",
+    "read": true,
+    "dedupeKey": "match:opp_ra:stu_iman",
+    "createdAt": "2026-10-31T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3blixpd58c68",
+    "studentId": "stu_mei",
+    "type": "new_match",
+    "opportunityId": "opp_mentor",
+    "title": "60% Good Match: Industry Mentorship Programme",
+    "message": "A new opportunity matches your profile. It aligns with your interest in Business.",
+    "read": true,
+    "dedupeKey": "match:opp_mentor:stu_mei",
+    "createdAt": "2026-10-30T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3blixoe4674f",
+    "studentId": "stu_siti",
+    "type": "new_match",
+    "opportunityId": "opp_mentor",
+    "title": "67% Good Match: Industry Mentorship Programme",
+    "message": "A new opportunity matches your profile. Your Communication skill is directly relevant to this opportunity.",
+    "read": true,
+    "dedupeKey": "match:opp_mentor:stu_siti",
+    "createdAt": "2026-10-30T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3blixgb1c18c",
+    "studentId": "stu_alex",
+    "type": "new_match",
+    "opportunityId": "opp_ctf",
+    "title": "85% Strong Match: Capture The Flag (CTF) Beginner Bootcamp",
+    "message": "A new opportunity matches your profile. Your Web Security, Linux and Python skills are directly relevant to this opportunity.",
+    "read": true,
+    "dedupeKey": "match:opp_ctf:stu_alex",
+    "createdAt": "2026-10-28T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3blixde6195f",
+    "studentId": "stu_jason",
+    "type": "new_match",
+    "opportunityId": "opp_webhack",
+    "title": "61% Good Match: Web Dev Hackathon: Build for Good",
+    "message": "A new opportunity matches your profile. Although it's promoted to Software Engineering, Computer Science and Information Technology students, your skills and interests make you a strong candidate.",
+    "read": true,
+    "dedupeKey": "match:opp_webhack:stu_jason",
+    "createdAt": "2026-10-27T02:00:00.000Z"
+  },
+  {
+    "id": "ntf_mw3blixb637055",
+    "studentId": "stu_daniel",
+    "type": "new_match",
+    "opportunityId": "opp_webhack",
+    "title": "84% Strong Match: Web Dev Hackathon: Build for Good",
+    "message": "A new opportunity matches your profile. Your Web Development, JavaScript, Database Management and UI/UX Design skills are directly relevant to this opportunity.",
+    "read": true,
+    "dedupeKey": "match:opp_webhack:stu_daniel",
+    "createdAt": "2026-10-27T02:00:00.000Z"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "academic", "name": "Academic & Research", "color": "#0754B8", "bg": "#E8F2FF", "icon": "🎓", "experienceTypes": ["research", "project"], "keywords": ["research", "assistant", "lab", "academic", "thesis", "publication", "scholarship"] },
+  { "id": "technical", "name": "Technical Competitions", "color": "#0754B8", "bg": "#E8F2FF", "icon": "💻", "experienceTypes": ["hackathon", "competition", "project"], "keywords": ["hackathon", "competition", "ctf", "challenge", "coding", "contest", "capture the flag", "bootcamp"] },
+  { "id": "professional", "name": "Professional Development", "color": "#10B956", "bg": "#E8F8EE", "icon": "💼", "experienceTypes": ["internship", "certification", "mentorship"], "keywords": ["mentor", "mentorship", "internship", "career", "industry", "networking", "resume", "interview", "professional"] },
+  { "id": "activities", "name": "Student Activities", "color": "#F2AD00", "bg": "#FFF5D6", "icon": "🎉", "experienceTypes": ["club", "leadership"], "keywords": ["club", "committee", "council", "society", "recruitment", "open day"] },
+  { "id": "volunteering", "name": "Volunteering", "color": "#10B956", "bg": "#E8F8EE", "icon": "🤝", "experienceTypes": ["volunteering", "club"], "keywords": ["volunteer", "community", "charity", "outreach", "green", "sustainab"] },
+  { "id": "general", "name": "General Events", "color": "#0F8F8A", "bg": "#E6F6F5", "icon": "📢", "experienceTypes": [], "keywords": ["talk", "seminar", "workshop", "webinar", "forum", "festival", "university-wide"] }
+]

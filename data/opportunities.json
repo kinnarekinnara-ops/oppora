@@ -1,0 +1,764 @@
+[
+  {
+    "viewedBy": [
+      "stu_priya",
+      "stu_daniel",
+      "stu_marcus",
+      "stu_iman",
+      "stu_mei"
+    ],
+    "clickedBy": [
+      "stu_alex",
+      "stu_marcus"
+    ],
+    "attachments": [],
+    "knowledgeAreas": [
+      "Linux command line",
+      "Server troubleshooting"
+    ],
+    "academicFields": [
+      "Cybersecurity",
+      "Computer Science",
+      "Software Engineering"
+    ],
+    "preferredSkills": [
+      "Teamwork"
+    ],
+    "targetProgrammes": [
+      "Software Engineering"
+    ],
+    "eligibleYears": [],
+    "studyLevels": [],
+    "mandatoryRequirements": [],
+    "openToAll": false,
+    "restrictToProgrammes": false,
+    "maxParticipants": 60,
+    "deliveryMode": "In-person",
+    "applicationInstructions": "",
+    "aiAssisted": true,
+    "aiSource": "rules",
+    "eventEndDate": "",
+    "id": "opp_linux",
+    "title": "Linux Systems Challenge 2026",
+    "organizationId": "org_cyber",
+    "categories": [
+      "technical"
+    ],
+    "description": "A beginner-friendly competition involving Linux command-line operations, basic networking, system administration and troubleshooting. Work in teams of three to fix broken servers against the clock. Mentors from the Cybersecurity & Linux Club will be on hand, and all participants receive a certificate.",
+    "requiredSkills": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "experienceLevel": "Beginner",
+    "eventDate": "2026-11-21",
+    "deadline": "2026-11-14",
+    "location": "Lab 4-02, Block B",
+    "registrationLink": "https://forms.example.com/linux-challenge",
+    "status": "published",
+    "publishedAt": "2026-11-04T02:00:00.000Z",
+    "createdBy": "usr_club",
+    "organizer": "Cybersecurity & Linux Club",
+    "createdAt": "2026-11-04T02:00:00.000Z",
+    "updatedAt": "2026-11-04T02:00:00.000Z",
+    "lastMatchStats": {
+      "evaluated": 8,
+      "eligible": 8,
+      "notEligible": 0,
+      "recommended": 3,
+      "strong": 1,
+      "crossDisciplinary": 2,
+      "notified": 2,
+      "at": "2026-11-04T02:00:00.000Z"
+    }
+  },
+  {
+    "viewedBy": [
+      "stu_alex",
+      "stu_priya",
+      "stu_siti",
+      "stu_marcus",
+      "stu_jason",
+      "stu_mei"
+    ],
+    "clickedBy": [
+      "stu_siti",
+      "stu_mei"
+    ],
+    "attachments": [],
+    "knowledgeAreas": [],
+    "academicFields": [
+      "Artificial Intelligence",
+      "Data Science"
+    ],
+    "preferredSkills": [
+      "Public Speaking",
+      "UI/UX Design"
+    ],
+    "targetProgrammes": [
+      "Artificial Intelligence",
+      "Computer Science",
+      "Software Engineering",
+      "Data Science"
+    ],
+    "eligibleYears": [
+      2,
+      3,
+      4
+    ],
+    "studyLevels": [],
+    "mandatoryRequirements": [
+      {
+        "type": "skill",
+        "value": "Python",
+        "minLevel": ""
+      }
+    ],
+    "openToAll": false,
+    "restrictToProgrammes": false,
+    "maxParticipants": 120,
+    "deliveryMode": "In-person",
+    "applicationInstructions": "",
+    "aiAssisted": false,
+    "aiSource": null,
+    "eventEndDate": "2026-11-28",
+    "id": "opp_ai",
+    "title": "AI Innovation Challenge",
+    "organizationId": "org_ai",
+    "categories": [
+      "technical"
+    ],
+    "description": "Build an AI-powered solution for a smart campus problem in 48 hours. Teams will train machine learning models, analyse campus data and pitch to industry judges. Participants should be comfortable programming in Python.",
+    "requiredSkills": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "experienceLevel": "Intermediate",
+    "eventDate": "2026-11-26",
+    "deadline": "2026-11-17",
+    "location": "Innovation Hub",
+    "registrationLink": "https://forms.example.com/ai-challenge",
+    "status": "published",
+    "publishedAt": "2026-11-02T02:00:00.000Z",
+    "createdBy": "usr_staff",
+    "organizer": "AI & Data Society",
+    "createdAt": "2026-11-02T02:00:00.000Z",
+    "updatedAt": "2026-11-02T02:00:00.000Z",
+    "lastMatchStats": {
+      "evaluated": 8,
+      "eligible": 3,
+      "notEligible": 5,
+      "recommended": 3,
+      "strong": 1,
+      "crossDisciplinary": 0,
+      "notified": 1,
+      "at": "2026-11-02T02:00:00.000Z"
+    }
+  },
+  {
+    "viewedBy": [
+      "stu_alex",
+      "stu_daniel",
+      "stu_siti",
+      "stu_iman",
+      "stu_jason"
+    ],
+    "clickedBy": [
+      "stu_daniel",
+      "stu_jason"
+    ],
+    "attachments": [],
+    "knowledgeAreas": [],
+    "academicFields": [
+      "Computer Engineering",
+      "Computer Science"
+    ],
+    "preferredSkills": [
+      "C/C++",
+      "Research"
+    ],
+    "targetProgrammes": [
+      "Computer Science",
+      "Computer Engineering"
+    ],
+    "eligibleYears": [
+      3,
+      4
+    ],
+    "studyLevels": [],
+    "mandatoryRequirements": [
+      {
+        "type": "text",
+        "value": "Available for 10 hours per week during the semester"
+      }
+    ],
+    "openToAll": false,
+    "restrictToProgrammes": true,
+    "maxParticipants": 2,
+    "deliveryMode": "Hybrid",
+    "applicationInstructions": "Submit your CV and a one-page statement of interest.",
+    "aiAssisted": false,
+    "aiSource": null,
+    "eventEndDate": "",
+    "id": "opp_ra",
+    "title": "Research Assistant — Smart Campus IoT Lab",
+    "organizationId": "org_fcs",
+    "categories": [
+      "academic"
+    ],
+    "description": "The Smart Campus IoT Lab is recruiting two part-time research assistants to help build sensor networks and analyse occupancy data. You will co-author a conference paper. Applicants must be from Computer Science or Computer Engineering in Year 3 or 4.",
+    "requiredSkills": [
+      "IoT",
+      "Python",
+      "Data Analysis"
+    ],
+    "experienceLevel": "Intermediate",
+    "eventDate": "2026-12-10",
+    "deadline": "2026-11-25",
+    "location": "IoT Lab, Engineering Block",
+    "registrationLink": "https://forms.example.com/ra-iot",
+    "status": "published",
+    "publishedAt": "2026-10-31T02:00:00.000Z",
+    "createdBy": "usr_staff",
+    "organizer": "Faculty of Computing",
+    "createdAt": "2026-10-31T02:00:00.000Z",
+    "updatedAt": "2026-10-31T02:00:00.000Z",
+    "lastMatchStats": {
+      "evaluated": 8,
+      "eligible": 2,
+      "notEligible": 6,
+      "recommended": 1,
+      "strong": 0,
+      "crossDisciplinary": 0,
+      "notified": 1,
+      "at": "2026-10-31T02:00:00.000Z"
+    }
+  },
+  {
+    "viewedBy": [
+      "stu_priya",
+      "stu_daniel",
+      "stu_marcus",
+      "stu_iman",
+      "stu_mei"
+    ],
+    "clickedBy": [
+      "stu_priya",
+      "stu_iman"
+    ],
+    "attachments": [],
+    "knowledgeAreas": [],
+    "academicFields": [],
+    "preferredSkills": [],
+    "targetProgrammes": [],
+    "eligibleYears": [],
+    "studyLevels": [],
+    "mandatoryRequirements": [],
+    "openToAll": true,
+    "restrictToProgrammes": false,
+    "maxParticipants": 80,
+    "deliveryMode": "Hybrid",
+    "applicationInstructions": "",
+    "aiAssisted": false,
+    "aiSource": null,
+    "eventEndDate": "",
+    "id": "opp_mentor",
+    "title": "Industry Mentorship Programme",
+    "organizationId": "org_career",
+    "categories": [
+      "professional"
+    ],
+    "description": "Get matched with an industry mentor for 8 weeks. Monthly one-to-one sessions covering career planning, resume reviews, interview skills and professional networking. Open to all students regardless of programme.",
+    "requiredSkills": [
+      "Career Planning",
+      "Communication"
+    ],
+    "experienceLevel": "Any",
+    "eventDate": "2026-11-19",
+    "deadline": "2026-11-09",
+    "location": "Online + Career Centre",
+    "registrationLink": "https://forms.example.com/mentorship",
+    "status": "published",
+    "publishedAt": "2026-10-30T02:00:00.000Z",
+    "createdBy": "usr_staff",
+    "organizer": "Career Development Centre",
+    "createdAt": "2026-10-30T02:00:00.000Z",
+    "updatedAt": "2026-10-30T02:00:00.000Z",
+    "lastMatchStats": {
+      "evaluated": 8,
+      "eligible": 8,
+      "notEligible": 0,
+      "recommended": 3,
+      "strong": 0,
+      "crossDisciplinary": 0,
+      "notified": 2,
+      "at": "2026-10-30T02:00:00.000Z"
+    }
+  },
+  {
+    "viewedBy": [
+      "stu_alex",
+      "stu_priya",
+      "stu_siti",
+      "stu_marcus",
+      "stu_jason",
+      "stu_mei"
+    ],
+    "clickedBy": [
+      "stu_alex",
+      "stu_marcus"
+    ],
+    "attachments": [],
+    "knowledgeAreas": [],
+    "academicFields": [],
+    "preferredSkills": [
+      "Event Management",
+      "Digital Marketing"
+    ],
+    "targetProgrammes": [],
+    "eligibleYears": [],
+    "studyLevels": [],
+    "mandatoryRequirements": [],
+    "openToAll": true,
+    "restrictToProgrammes": false,
+    "maxParticipants": null,
+    "deliveryMode": "In-person",
+    "applicationInstructions": "",
+    "aiAssisted": false,
+    "aiSource": null,
+    "eventEndDate": "",
+    "id": "opp_council",
+    "title": "Student Council Committee Recruitment",
+    "organizationId": "org_sca",
+    "categories": [
+      "activities"
+    ],
+    "description": "Join the Student Council committee! We are recruiting for events, marketing and community roles. Help organise university-wide festivals and represent student voices. Leadership, teamwork and event planning experience are a plus.",
+    "requiredSkills": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "experienceLevel": "Any",
+    "eventDate": "2026-11-23",
+    "deadline": "2026-11-16",
+    "location": "Student Centre",
+    "registrationLink": "https://forms.example.com/council",
+    "status": "published",
+    "publishedAt": "2026-11-03T02:00:00.000Z",
+    "createdBy": "usr_staff",
+    "organizer": "Student Affairs Office",
+    "createdAt": "2026-11-03T02:00:00.000Z",
+    "updatedAt": "2026-11-03T02:00:00.000Z",
+    "lastMatchStats": {
+      "evaluated": 8,
+      "eligible": 8,
+      "notEligible": 0,
+      "recommended": 3,
+      "strong": 1,
+      "crossDisciplinary": 0,
+      "notified": 2,
+      "at": "2026-11-03T02:00:00.000Z"
+    }
+  },
+  {
+    "viewedBy": [
+      "stu_alex",
+      "stu_daniel",
+      "stu_siti",
+      "stu_iman",
+      "stu_jason"
+    ],
+    "clickedBy": [
+      "stu_siti",
+      "stu_mei"
+    ],
+    "attachments": [],
+    "knowledgeAreas": [],
+    "academicFields": [],
+    "preferredSkills": [],
+    "targetProgrammes": [],
+    "eligibleYears": [],
+    "studyLevels": [],
+    "mandatoryRequirements": [],
+    "openToAll": true,
+    "restrictToProgrammes": false,
+    "maxParticipants": null,
+    "deliveryMode": "In-person",
+    "applicationInstructions": "",
+    "aiAssisted": false,
+    "aiSource": null,
+    "eventEndDate": "",
+    "id": "opp_green",
+    "title": "Campus Green Volunteering Day",
+    "organizationId": "org_green",
+    "categories": [
+      "volunteering"
+    ],
+    "description": "Spend a Saturday morning planting trees and setting up recycling stations around campus. No experience needed — just bring your energy! Volunteers earn community-service hours.",
+    "requiredSkills": [
+      "Teamwork"
+    ],
+    "experienceLevel": "Beginner",
+    "eventDate": "2026-11-11",
+    "deadline": "2026-11-08",
+    "location": "Main Campus Lawn",
+    "registrationLink": "https://forms.example.com/green-day",
+    "status": "published",
+    "publishedAt": "2026-11-01T02:00:00.000Z",
+    "createdBy": "usr_staff",
+    "organizer": "Green Campus Volunteers",
+    "createdAt": "2026-11-01T02:00:00.000Z",
+    "updatedAt": "2026-11-01T02:00:00.000Z",
+    "lastMatchStats": {
+      "evaluated": 8,
+      "eligible": 8,
+      "notEligible": 0,
+      "recommended": 2,
+      "strong": 0,
+      "crossDisciplinary": 0,
+      "notified": 1,
+      "at": "2026-11-01T02:00:00.000Z"
+    }
+  },
+  {
+    "viewedBy": [
+      "stu_priya",
+      "stu_daniel",
+      "stu_marcus",
+      "stu_iman",
+      "stu_mei"
+    ],
+    "clickedBy": [
+      "stu_daniel",
+      "stu_jason"
+    ],
+    "attachments": [],
+    "knowledgeAreas": [],
+    "academicFields": [],
+    "preferredSkills": [
+      "Linux"
+    ],
+    "targetProgrammes": [],
+    "eligibleYears": [],
+    "studyLevels": [],
+    "mandatoryRequirements": [],
+    "openToAll": true,
+    "restrictToProgrammes": false,
+    "maxParticipants": null,
+    "deliveryMode": "In-person",
+    "applicationInstructions": "",
+    "aiAssisted": false,
+    "aiSource": null,
+    "eventEndDate": "",
+    "id": "opp_cloud",
+    "title": "Tech Talk: Careers in Cloud Computing",
+    "organizationId": "org_fcs",
+    "categories": [
+      "general",
+      "professional"
+    ],
+    "description": "A university-wide talk with cloud engineers from the industry. Learn how cloud infrastructure, DevOps and Linux skills translate into graduate roles. Free seminar, open to everyone.",
+    "requiredSkills": [
+      "Cloud Computing"
+    ],
+    "experienceLevel": "Any",
+    "eventDate": "2026-11-13",
+    "deadline": "2026-11-12",
+    "location": "Auditorium 1",
+    "registrationLink": "https://forms.example.com/cloud-talk",
+    "status": "published",
+    "publishedAt": "2026-11-05T02:00:00.000Z",
+    "createdBy": "usr_staff",
+    "organizer": "Faculty of Computing",
+    "createdAt": "2026-11-05T02:00:00.000Z",
+    "updatedAt": "2026-11-05T02:00:00.000Z",
+    "lastMatchStats": {
+      "evaluated": 8,
+      "eligible": 8,
+      "notEligible": 0,
+      "recommended": 3,
+      "strong": 1,
+      "crossDisciplinary": 0,
+      "notified": 8,
+      "at": "2026-11-05T02:00:00.000Z"
+    }
+  },
+  {
+    "viewedBy": [
+      "stu_alex",
+      "stu_priya",
+      "stu_siti",
+      "stu_marcus",
+      "stu_jason",
+      "stu_mei"
+    ],
+    "clickedBy": [
+      "stu_priya",
+      "stu_iman"
+    ],
+    "attachments": [],
+    "knowledgeAreas": [],
+    "academicFields": [
+      "Cybersecurity"
+    ],
+    "preferredSkills": [
+      "Cryptography",
+      "Python"
+    ],
+    "targetProgrammes": [
+      "Cybersecurity"
+    ],
+    "eligibleYears": [],
+    "studyLevels": [],
+    "mandatoryRequirements": [],
+    "openToAll": false,
+    "restrictToProgrammes": false,
+    "maxParticipants": 40,
+    "deliveryMode": "In-person",
+    "applicationInstructions": "",
+    "aiAssisted": false,
+    "aiSource": null,
+    "eventEndDate": "",
+    "id": "opp_ctf",
+    "title": "Capture The Flag (CTF) Beginner Bootcamp",
+    "organizationId": "org_cyber",
+    "categories": [
+      "technical"
+    ],
+    "description": "A two-day bootcamp introducing ethical hacking, web security and cryptography through hands-on CTF challenges. Ideal for first-timers who want to get into cybersecurity competitions.",
+    "requiredSkills": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "experienceLevel": "Beginner",
+    "eventDate": "2026-12-01",
+    "deadline": "2026-11-20",
+    "location": "Cyber Range Lab",
+    "registrationLink": "https://forms.example.com/ctf-bootcamp",
+    "status": "published",
+    "publishedAt": "2026-10-28T02:00:00.000Z",
+    "createdBy": "usr_club",
+    "organizer": "Cybersecurity & Linux Club",
+    "createdAt": "2026-10-28T02:00:00.000Z",
+    "updatedAt": "2026-10-28T02:00:00.000Z",
+    "lastMatchStats": {
+      "evaluated": 8,
+      "eligible": 8,
+      "notEligible": 0,
+      "recommended": 2,
+      "strong": 1,
+      "crossDisciplinary": 0,
+      "notified": 1,
+      "at": "2026-10-28T02:00:00.000Z"
+    }
+  },
+  {
+    "viewedBy": [
+      "stu_alex",
+      "stu_daniel",
+      "stu_siti",
+      "stu_iman",
+      "stu_jason"
+    ],
+    "clickedBy": [
+      "stu_alex",
+      "stu_marcus"
+    ],
+    "attachments": [],
+    "knowledgeAreas": [],
+    "academicFields": [
+      "Software Engineering"
+    ],
+    "preferredSkills": [
+      "UI/UX Design",
+      "Teamwork"
+    ],
+    "targetProgrammes": [
+      "Software Engineering",
+      "Computer Science",
+      "Information Technology"
+    ],
+    "eligibleYears": [],
+    "studyLevels": [],
+    "mandatoryRequirements": [],
+    "openToAll": false,
+    "restrictToProgrammes": false,
+    "maxParticipants": null,
+    "deliveryMode": "In-person",
+    "applicationInstructions": "",
+    "aiAssisted": false,
+    "aiSource": null,
+    "eventEndDate": "",
+    "id": "opp_webhack",
+    "title": "Web Dev Hackathon: Build for Good",
+    "organizationId": "org_sca",
+    "categories": [
+      "technical",
+      "volunteering"
+    ],
+    "description": "Build websites for local charities in a 24-hour hackathon. Teams need front-end, back-end and design skills. Experience with JavaScript, databases and UI/UX design is recommended.",
+    "requiredSkills": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "experienceLevel": "Intermediate",
+    "eventDate": "2026-12-05",
+    "deadline": "2026-11-24",
+    "location": "Innovation Hub",
+    "registrationLink": "https://forms.example.com/webhack",
+    "status": "published",
+    "publishedAt": "2026-10-27T02:00:00.000Z",
+    "createdBy": "usr_staff",
+    "organizer": "Student Affairs Office",
+    "createdAt": "2026-10-27T02:00:00.000Z",
+    "updatedAt": "2026-10-27T02:00:00.000Z",
+    "lastMatchStats": {
+      "evaluated": 8,
+      "eligible": 8,
+      "notEligible": 0,
+      "recommended": 5,
+      "strong": 1,
+      "crossDisciplinary": 1,
+      "notified": 2,
+      "at": "2026-10-27T02:00:00.000Z"
+    }
+  },
+  {
+    "viewedBy": [],
+    "clickedBy": [],
+    "attachments": [],
+    "knowledgeAreas": [],
+    "academicFields": [],
+    "preferredSkills": [],
+    "targetProgrammes": [],
+    "eligibleYears": [],
+    "studyLevels": [],
+    "mandatoryRequirements": [],
+    "openToAll": true,
+    "restrictToProgrammes": false,
+    "maxParticipants": null,
+    "deliveryMode": "In-person",
+    "applicationInstructions": "",
+    "aiAssisted": false,
+    "aiSource": null,
+    "eventEndDate": "",
+    "id": "opp_robotics",
+    "title": "Robotics Club Open Day",
+    "organizationId": "org_robotics",
+    "categories": [
+      "activities"
+    ],
+    "description": "Come see our line-following and sumo robots, try building a simple Arduino circuit, and meet the team. Great for anyone curious about robotics and embedded systems.",
+    "requiredSkills": [
+      "Robotics",
+      "IoT"
+    ],
+    "experienceLevel": "Beginner",
+    "eventDate": "2026-11-18",
+    "deadline": "2026-11-17",
+    "location": "Engineering Workshop",
+    "registrationLink": "https://forms.example.com/robotics-open-day",
+    "status": "pending_approval",
+    "submittedAt": "2026-11-04T02:00:00.000Z",
+    "createdBy": "usr_robot",
+    "organizer": "Robotics Club",
+    "createdAt": "2026-11-02T02:00:00.000Z",
+    "updatedAt": "2026-11-02T02:00:00.000Z"
+  },
+  {
+    "viewedBy": [],
+    "clickedBy": [],
+    "attachments": [],
+    "knowledgeAreas": [],
+    "academicFields": [],
+    "preferredSkills": [],
+    "targetProgrammes": [],
+    "eligibleYears": [],
+    "studyLevels": [],
+    "mandatoryRequirements": [],
+    "openToAll": true,
+    "restrictToProgrammes": false,
+    "maxParticipants": null,
+    "deliveryMode": "In-person",
+    "applicationInstructions": "",
+    "aiAssisted": false,
+    "aiSource": null,
+    "eventEndDate": "",
+    "id": "opp_datasci",
+    "title": "Data Science Workshop Series",
+    "organizationId": "org_ai",
+    "categories": [
+      "general"
+    ],
+    "description": "Draft — four-week workshop series on pandas, visualisation and statistics.",
+    "requiredSkills": [
+      "Data Analysis",
+      "Python"
+    ],
+    "experienceLevel": "Beginner",
+    "eventDate": "",
+    "deadline": "",
+    "registrationLink": "",
+    "status": "draft",
+    "createdBy": "usr_staff",
+    "organizer": "AI & Data Society",
+    "createdAt": "2026-11-02T02:00:00.000Z",
+    "updatedAt": "2026-11-02T02:00:00.000Z"
+  },
+  {
+    "viewedBy": [
+      "stu_alex",
+      "stu_daniel",
+      "stu_siti",
+      "stu_iman",
+      "stu_jason"
+    ],
+    "clickedBy": [
+      "stu_priya",
+      "stu_iman"
+    ],
+    "attachments": [],
+    "knowledgeAreas": [],
+    "academicFields": [],
+    "preferredSkills": [],
+    "targetProgrammes": [],
+    "eligibleYears": [],
+    "studyLevels": [],
+    "mandatoryRequirements": [],
+    "openToAll": true,
+    "restrictToProgrammes": false,
+    "maxParticipants": null,
+    "deliveryMode": "In-person",
+    "applicationInstructions": "",
+    "aiAssisted": false,
+    "aiSource": null,
+    "eventEndDate": "",
+    "id": "opp_orient",
+    "title": "Hackathon Orientation Night",
+    "organizationId": "org_sca",
+    "categories": [
+      "general"
+    ],
+    "description": "An evening introducing new students to hackathons, team formation and the campus tech community.",
+    "requiredSkills": [
+      "Programming"
+    ],
+    "experienceLevel": "Any",
+    "eventDate": "2026-11-02",
+    "deadline": "2026-10-30",
+    "location": "Auditorium 2",
+    "registrationLink": "https://forms.example.com/orientation",
+    "status": "closed",
+    "publishedAt": "2026-10-16T02:00:00.000Z",
+    "closedAt": "2026-10-30T02:00:00.000Z",
+    "createdBy": "usr_staff",
+    "organizer": "Student Affairs Office",
+    "createdAt": "2026-10-16T02:00:00.000Z",
+    "updatedAt": "2026-10-16T02:00:00.000Z"
+  }
+]

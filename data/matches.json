@@ -1,0 +1,3520 @@
+[
+  {
+    "id": "stu_alex__opp_webhack",
+    "studentId": "stu_alex",
+    "opportunityId": "opp_webhack",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 46,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 25,
+      "interests": 60,
+      "academic": 70,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "Teamwork"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "Web Development",
+        "via": "Web Security"
+      }
+    ],
+    "missingSkills": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "matchedInterests": [
+      "Software Engineering"
+    ],
+    "reasons": [
+      "Your Teamwork skill is directly relevant to this opportunity.",
+      "Your Web Security (related to Web Development) gives you a head start.",
+      "It aligns with your interest in Software Engineering.",
+      "Your Cybersecurity background provides relevant foundational knowledge.",
+      "Your previous competition experience (\"Inter-varsity CTF 2025\") is relevant."
+    ],
+    "improve": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.467Z"
+  },
+  {
+    "id": "stu_priya__opp_webhack",
+    "studentId": "stu_priya",
+    "opportunityId": "opp_webhack",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 42,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 13,
+      "interests": 60,
+      "academic": 70,
+      "experience": 100
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Database Management",
+        "via": "Data Analysis"
+      }
+    ],
+    "missingSkills": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "matchedInterests": [
+      "Data Science"
+    ],
+    "reasons": [
+      "Your Data Analysis (related to Database Management) gives you a head start.",
+      "It aligns with your interest in Data Science.",
+      "Your Artificial Intelligence background provides relevant foundational knowledge.",
+      "Your previous hackathon experience (\"GenAI Hackathon 2025\") is relevant."
+    ],
+    "improve": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.467Z"
+  },
+  {
+    "id": "stu_daniel__opp_webhack",
+    "studentId": "stu_daniel",
+    "opportunityId": "opp_webhack",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 84,
+    "label": "Strong Match",
+    "tone": "strong",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 82,
+      "interests": 80,
+      "academic": 100,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "Web Development",
+      "JavaScript",
+      "Database Management",
+      "UI/UX Design"
+    ],
+    "relatedSkills": [],
+    "missingSkills": [],
+    "matchedInterests": [
+      "Software Engineering",
+      "Design & Creativity"
+    ],
+    "reasons": [
+      "Your Web Development, JavaScript, Database Management and UI/UX Design skills are directly relevant to this opportunity.",
+      "It aligns with your interest in Software Engineering and Design & Creativity.",
+      "It is aimed at Software Engineering students.",
+      "Your previous project experience (\"Personal portfolio website\") is relevant."
+    ],
+    "improve": [],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.468Z"
+  },
+  {
+    "id": "stu_siti__opp_webhack",
+    "studentId": "stu_siti",
+    "opportunityId": "opp_webhack",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 20,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 6,
+      "interests": 10,
+      "academic": 30,
+      "experience": 100
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Teamwork",
+        "via": "Communication"
+      }
+    ],
+    "missingSkills": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "Your Communication (related to Teamwork) gives you a head start.",
+      "Your previous club experience (\"Treasurer, Business Society\") is relevant."
+    ],
+    "improve": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.468Z"
+  },
+  {
+    "id": "stu_marcus__opp_webhack",
+    "studentId": "stu_marcus",
+    "opportunityId": "opp_webhack",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 38,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 60,
+      "academic": 100,
+      "experience": 75
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "matchedInterests": [
+      "Software Engineering"
+    ],
+    "reasons": [
+      "It aligns with your interest in Software Engineering.",
+      "It is aimed at Computer Science students.",
+      "Your previous hackathon experience (\"Campus Hack 2024\") is relevant."
+    ],
+    "improve": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.468Z"
+  },
+  {
+    "id": "stu_iman__opp_webhack",
+    "studentId": "stu_iman",
+    "opportunityId": "opp_webhack",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 21,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 70,
+      "experience": 75
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "Your Computer Engineering background provides relevant foundational knowledge.",
+      "Your previous project experience (\"Smart parking sensor prototype\") is relevant."
+    ],
+    "improve": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.468Z"
+  },
+  {
+    "id": "stu_jason__opp_webhack",
+    "studentId": "stu_jason",
+    "opportunityId": "opp_webhack",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 61,
+    "label": "Good Match",
+    "tone": "good",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 59,
+      "interests": 60,
+      "academic": 70,
+      "experience": null
+    },
+    "matchedSkills": [
+      "Web Development",
+      "UI/UX Design"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "JavaScript",
+        "via": "Web Development"
+      },
+      {
+        "skill": "Database Management",
+        "via": "Web Development"
+      }
+    ],
+    "missingSkills": [
+      "JavaScript",
+      "Database Management"
+    ],
+    "matchedInterests": [
+      "Design & Creativity"
+    ],
+    "reasons": [
+      "Although it's promoted to Software Engineering, Computer Science and Information Technology students, your skills and interests make you a strong candidate.",
+      "Your Web Development and UI/UX Design skills are directly relevant to this opportunity.",
+      "Your Web Development (related to JavaScript) and Web Development (related to Database Management) gives you a head start.",
+      "It aligns with your interest in Design & Creativity.",
+      "Your Multimedia & Design background provides relevant foundational knowledge."
+    ],
+    "improve": [
+      "JavaScript",
+      "Database Management"
+    ],
+    "crossDisciplinary": true,
+    "notes": [
+      "This score is provisional — add your experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.468Z"
+  },
+  {
+    "id": "stu_mei__opp_webhack",
+    "studentId": "stu_mei",
+    "opportunityId": "opp_webhack",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 49,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": null,
+      "interests": 60,
+      "academic": 30,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "matchedInterests": [
+      "Business"
+    ],
+    "reasons": [
+      "It aligns with your interest in Business."
+    ],
+    "improve": [
+      "Web Development",
+      "JavaScript",
+      "Database Management"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your skills and experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.468Z"
+  },
+  {
+    "id": "stu_alex__opp_ctf",
+    "studentId": "stu_alex",
+    "opportunityId": "opp_ctf",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 85,
+    "label": "Strong Match",
+    "tone": "strong",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 75,
+      "interests": 100,
+      "academic": 100,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "Web Security",
+      "Linux",
+      "Python"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "Ethical Hacking",
+        "via": "Web Security"
+      }
+    ],
+    "missingSkills": [
+      "Ethical Hacking"
+    ],
+    "matchedInterests": [
+      "Cybersecurity",
+      "Cloud & Infrastructure",
+      "Software Engineering"
+    ],
+    "reasons": [
+      "Your Web Security, Linux and Python skills are directly relevant to this opportunity.",
+      "Your Web Security (related to Ethical Hacking) gives you a head start.",
+      "It aligns with your interest in Cybersecurity, Cloud & Infrastructure and Software Engineering.",
+      "It is aimed at Cybersecurity students.",
+      "Your previous competition experience (\"Inter-varsity CTF 2025\") is relevant."
+    ],
+    "improve": [
+      "Ethical Hacking"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.475Z"
+  },
+  {
+    "id": "stu_priya__opp_ctf",
+    "studentId": "stu_priya",
+    "opportunityId": "opp_ctf",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 24,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 13,
+      "interests": 10,
+      "academic": 30,
+      "experience": 100
+    },
+    "matchedSkills": [
+      "Python"
+    ],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "Your Python skill is directly relevant to this opportunity.",
+      "Your previous hackathon experience (\"GenAI Hackathon 2025\") is relevant.",
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.475Z"
+  },
+  {
+    "id": "stu_daniel__opp_ctf",
+    "studentId": "stu_daniel",
+    "opportunityId": "opp_ctf",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 39,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 13,
+      "interests": 80,
+      "academic": 30,
+      "experience": 75
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Web Security",
+        "via": "Web Development"
+      }
+    ],
+    "missingSkills": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "matchedInterests": [
+      "Software Engineering",
+      "Design & Creativity"
+    ],
+    "reasons": [
+      "Your Web Development (related to Web Security) gives you a head start.",
+      "It aligns with your interest in Software Engineering and Design & Creativity.",
+      "Your previous project experience (\"Personal portfolio website\") is relevant.",
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.475Z"
+  },
+  {
+    "id": "stu_siti__opp_ctf",
+    "studentId": "stu_siti",
+    "opportunityId": "opp_ctf",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 12,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 30,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.475Z"
+  },
+  {
+    "id": "stu_marcus__opp_ctf",
+    "studentId": "stu_marcus",
+    "opportunityId": "opp_ctf",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 57,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 38,
+      "interests": 80,
+      "academic": 70,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "Linux"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "Ethical Hacking",
+        "via": "Linux"
+      }
+    ],
+    "missingSkills": [
+      "Ethical Hacking",
+      "Web Security"
+    ],
+    "matchedInterests": [
+      "Cloud & Infrastructure",
+      "Software Engineering"
+    ],
+    "reasons": [
+      "Your Linux skill is directly relevant to this opportunity.",
+      "Your Linux (related to Ethical Hacking) gives you a head start.",
+      "It aligns with your interest in Cloud & Infrastructure and Software Engineering.",
+      "Your Computer Science background provides relevant foundational knowledge.",
+      "Your previous hackathon experience (\"Campus Hack 2024\") is relevant."
+    ],
+    "improve": [
+      "Ethical Hacking",
+      "Web Security"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.475Z"
+  },
+  {
+    "id": "stu_iman__opp_ctf",
+    "studentId": "stu_iman",
+    "opportunityId": "opp_ctf",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 21,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 13,
+      "interests": 10,
+      "academic": 30,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "Python"
+    ],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "Your Python skill is directly relevant to this opportunity.",
+      "Your previous project experience (\"Smart parking sensor prototype\") is relevant.",
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.475Z"
+  },
+  {
+    "id": "stu_jason__opp_ctf",
+    "studentId": "stu_jason",
+    "opportunityId": "opp_ctf",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 29,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 13,
+      "interests": 60,
+      "academic": 30,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Web Security",
+        "via": "Web Development"
+      }
+    ],
+    "missingSkills": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "matchedInterests": [
+      "Design & Creativity"
+    ],
+    "reasons": [
+      "Your Web Development (related to Web Security) gives you a head start.",
+      "It aligns with your interest in Design & Creativity.",
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.475Z"
+  },
+  {
+    "id": "stu_mei__opp_ctf",
+    "studentId": "stu_mei",
+    "opportunityId": "opp_ctf",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 18,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": null,
+      "interests": 10,
+      "academic": 30,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Ethical Hacking",
+      "Web Security",
+      "Linux"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your skills and experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.475Z"
+  },
+  {
+    "id": "stu_alex__opp_mentor",
+    "studentId": "stu_alex",
+    "opportunityId": "opp_mentor",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 42,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 25,
+      "interests": 60,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Communication",
+        "via": "Teamwork"
+      }
+    ],
+    "missingSkills": [
+      "Career Planning",
+      "Communication"
+    ],
+    "matchedInterests": [
+      "Cybersecurity"
+    ],
+    "reasons": [
+      "Your Teamwork (related to Communication) gives you a head start.",
+      "It aligns with your interest in Cybersecurity.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Career Planning",
+      "Communication"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.481Z"
+  },
+  {
+    "id": "stu_priya__opp_mentor",
+    "studentId": "stu_priya",
+    "opportunityId": "opp_mentor",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 29,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 25,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Communication",
+        "via": "Public Speaking"
+      }
+    ],
+    "missingSkills": [
+      "Career Planning",
+      "Communication"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "Your Public Speaking (related to Communication) gives you a head start.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Career Planning",
+      "Communication"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.481Z"
+  },
+  {
+    "id": "stu_daniel__opp_mentor",
+    "studentId": "stu_daniel",
+    "opportunityId": "opp_mentor",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 17,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Career Planning",
+      "Communication"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Career Planning",
+      "Communication"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.481Z"
+  },
+  {
+    "id": "stu_siti__opp_mentor",
+    "studentId": "stu_siti",
+    "opportunityId": "opp_mentor",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 67,
+    "label": "Good Match",
+    "tone": "good",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 75,
+      "interests": 60,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [
+      "Communication"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "Career Planning",
+        "via": "Communication"
+      }
+    ],
+    "missingSkills": [
+      "Career Planning"
+    ],
+    "matchedInterests": [
+      "Leadership"
+    ],
+    "reasons": [
+      "Your Communication skill is directly relevant to this opportunity.",
+      "Your Communication (related to Career Planning) gives you a head start.",
+      "It aligns with your interest in Leadership.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Career Planning"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.482Z"
+  },
+  {
+    "id": "stu_marcus__opp_mentor",
+    "studentId": "stu_marcus",
+    "opportunityId": "opp_mentor",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 32,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 60,
+      "academic": 60,
+      "experience": 75
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Career Planning",
+      "Communication"
+    ],
+    "matchedInterests": [
+      "Career Development"
+    ],
+    "reasons": [
+      "It aligns with your interest in Career Development.",
+      "Your previous internship experience (\"DevOps intern, local fintech\") is relevant.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Career Planning",
+      "Communication"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.482Z"
+  },
+  {
+    "id": "stu_iman__opp_mentor",
+    "studentId": "stu_iman",
+    "opportunityId": "opp_mentor",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 17,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Career Planning",
+      "Communication"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Career Planning",
+      "Communication"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.483Z"
+  },
+  {
+    "id": "stu_jason__opp_mentor",
+    "studentId": "stu_jason",
+    "opportunityId": "opp_mentor",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 13,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Career Planning",
+      "Communication"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Career Planning",
+      "Communication"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.483Z"
+  },
+  {
+    "id": "stu_mei__opp_mentor",
+    "studentId": "stu_mei",
+    "opportunityId": "opp_mentor",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 60,
+    "label": "Good Match",
+    "tone": "good",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": null,
+      "interests": 60,
+      "academic": 60,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Career Planning",
+      "Communication"
+    ],
+    "matchedInterests": [
+      "Business"
+    ],
+    "reasons": [
+      "It aligns with your interest in Business.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Career Planning",
+      "Communication"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your skills and experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.483Z"
+  },
+  {
+    "id": "stu_alex__opp_ra",
+    "studentId": "stu_alex",
+    "opportunityId": "opp_ra",
+    "eligibility": "not_eligible",
+    "eligibilityDetails": {
+      "status": "not_eligible",
+      "failed": [
+        "Open only to Computer Science, Computer Engineering students.",
+        "Open to Year 3, 4 students only (you are in Year 2)."
+      ],
+      "unknown": [],
+      "selfConfirm": [
+        "Available for 10 hours per week during the semester"
+      ]
+    },
+    "score": 59,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 53,
+      "interests": 80,
+      "academic": 70,
+      "experience": 20
+    },
+    "matchedSkills": [
+      "Python"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "IoT",
+        "via": "Python"
+      },
+      {
+        "skill": "Data Analysis",
+        "via": "Python"
+      },
+      {
+        "skill": "Research",
+        "via": "Problem Solving"
+      }
+    ],
+    "missingSkills": [
+      "IoT",
+      "Data Analysis"
+    ],
+    "matchedInterests": [
+      "Cybersecurity",
+      "Software Engineering"
+    ],
+    "reasons": [
+      "Your Python skill is directly relevant to this opportunity.",
+      "Your Python (related to IoT) and Python (related to Data Analysis) gives you a head start.",
+      "It aligns with your interest in Cybersecurity and Software Engineering.",
+      "Your Cybersecurity background provides relevant foundational knowledge."
+    ],
+    "improve": [
+      "IoT",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.489Z"
+  },
+  {
+    "id": "stu_priya__opp_ra",
+    "studentId": "stu_priya",
+    "opportunityId": "opp_ra",
+    "eligibility": "not_eligible",
+    "eligibilityDetails": {
+      "status": "not_eligible",
+      "failed": [
+        "Open only to Computer Science, Computer Engineering students."
+      ],
+      "unknown": [],
+      "selfConfirm": [
+        "Available for 10 hours per week during the semester"
+      ]
+    },
+    "score": 75,
+    "label": "Good Match",
+    "tone": "good",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 73,
+      "interests": 80,
+      "academic": 70,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "Python",
+      "Data Analysis",
+      "Research"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "IoT",
+        "via": "Python"
+      }
+    ],
+    "missingSkills": [
+      "IoT"
+    ],
+    "matchedInterests": [
+      "Research",
+      "Data Science"
+    ],
+    "reasons": [
+      "Your Python, Data Analysis and Research skills are directly relevant to this opportunity.",
+      "Your Python (related to IoT) gives you a head start.",
+      "It aligns with your interest in Research and Data Science.",
+      "Your Artificial Intelligence background provides relevant foundational knowledge.",
+      "Your previous project experience (\"Sign-language recognition app\") is relevant."
+    ],
+    "improve": [
+      "IoT"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.489Z"
+  },
+  {
+    "id": "stu_daniel__opp_ra",
+    "studentId": "stu_daniel",
+    "opportunityId": "opp_ra",
+    "eligibility": "not_eligible",
+    "eligibilityDetails": {
+      "status": "not_eligible",
+      "failed": [
+        "Open only to Computer Science, Computer Engineering students.",
+        "Open to Year 3, 4 students only (you are in Year 1)."
+      ],
+      "unknown": [],
+      "selfConfirm": [
+        "Available for 10 hours per week during the semester"
+      ]
+    },
+    "score": 40,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 13,
+      "interests": 60,
+      "academic": 70,
+      "experience": 75
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Data Analysis",
+        "via": "Database Management"
+      }
+    ],
+    "missingSkills": [
+      "IoT",
+      "Python",
+      "Data Analysis"
+    ],
+    "matchedInterests": [
+      "Software Engineering"
+    ],
+    "reasons": [
+      "Your Database Management (related to Data Analysis) gives you a head start.",
+      "It aligns with your interest in Software Engineering.",
+      "Your Software Engineering background provides relevant foundational knowledge.",
+      "Your previous project experience (\"Personal portfolio website\") is relevant."
+    ],
+    "improve": [
+      "IoT",
+      "Python",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.489Z"
+  },
+  {
+    "id": "stu_siti__opp_ra",
+    "studentId": "stu_siti",
+    "opportunityId": "opp_ra",
+    "eligibility": "not_eligible",
+    "eligibilityDetails": {
+      "status": "not_eligible",
+      "failed": [
+        "Open only to Computer Science, Computer Engineering students.",
+        "Open to Year 3, 4 students only (you are in Year 2)."
+      ],
+      "unknown": [],
+      "selfConfirm": [
+        "Available for 10 hours per week during the semester"
+      ]
+    },
+    "score": 9,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 30,
+      "experience": 20
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "IoT",
+      "Python",
+      "Data Analysis"
+    ],
+    "matchedInterests": [],
+    "reasons": [],
+    "improve": [
+      "IoT",
+      "Python",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.489Z"
+  },
+  {
+    "id": "stu_marcus__opp_ra",
+    "studentId": "stu_marcus",
+    "opportunityId": "opp_ra",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": [
+        "Available for 10 hours per week during the semester"
+      ]
+    },
+    "score": 39,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 13,
+      "interests": 60,
+      "academic": 100,
+      "experience": 20
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "IoT",
+        "via": "Networking"
+      }
+    ],
+    "missingSkills": [
+      "IoT",
+      "Python",
+      "Data Analysis"
+    ],
+    "matchedInterests": [
+      "Software Engineering"
+    ],
+    "reasons": [
+      "Your Networking (related to IoT) gives you a head start.",
+      "It aligns with your interest in Software Engineering.",
+      "It is aimed at Computer Science students."
+    ],
+    "improve": [
+      "IoT",
+      "Python",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.489Z"
+  },
+  {
+    "id": "stu_iman__opp_ra",
+    "studentId": "stu_iman",
+    "opportunityId": "opp_ra",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": [
+        "Available for 10 hours per week during the semester"
+      ]
+    },
+    "score": 78,
+    "label": "Good Match",
+    "tone": "good",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 71,
+      "interests": 80,
+      "academic": 100,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "IoT",
+      "Python",
+      "C/C++"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "Data Analysis",
+        "via": "Python"
+      }
+    ],
+    "missingSkills": [
+      "Data Analysis"
+    ],
+    "matchedInterests": [
+      "Hardware & IoT",
+      "Research"
+    ],
+    "reasons": [
+      "Your IoT, Python and C/C++ skills are directly relevant to this opportunity.",
+      "Your Python (related to Data Analysis) gives you a head start.",
+      "It aligns with your interest in Hardware & IoT and Research.",
+      "It is aimed at Computer Engineering students.",
+      "Your previous project experience (\"Smart parking sensor prototype\") is relevant."
+    ],
+    "improve": [
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.489Z"
+  },
+  {
+    "id": "stu_jason__opp_ra",
+    "studentId": "stu_jason",
+    "opportunityId": "opp_ra",
+    "eligibility": "not_eligible",
+    "eligibilityDetails": {
+      "status": "not_eligible",
+      "failed": [
+        "Open only to Computer Science, Computer Engineering students.",
+        "Open to Year 3, 4 students only (you are in Year 2)."
+      ],
+      "unknown": [],
+      "selfConfirm": [
+        "Available for 10 hours per week during the semester"
+      ]
+    },
+    "score": 8,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 30,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "IoT",
+      "Python",
+      "Data Analysis"
+    ],
+    "matchedInterests": [],
+    "reasons": [],
+    "improve": [
+      "IoT",
+      "Python",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.489Z"
+  },
+  {
+    "id": "stu_mei__opp_ra",
+    "studentId": "stu_mei",
+    "opportunityId": "opp_ra",
+    "eligibility": "not_eligible",
+    "eligibilityDetails": {
+      "status": "not_eligible",
+      "failed": [
+        "Open only to Computer Science, Computer Engineering students.",
+        "Open to Year 3, 4 students only (you are in Year 1)."
+      ],
+      "unknown": [],
+      "selfConfirm": [
+        "Available for 10 hours per week during the semester"
+      ]
+    },
+    "score": 18,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": null,
+      "interests": 10,
+      "academic": 30,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "IoT",
+      "Python",
+      "Data Analysis"
+    ],
+    "matchedInterests": [],
+    "reasons": [],
+    "improve": [
+      "IoT",
+      "Python",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your skills and experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.489Z"
+  },
+  {
+    "id": "stu_alex__opp_green",
+    "studentId": "stu_alex",
+    "opportunityId": "opp_green",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 67,
+    "label": "Good Match",
+    "tone": "good",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 100,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [
+      "Teamwork"
+    ],
+    "relatedSkills": [],
+    "missingSkills": [],
+    "matchedInterests": [],
+    "reasons": [
+      "Your Teamwork skill is directly relevant to this opportunity.",
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.492Z"
+  },
+  {
+    "id": "stu_priya__opp_green",
+    "studentId": "stu_priya",
+    "opportunityId": "opp_green",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 17,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Teamwork"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.492Z"
+  },
+  {
+    "id": "stu_daniel__opp_green",
+    "studentId": "stu_daniel",
+    "opportunityId": "opp_green",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 17,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Teamwork"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.492Z"
+  },
+  {
+    "id": "stu_siti__opp_green",
+    "studentId": "stu_siti",
+    "opportunityId": "opp_green",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 59,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 50,
+      "interests": 60,
+      "academic": 60,
+      "experience": 100
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Teamwork",
+        "via": "Communication"
+      }
+    ],
+    "missingSkills": [
+      "Teamwork"
+    ],
+    "matchedInterests": [
+      "Community & Volunteering"
+    ],
+    "reasons": [
+      "Your Communication (related to Teamwork) gives you a head start.",
+      "It aligns with your interest in Community & Volunteering.",
+      "Your previous club experience (\"Treasurer, Business Society\") is relevant.",
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.492Z"
+  },
+  {
+    "id": "stu_marcus__opp_green",
+    "studentId": "stu_marcus",
+    "opportunityId": "opp_green",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 17,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Teamwork"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.492Z"
+  },
+  {
+    "id": "stu_iman__opp_green",
+    "studentId": "stu_iman",
+    "opportunityId": "opp_green",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 17,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Teamwork"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.492Z"
+  },
+  {
+    "id": "stu_jason__opp_green",
+    "studentId": "stu_jason",
+    "opportunityId": "opp_green",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 13,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Teamwork"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.492Z"
+  },
+  {
+    "id": "stu_mei__opp_green",
+    "studentId": "stu_mei",
+    "opportunityId": "opp_green",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 29,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": null,
+      "interests": 10,
+      "academic": 60,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Teamwork"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your skills and experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.492Z"
+  },
+  {
+    "id": "stu_alex__opp_ai",
+    "studentId": "stu_alex",
+    "opportunityId": "opp_ai",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 56,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 46,
+      "interests": 60,
+      "academic": 70,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "Python"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "Machine Learning",
+        "via": "Python"
+      },
+      {
+        "skill": "Data Analysis",
+        "via": "Python"
+      }
+    ],
+    "missingSkills": [
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "matchedInterests": [
+      "Software Engineering"
+    ],
+    "reasons": [
+      "Your Python skill is directly relevant to this opportunity.",
+      "Your Python (related to Machine Learning) and Python (related to Data Analysis) gives you a head start.",
+      "It aligns with your interest in Software Engineering.",
+      "Your Cybersecurity background provides relevant foundational knowledge.",
+      "Your previous competition experience (\"Inter-varsity CTF 2025\") is relevant."
+    ],
+    "improve": [
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.494Z"
+  },
+  {
+    "id": "stu_priya__opp_ai",
+    "studentId": "stu_priya",
+    "opportunityId": "opp_ai",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 89,
+    "label": "Strong Match",
+    "tone": "strong",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 88,
+      "interests": 80,
+      "academic": 100,
+      "experience": 100
+    },
+    "matchedSkills": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis",
+      "Public Speaking"
+    ],
+    "relatedSkills": [],
+    "missingSkills": [],
+    "matchedInterests": [
+      "Artificial Intelligence",
+      "Data Science"
+    ],
+    "reasons": [
+      "Your Python, Machine Learning, Data Analysis and Public Speaking skills are directly relevant to this opportunity.",
+      "It aligns with your interest in Artificial Intelligence and Data Science.",
+      "It is aimed at Artificial Intelligence students.",
+      "Your previous hackathon experience (\"GenAI Hackathon 2025\") is relevant."
+    ],
+    "improve": [],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.494Z"
+  },
+  {
+    "id": "stu_daniel__opp_ai",
+    "studentId": "stu_daniel",
+    "opportunityId": "opp_ai",
+    "eligibility": "not_eligible",
+    "eligibilityDetails": {
+      "status": "not_eligible",
+      "failed": [
+        "Open to Year 2, 3, 4 students only (you are in Year 1).",
+        "Requires Python, which is not on your profile."
+      ],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 59,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 23,
+      "interests": 100,
+      "academic": 100,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "UI/UX Design"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "Data Analysis",
+        "via": "Database Management"
+      }
+    ],
+    "missingSkills": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "matchedInterests": [
+      "Software Engineering",
+      "Entrepreneurship",
+      "Design & Creativity"
+    ],
+    "reasons": [
+      "Your UI/UX Design skill is directly relevant to this opportunity.",
+      "Your Database Management (related to Data Analysis) gives you a head start.",
+      "It aligns with your interest in Software Engineering, Entrepreneurship and Design & Creativity.",
+      "It is aimed at Software Engineering students.",
+      "Your previous project experience (\"Personal portfolio website\") is relevant."
+    ],
+    "improve": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.494Z"
+  },
+  {
+    "id": "stu_siti__opp_ai",
+    "studentId": "stu_siti",
+    "opportunityId": "opp_ai",
+    "eligibility": "not_eligible",
+    "eligibilityDetails": {
+      "status": "not_eligible",
+      "failed": [
+        "Requires Python, which is not on your profile."
+      ],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 25,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 6,
+      "interests": 60,
+      "academic": 30,
+      "experience": 20
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Public Speaking",
+        "via": "Communication"
+      }
+    ],
+    "missingSkills": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "matchedInterests": [
+      "Entrepreneurship"
+    ],
+    "reasons": [
+      "Your Communication (related to Public Speaking) gives you a head start.",
+      "It aligns with your interest in Entrepreneurship."
+    ],
+    "improve": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.494Z"
+  },
+  {
+    "id": "stu_marcus__opp_ai",
+    "studentId": "stu_marcus",
+    "opportunityId": "opp_ai",
+    "eligibility": "not_eligible",
+    "eligibilityDetails": {
+      "status": "not_eligible",
+      "failed": [
+        "Requires Python, which is not on your profile."
+      ],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 43,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 80,
+      "academic": 100,
+      "experience": 75
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "matchedInterests": [
+      "Software Engineering",
+      "Career Development"
+    ],
+    "reasons": [
+      "It aligns with your interest in Software Engineering and Career Development.",
+      "It is aimed at Computer Science students.",
+      "Your previous hackathon experience (\"Campus Hack 2024\") is relevant."
+    ],
+    "improve": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.494Z"
+  },
+  {
+    "id": "stu_iman__opp_ai",
+    "studentId": "stu_iman",
+    "opportunityId": "opp_ai",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 56,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 46,
+      "interests": 60,
+      "academic": 70,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "Python"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "Machine Learning",
+        "via": "Python"
+      },
+      {
+        "skill": "Data Analysis",
+        "via": "Python"
+      }
+    ],
+    "missingSkills": [
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "matchedInterests": [
+      "Artificial Intelligence"
+    ],
+    "reasons": [
+      "Your Python skill is directly relevant to this opportunity.",
+      "Your Python (related to Machine Learning) and Python (related to Data Analysis) gives you a head start.",
+      "It aligns with your interest in Artificial Intelligence.",
+      "Your Computer Engineering background provides relevant foundational knowledge.",
+      "Your previous project experience (\"Smart parking sensor prototype\") is relevant."
+    ],
+    "improve": [
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.494Z"
+  },
+  {
+    "id": "stu_jason__opp_ai",
+    "studentId": "stu_jason",
+    "opportunityId": "opp_ai",
+    "eligibility": "not_eligible",
+    "eligibilityDetails": {
+      "status": "not_eligible",
+      "failed": [
+        "Requires Python, which is not on your profile."
+      ],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 41,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 13,
+      "interests": 80,
+      "academic": 70,
+      "experience": null
+    },
+    "matchedSkills": [
+      "UI/UX Design"
+    ],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "matchedInterests": [
+      "Design & Creativity",
+      "Entrepreneurship"
+    ],
+    "reasons": [
+      "Your UI/UX Design skill is directly relevant to this opportunity.",
+      "It aligns with your interest in Design & Creativity and Entrepreneurship.",
+      "Your Multimedia & Design background provides relevant foundational knowledge."
+    ],
+    "improve": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.494Z"
+  },
+  {
+    "id": "stu_mei__opp_ai",
+    "studentId": "stu_mei",
+    "opportunityId": "opp_ai",
+    "eligibility": "not_eligible",
+    "eligibilityDetails": {
+      "status": "not_eligible",
+      "failed": [
+        "Open to Year 2, 3, 4 students only (you are in Year 1).",
+        "Requires Python, which is not on your profile."
+      ],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 49,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": null,
+      "interests": 60,
+      "academic": 30,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "matchedInterests": [
+      "Business"
+    ],
+    "reasons": [
+      "It aligns with your interest in Business."
+    ],
+    "improve": [
+      "Python",
+      "Machine Learning",
+      "Data Analysis"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your skills and experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.494Z"
+  },
+  {
+    "id": "stu_alex__opp_council",
+    "studentId": "stu_alex",
+    "opportunityId": "opp_council",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 45,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 56,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [
+      "Teamwork"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "Leadership",
+        "via": "Teamwork"
+      },
+      {
+        "skill": "Communication",
+        "via": "Teamwork"
+      },
+      {
+        "skill": "Event Management",
+        "via": "Teamwork"
+      }
+    ],
+    "missingSkills": [
+      "Leadership",
+      "Communication"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "Your Teamwork skill is directly relevant to this opportunity.",
+      "Your Teamwork (related to Leadership) and Teamwork (related to Communication) gives you a head start.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Leadership",
+      "Communication"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.497Z"
+  },
+  {
+    "id": "stu_priya__opp_council",
+    "studentId": "stu_priya",
+    "opportunityId": "opp_council",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 29,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 25,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Leadership",
+        "via": "Public Speaking"
+      },
+      {
+        "skill": "Communication",
+        "via": "Public Speaking"
+      }
+    ],
+    "missingSkills": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "Your Public Speaking (related to Leadership) and Public Speaking (related to Communication) gives you a head start.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.497Z"
+  },
+  {
+    "id": "stu_daniel__opp_council",
+    "studentId": "stu_daniel",
+    "opportunityId": "opp_council",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 17,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.497Z"
+  },
+  {
+    "id": "stu_siti__opp_council",
+    "studentId": "stu_siti",
+    "opportunityId": "opp_council",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 81,
+    "label": "Strong Match",
+    "tone": "strong",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 88,
+      "interests": 80,
+      "academic": 60,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "Leadership",
+      "Communication",
+      "Event Management",
+      "Digital Marketing"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "Teamwork",
+        "via": "Communication"
+      }
+    ],
+    "missingSkills": [
+      "Teamwork"
+    ],
+    "matchedInterests": [
+      "Leadership",
+      "Community & Volunteering"
+    ],
+    "reasons": [
+      "Your Leadership, Communication, Event Management and Digital Marketing skills are directly relevant to this opportunity.",
+      "Your Communication (related to Teamwork) gives you a head start.",
+      "It aligns with your interest in Leadership and Community & Volunteering.",
+      "Your previous club experience (\"Treasurer, Business Society\") is relevant.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.497Z"
+  },
+  {
+    "id": "stu_marcus__opp_council",
+    "studentId": "stu_marcus",
+    "opportunityId": "opp_council",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 17,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.497Z"
+  },
+  {
+    "id": "stu_iman__opp_council",
+    "studentId": "stu_iman",
+    "opportunityId": "opp_council",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 17,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.498Z"
+  },
+  {
+    "id": "stu_jason__opp_council",
+    "studentId": "stu_jason",
+    "opportunityId": "opp_council",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 16,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 6,
+      "interests": 10,
+      "academic": 60,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Digital Marketing",
+        "via": "Graphic Design"
+      }
+    ],
+    "missingSkills": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "Your Graphic Design (related to Digital Marketing) gives you a head start.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.498Z"
+  },
+  {
+    "id": "stu_mei__opp_council",
+    "studentId": "stu_mei",
+    "opportunityId": "opp_council",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 60,
+    "label": "Good Match",
+    "tone": "good",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": null,
+      "interests": 60,
+      "academic": 60,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "matchedInterests": [
+      "Business"
+    ],
+    "reasons": [
+      "It aligns with your interest in Business.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Leadership",
+      "Communication",
+      "Teamwork"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your skills and experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.498Z"
+  },
+  {
+    "id": "stu_alex__opp_linux",
+    "studentId": "stu_alex",
+    "opportunityId": "opp_linux",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 84,
+    "label": "Strong Match",
+    "tone": "strong",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 78,
+      "interests": 100,
+      "academic": 85,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "Linux",
+      "Networking",
+      "Teamwork"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "System Administration",
+        "via": "Linux"
+      },
+      {
+        "skill": "Troubleshooting",
+        "via": "Problem Solving"
+      }
+    ],
+    "missingSkills": [
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "matchedInterests": [
+      "Cybersecurity",
+      "Cloud & Infrastructure",
+      "Software Engineering"
+    ],
+    "reasons": [
+      "Although it's promoted to Software Engineering students, your skills and interests make you a strong candidate.",
+      "Your Linux, Networking and Teamwork skills are directly relevant to this opportunity.",
+      "Your Linux (related to System Administration) and Problem Solving (related to Troubleshooting) gives you a head start.",
+      "It aligns with your interest in Cybersecurity, Cloud & Infrastructure and Software Engineering.",
+      "Your Cybersecurity background provides relevant foundational knowledge."
+    ],
+    "improve": [
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "crossDisciplinary": true,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.503Z"
+  },
+  {
+    "id": "stu_priya__opp_linux",
+    "studentId": "stu_priya",
+    "opportunityId": "opp_linux",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 23,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 70,
+      "experience": 100
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "Your Artificial Intelligence background provides relevant foundational knowledge.",
+      "Your previous hackathon experience (\"GenAI Hackathon 2025\") is relevant.",
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.503Z"
+  },
+  {
+    "id": "stu_daniel__opp_linux",
+    "studentId": "stu_daniel",
+    "opportunityId": "opp_linux",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 43,
+    "label": "Potential Match",
+    "tone": "potential",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 80,
+      "academic": 100,
+      "experience": 75
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "matchedInterests": [
+      "Software Engineering",
+      "Design & Creativity"
+    ],
+    "reasons": [
+      "It aligns with your interest in Software Engineering and Design & Creativity.",
+      "It is aimed at Software Engineering students.",
+      "Your previous project experience (\"Personal portfolio website\") is relevant.",
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.504Z"
+  },
+  {
+    "id": "stu_siti__opp_linux",
+    "studentId": "stu_siti",
+    "opportunityId": "opp_linux",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 28,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 6,
+      "interests": 60,
+      "academic": 30,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Teamwork",
+        "via": "Communication"
+      }
+    ],
+    "missingSkills": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "matchedInterests": [
+      "Leadership"
+    ],
+    "reasons": [
+      "Your Communication (related to Teamwork) gives you a head start.",
+      "It aligns with your interest in Leadership.",
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.504Z"
+  },
+  {
+    "id": "stu_marcus__opp_linux",
+    "studentId": "stu_marcus",
+    "opportunityId": "opp_linux",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 79,
+    "label": "Good Match",
+    "tone": "good",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 78,
+      "interests": 80,
+      "academic": 85,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "Linux",
+      "Networking",
+      "System Administration"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "Troubleshooting",
+        "via": "System Administration"
+      }
+    ],
+    "missingSkills": [
+      "Troubleshooting"
+    ],
+    "matchedInterests": [
+      "Cloud & Infrastructure",
+      "Software Engineering"
+    ],
+    "reasons": [
+      "Although it's promoted to Software Engineering students, your skills and interests make you a strong candidate.",
+      "Your Linux, Networking and System Administration skills are directly relevant to this opportunity.",
+      "Your System Administration (related to Troubleshooting) gives you a head start.",
+      "It aligns with your interest in Cloud & Infrastructure and Software Engineering.",
+      "Your Computer Science background provides relevant foundational knowledge."
+    ],
+    "improve": [
+      "Troubleshooting"
+    ],
+    "crossDisciplinary": true,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.504Z"
+  },
+  {
+    "id": "stu_iman__opp_linux",
+    "studentId": "stu_iman",
+    "opportunityId": "opp_linux",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 26,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 11,
+      "interests": 10,
+      "academic": 70,
+      "experience": 75
+    },
+    "matchedSkills": [],
+    "relatedSkills": [
+      {
+        "skill": "Networking",
+        "via": "IoT"
+      }
+    ],
+    "missingSkills": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "Your IoT (related to Networking) gives you a head start.",
+      "Your Computer Engineering background provides relevant foundational knowledge.",
+      "Your previous project experience (\"Smart parking sensor prototype\") is relevant.",
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.504Z"
+  },
+  {
+    "id": "stu_jason__opp_linux",
+    "studentId": "stu_jason",
+    "opportunityId": "opp_linux",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 28,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 60,
+      "academic": 70,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "matchedInterests": [
+      "Design & Creativity"
+    ],
+    "reasons": [
+      "It aligns with your interest in Design & Creativity.",
+      "Your Multimedia & Design background provides relevant foundational knowledge.",
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.504Z"
+  },
+  {
+    "id": "stu_mei__opp_linux",
+    "studentId": "stu_mei",
+    "opportunityId": "opp_linux",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 18,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": null,
+      "interests": 10,
+      "academic": 30,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is beginner-friendly, so you can join without prior experience."
+    ],
+    "improve": [
+      "Linux",
+      "Networking",
+      "System Administration",
+      "Troubleshooting"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your skills and experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.504Z"
+  },
+  {
+    "id": "stu_alex__opp_cloud",
+    "studentId": "stu_alex",
+    "opportunityId": "opp_cloud",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 68,
+    "label": "Good Match",
+    "tone": "good",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 67,
+      "interests": 80,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [
+      "Linux"
+    ],
+    "relatedSkills": [
+      {
+        "skill": "Cloud Computing",
+        "via": "Linux"
+      }
+    ],
+    "missingSkills": [
+      "Cloud Computing"
+    ],
+    "matchedInterests": [
+      "Cybersecurity",
+      "Cloud & Infrastructure"
+    ],
+    "reasons": [
+      "Your Linux skill is directly relevant to this opportunity.",
+      "Your Linux (related to Cloud Computing) gives you a head start.",
+      "It aligns with your interest in Cybersecurity and Cloud & Infrastructure.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Cloud Computing"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.507Z"
+  },
+  {
+    "id": "stu_priya__opp_cloud",
+    "studentId": "stu_priya",
+    "opportunityId": "opp_cloud",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 17,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Cloud Computing"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Cloud Computing"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.507Z"
+  },
+  {
+    "id": "stu_daniel__opp_cloud",
+    "studentId": "stu_daniel",
+    "opportunityId": "opp_cloud",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 29,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 60,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Cloud Computing"
+    ],
+    "matchedInterests": [
+      "Design & Creativity"
+    ],
+    "reasons": [
+      "It aligns with your interest in Design & Creativity.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Cloud Computing"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.507Z"
+  },
+  {
+    "id": "stu_siti__opp_cloud",
+    "studentId": "stu_siti",
+    "opportunityId": "opp_cloud",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 17,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Cloud Computing"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Cloud Computing"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.507Z"
+  },
+  {
+    "id": "stu_marcus__opp_cloud",
+    "studentId": "stu_marcus",
+    "opportunityId": "opp_cloud",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 87,
+    "label": "Strong Match",
+    "tone": "strong",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 100,
+      "interests": 80,
+      "academic": 60,
+      "experience": 75
+    },
+    "matchedSkills": [
+      "Cloud Computing",
+      "Linux"
+    ],
+    "relatedSkills": [],
+    "missingSkills": [],
+    "matchedInterests": [
+      "Cloud & Infrastructure",
+      "Career Development"
+    ],
+    "reasons": [
+      "Your Cloud Computing and Linux skills are directly relevant to this opportunity.",
+      "It aligns with your interest in Cloud & Infrastructure and Career Development.",
+      "Your previous internship experience (\"DevOps intern, local fintech\") is relevant.",
+      "It is open to all experience levels."
+    ],
+    "improve": [],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.507Z"
+  },
+  {
+    "id": "stu_iman__opp_cloud",
+    "studentId": "stu_iman",
+    "opportunityId": "opp_cloud",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 17,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": false,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 10,
+      "academic": 60,
+      "experience": 50
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Cloud Computing"
+    ],
+    "matchedInterests": [],
+    "reasons": [
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Cloud Computing"
+    ],
+    "crossDisciplinary": false,
+    "notes": [],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.507Z"
+  },
+  {
+    "id": "stu_jason__opp_cloud",
+    "studentId": "stu_jason",
+    "opportunityId": "opp_cloud",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 27,
+    "label": "Lower Relevance",
+    "tone": "low",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": 0,
+      "interests": 60,
+      "academic": 60,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Cloud Computing"
+    ],
+    "matchedInterests": [
+      "Design & Creativity"
+    ],
+    "reasons": [
+      "It aligns with your interest in Design & Creativity.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Cloud Computing"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.507Z"
+  },
+  {
+    "id": "stu_mei__opp_cloud",
+    "studentId": "stu_mei",
+    "opportunityId": "opp_cloud",
+    "eligibility": "eligible",
+    "eligibilityDetails": {
+      "status": "eligible",
+      "failed": [],
+      "unknown": [],
+      "selfConfirm": []
+    },
+    "score": 60,
+    "label": "Good Match",
+    "tone": "good",
+    "provisional": true,
+    "insufficient": false,
+    "breakdown": {
+      "skills": null,
+      "interests": 60,
+      "academic": 60,
+      "experience": null
+    },
+    "matchedSkills": [],
+    "relatedSkills": [],
+    "missingSkills": [
+      "Cloud Computing"
+    ],
+    "matchedInterests": [
+      "Business"
+    ],
+    "reasons": [
+      "It aligns with your interest in Business.",
+      "It is open to all experience levels."
+    ],
+    "improve": [
+      "Cloud Computing"
+    ],
+    "crossDisciplinary": false,
+    "notes": [
+      "This score is provisional — add your skills and experience to make it more accurate."
+    ],
+    "disclaimer": "A compatibility score is a guide, not a guarantee of eligibility, acceptance or selection.",
+    "computedAt": "2026-11-05T09:05:23.507Z"
+  }
+]

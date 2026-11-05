@@ -1,0 +1,65 @@
+[
+  {
+    "id": "org_cyber",
+    "name": "Cybersecurity & Linux Club",
+    "type": "Club",
+    "email": "cyberclub@oppora.edu",
+    "description": "",
+    "status": "active",
+    "createdAt": "2026-09-06T02:00:00.000Z"
+  },
+  {
+    "id": "org_sca",
+    "name": "Student Affairs Office",
+    "type": "Office",
+    "email": "studentaffairs@oppora.edu",
+    "description": "",
+    "status": "active",
+    "createdAt": "2026-09-06T02:00:00.000Z"
+  },
+  {
+    "id": "org_fcs",
+    "name": "Faculty of Computing",
+    "type": "Faculty",
+    "email": "computing@oppora.edu",
+    "description": "",
+    "status": "active",
+    "createdAt": "2026-09-06T02:00:00.000Z"
+  },
+  {
+    "id": "org_career",
+    "name": "Career Development Centre",
+    "type": "Department",
+    "email": "careers@oppora.edu",
+    "description": "",
+    "status": "active",
+    "createdAt": "2026-09-06T02:00:00.000Z"
+  },
+  {
+    "id": "org_ai",
+    "name": "AI & Data Society",
+    "type": "Society",
+    "email": "aidata@oppora.edu",
+    "description": "",
+    "status": "active",
+    "createdAt": "2026-09-06T02:00:00.000Z"
+  },
+  {
+    "id": "org_green",
+    "name": "Green Campus Volunteers",
+    "type": "Club",
+    "email": "green@oppora.edu",
+    "description": "",
+    "status": "active",
+    "createdAt": "2026-09-06T02:00:00.000Z"
+  },
+  {
+    "id": "org_robotics",
+    "name": "Robotics Club",
+    "type": "Club",
+    "email": "robotics@oppora.edu",
+    "description": "",
+    "status": "active",
+    "createdAt": "2026-09-06T02:00:00.000Z"
+  }
+]
