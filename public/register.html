@@ -2,90 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Create your account · OPPORA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0E1A3A">
+  <title>Grab your ticket · OPPORA</title>
   <link rel="icon" href="/assets/images/logo.svg">
   <link rel="stylesheet" href="/assets/css/tokens.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/student.css">
+  <link rel="stylesheet" href="/assets/css/auth.css">
+  <script src="/assets/js/transition.js"></script>
 </head>
-<body>
-  <div class="auth">
-    <aside class="auth-side">
-      <a class="brand" href="/"><img src="/assets/images/logo.svg" alt=""><span><span class="name">OPPOR<span>A</span></span><span class="tag">Opportunities find their people</span></span></a>
-      <div>
-        <h1>Your campus journey <em>starts here.</em></h1>
-        <p>Tell us what you know and what excites you — we'll bring the right opportunities to you, even ones outside your programme.</p>
-        <ul class="benefits">
-          <li><span>✨</span>Personalised opportunities</li>
-          <li><span>🎓</span>Professional development</li>
-          <li><span>🤝</span>Student communities</li>
-        </ul>
+<body class="campus">
+  <!-- APU campus photograph, layered for depth (decorative) -->
+  <div class="campus-scene" aria-hidden="true">
+    <div class="campus-tilt">
+      <div class="campus-depth"><img src="/assets/images/backgrounds/apu-campus.webp" alt=""></div>
+      <div class="campus-photo">
+        <picture>
+          <source srcset="/assets/images/backgrounds/apu-campus.webp" type="image/webp">
+          <img src="/assets/images/backgrounds/apu-campus.jpg" alt="" fetchpriority="high">
+        </picture>
       </div>
-      <p class="small" style="color:#9FB6DE">Your profile is private. Other students never see your details.</p>
-    </aside>
+      <div class="campus-light"></div>
+    </div>
+    <div class="campus-shade"></div>
+  </div>
+  <!-- Starfield: hidden until the login warp -->
+  <canvas id="sky" aria-hidden="true"></canvas>
 
-    <main class="auth-main">
-      <div class="auth-card">
+  <div class="auth-stage">
+    <header class="auth-top">
+      <a class="lockup" href="/" aria-label="OPPORA home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8.4 46.7 A 28 9 -28 0 1 52.6 18.6" fill="none" stroke="#FFB81C" stroke-width="3.6" stroke-linecap="round"/><circle cx="30" cy="34" r="16" fill="none" stroke="currentColor" stroke-width="7.4"/><circle cx="30" cy="34" r="5.8" fill="#FF5A3C"/><circle cx="51.8" cy="19" r="5.2" fill="#22B573" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span><span class="word">oppor<i>a</i></span><span class="tag">opportunities find their people</span></span>
+      </a>
+      <a class="back" href="/login.html">Already flying? Log in →</a>
+    </header>
+
+    <section class="pitch" aria-hidden="true">
+      <p class="display">Your campus <span class="hl">journey<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M4 13 C 40 4, 70 18, 104 9 S 168 4, 196 11"/></svg></span> starts here.</p>
+    </section>
+
+    <div class="ticket-wrap">
+      <main class="ticket wide" id="ticket">
+        <p class="eyebrow" id="stepCount">Step 1 of 4</p>
         <h1 id="stepTitle">Create your account</h1>
-        <p class="muted" style="margin-top:6px">Already have one? <a href="/login.html">Log in</a></p>
-        <div class="stepper" id="stepper" aria-label="Registration progress"></div>
-        <div id="formAlert"></div>
+        <div class="flight" id="stepper" aria-label="Registration progress"></div>
+        <div id="formAlert" role="alert"></div>
 
-        <form id="regForm" novalidate>
-          <!-- Step 1: Account -->
-          <section data-step="1" class="stack">
-            <div class="field"><label for="name">Full name</label><input class="input" id="name" name="name" autocomplete="name" required></div>
-            <div class="field"><label for="email">University email</label><input class="input" id="email" name="email" type="email" autocomplete="email" required></div>
-            <div class="field"><label for="password">Password</label><input class="input" id="password" name="password" type="password" autocomplete="new-password" minlength="6" required><span class="hint">At least 6 characters.</span></div>
-            <div class="field"><label for="university">University</label><input class="input" id="university" name="university" value="OPPORA Demo University" required></div>
+        <form id="regForm" class="t-form" novalidate>
+          <!-- Stop 1: Account -->
+          <section data-step="1" class="t-form" style="margin:0">
+            <div class="t-field field"><label for="name">Full name</label><input class="t-input" id="name" name="name" autocomplete="name" placeholder="e.g. Nur Aisyah" required></div>
+            <div class="t-field field"><label for="email">University email</label><input class="t-input" id="email" name="email" type="email" autocomplete="email" placeholder="you@student.apu.edu.my" required></div>
+            <div class="t-field field"><label for="password">Password</label><input class="t-input" id="password" name="password" type="password" autocomplete="new-password" minlength="6" placeholder="at least 6 characters" required></div>
+            <div class="t-field field"><label for="university">University</label><input class="t-input" id="university" name="university" value="Asia Pacific University" required></div>
           </section>
 
-          <!-- Step 2: Academic profile -->
-          <section data-step="2" class="stack hidden">
-            <div class="form-grid">
-              <div class="field full"><label for="programme">Academic programme</label><select class="input" id="programme" name="programme" required></select></div>
-              <div class="field"><label for="year">Year of study</label>
-                <select class="input" id="year" name="year"><option value="1">Year 1</option><option value="2">Year 2</option><option value="3">Year 3</option><option value="4">Year 4</option><option value="5">Year 5+</option></select></div>
-              <div class="field"><label for="studyLevel">Study level</label><select class="input" id="studyLevel" name="studyLevel"></select></div>
-            </div>
+          <!-- Stop 2: Academic -->
+          <section data-step="2" class="t-form hidden" style="margin:0">
+            <div class="t-field field"><label for="programme">Academic programme</label><select class="t-input" id="programme" name="programme" required></select></div>
+            <div class="t-field field"><label for="year">Year of study</label>
+              <select class="t-input" id="year" name="year"><option value="1">Year 1</option><option value="2">Year 2</option><option value="3">Year 3</option><option value="4">Year 4</option><option value="5">Year 5+</option></select></div>
+            <div class="t-field field"><label for="studyLevel">Study level</label><select class="t-input" id="studyLevel" name="studyLevel"></select></div>
           </section>
 
-          <!-- Step 3: Skills & interests -->
-          <section data-step="3" class="stack hidden">
-            <div class="field" data-field="skills">
-              <label>Your skills</label>
+          <!-- Stop 3: Skills & interests -->
+          <section data-step="3" class="t-form hidden" style="margin:0">
+            <div class="t-field field" data-field="skills">
+              <label>Your skills <span class="t-hint">tap the level to change it</span></label>
               <div id="skillsInput"></div>
-              <span class="hint">Start typing — e.g. Linux, Python, Leadership. Click a skill to change its level.</span>
             </div>
-            <div class="field" data-field="interests">
-              <label>Areas of interest <span class="muted">(pick at least one)</span></label>
-              <div class="interest-grid" id="interestGrid"></div>
-            </div>
-          </section>
-
-          <!-- Step 4: Goals & experience (optional) -->
-          <section data-step="4" class="stack hidden">
-            <div class="alert info">These are optional — but they make your matches more accurate.</div>
-            <div class="field"><label for="careerGoals">Career goals</label><textarea class="input" id="careerGoals" name="careerGoals" rows="3" placeholder="e.g. Get a cybersecurity internship next year"></textarea></div>
-            <div class="field">
-              <label>Experience & achievements</label>
-              <div id="expList" class="stack"></div>
-              <button type="button" class="btn outline sm" id="addExp" style="align-self:flex-start">+ Add experience</button>
+            <div class="t-field field" data-field="interests">
+              <label>What lights you up? <span class="t-hint">pick at least one</span></label>
+              <div class="chip-grid" id="interestGrid"></div>
             </div>
           </section>
 
-          <div class="row between" style="margin-top:26px">
-            <button type="button" class="btn outline" id="backBtn">← Back</button>
-            <button type="submit" class="btn green" id="nextBtn">Continue →</button>
+          <!-- Stop 4: Goals (optional) -->
+          <section data-step="4" class="t-form hidden" style="margin:0">
+            <p class="t-hint" style="font-size:14px">Optional — but it makes your matches sharper ✨</p>
+            <div class="t-field field"><label for="careerGoals">Where are you heading?</label><textarea class="t-input" id="careerGoals" name="careerGoals" rows="3" placeholder="e.g. A cybersecurity internship next year"></textarea></div>
+            <div class="t-field field">
+              <label>Experience & wins</label>
+              <div id="expList" class="t-form" style="margin:0;gap:8px"></div>
+              <button type="button" class="ghost-btn" id="addExp" style="align-self:flex-start;height:40px">+ add one</button>
+            </div>
+          </section>
+
+          <div class="reg-actions">
+            <button type="button" class="ghost-btn" id="backBtn">← Back</button>
+            <button type="submit" class="launch" id="nextBtn"><span class="label">Next stop</span> <span class="rocket" aria-hidden="true">✈️</span></button>
           </div>
         </form>
-      </div>
-    </main>
+      </main>
+    </div>
   </div>
+
   <script src="/assets/js/api.js"></script>
   <script src="/assets/js/components.js"></script>
+  <script src="/assets/js/sky.js"></script>
   <script src="/assets/js/auth.js"></script>
-  <script>initRegister();</script>
+  <script src="/assets/js/campus.js"></script>
+  <script>
+    window.__sky = OpporaSky.mount(document.getElementById('sky'), { drones: 0, shapes: [], stars: 260, parallax: false });
+    initRegister();
+  </script>
 </body>
 </html>

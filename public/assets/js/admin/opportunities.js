@@ -35,8 +35,8 @@
         <thead><tr><th>Opportunity</th><th>Status</th><th>Deadline</th><th>Matched</th><th>Notified</th><th>Saved</th><th>Actions</th></tr></thead>
         <tbody>${d.items.map((o) => `
           <tr>
-            <td><div class="title">${esc(o.title)}</div><div class="xs muted">${esc(o.organizer)} · ${esc(o.categoryNames.join(', ') || 'No category')}${o.aiAssisted ? ' · ✨ AI-assisted' : ''}</div>
-              ${o.rejectionReason && o.status === 'draft' ? `<div class="xs" style="color:var(--red)">Returned: ${esc(o.rejectionReason)}</div>` : ''}</td>
+            <td><div class="row" style="gap:12px;align-items:flex-start">${coverHtml(o, { extraClass: 'thumb' })}<div><div class="title">${esc(o.title)}</div><div class="xs muted">${esc(o.organizer)} · ${esc(o.categoryNames.join(', ') || 'No category')}${o.aiAssisted ? ' · ✨ AI-assisted' : ''}${o.imageUrl ? '' : ' · <span title="No cover image uploaded">no image</span>'}</div>
+              ${o.rejectionReason && o.status === 'draft' ? `<div class="xs" style="color:var(--red)">Returned: ${esc(o.rejectionReason)}</div>` : ''}</div></div></td>
             <td>${statusPill(o.status)}</td>
             <td class="small">${o.deadline ? `${fmtDate(o.deadline)}<div class="xs muted">${daysLeftText(o.daysLeft)}</div>` : '—'}</td>
             <td><b class="strong">${o.stats.recommended}</b>${o.stats.crossDisciplinary ? `<div class="xs muted">${o.stats.crossDisciplinary} cross-discipline</div>` : ''}</td>

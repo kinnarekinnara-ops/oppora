@@ -1,0 +1,127 @@
+/* =============================================================
+   student-theme.css — Student Portal "galaxy" theme
+   Colours + background only. Layout and content are unchanged.
+   Everything is scoped to html.portal-student, so the admin portal
+   and public pages are not affected.
+   ============================================================= */
+html.portal-student {
+  background: #060D2B;
+  --g-text: #E6EBFF;          /* text sitting directly on the galaxy */
+  --g-muted: #A9B4DA;
+  --g-link: #9DB7FF;
+  --g-card: #F3F5FC;          /* light cards */
+  --g-line: rgba(160, 180, 255, .22);
+  --g-glass: rgba(18, 28, 72, .55);
+}
+html.portal-student body { background: transparent; color: var(--g-text); }
+
+/* ---------- Background: galaxy, slow drift + gentle parallax ---------- */
+.portal-bg--student .portal-bg__img {
+  background-image: url(/assets/images/backgrounds/student-galaxy.jpg);
+  background-position: center; opacity: 1;
+  animation: galaxyDrift 60s ease-in-out infinite alternate;
+}
+.portal-bg--student .portal-bg__glow {
+  background:
+    radial-gradient(30% 26% at 59% 27%, rgba(255, 214, 150, .10), transparent 70%),
+    radial-gradient(40% 35% at 85% 95%, rgba(70, 140, 255, .14), transparent 70%);
+  animation: galaxyGlow 9s ease-in-out infinite;
+}
+.portal-bg--student::after { /* darkens the lower area so cards and text read clearly */
+  background: linear-gradient(180deg, rgba(6, 13, 43, .15) 0%, rgba(6, 13, 43, .35) 55%, rgba(6, 13, 43, .6) 100%);
+}
+@keyframes galaxyDrift { from { transform: scale(1.03) translate3d(0, 0, 0); } to { transform: scale(1.08) translate3d(-1.2%, .8%, 0); } }
+@keyframes galaxyGlow { 0%, 100% { opacity: .75; } 50% { opacity: 1; } }
+
+/* ---------- Header ---------- */
+html.portal-student .site-header { background: rgba(6, 12, 38, .72); border-bottom: 1px solid rgba(160, 180, 255, .14); }
+html.portal-student .site-header.scrolled { box-shadow: 0 8px 30px rgba(0, 0, 0, .3); }
+html.portal-student .site-header .lockup { color: #fff; }
+html.portal-student .site-header .lockup .tag { color: var(--amber); }
+html.portal-student .nav-link { color: #D9E0FF; }
+html.portal-student .nav-link:hover { background: rgba(255, 255, 255, .07); color: #fff; }
+html.portal-student .nav-link.active { background: rgba(255, 255, 255, .06); color: #fff; border: 1px solid rgba(160, 180, 255, .3); }
+html.portal-student .nav-link.active::after { content: ""; position: absolute; left: 22%; right: 22%; bottom: -2px; height: 3px; border-radius: 3px; background: var(--amber); box-shadow: 0 0 12px rgba(255, 184, 28, .8); }
+html.portal-student .nav-link.active .nav-icon { color: var(--amber); }
+html.portal-student .icon-btn { background: transparent; border-color: transparent; color: #fff; }
+html.portal-student .icon-btn:hover { background: rgba(255, 255, 255, .08); }
+html.portal-student .icon-btn .dot { border-color: #0A1236; }
+html.portal-student .avatar { background: #2C3D86; color: #fff; }
+html.portal-student .mobile-toggle { border-color: rgba(160, 180, 255, .3); }
+@media (max-width: 860px) {
+  html.portal-student .nav { background: #0B1440; border-color: rgba(160, 180, 255, .25); }
+  html.portal-student .nav-link.active::after { display: none; }
+}
+
+/* ---------- Text sitting on the galaxy ---------- */
+html.portal-student .page { color: var(--g-text); }
+html.portal-student .page :is(h1, h2, h3) { color: #fff; }
+html.portal-student .page :is(.muted, .small.muted, .xs.muted) { color: var(--g-muted); }
+html.portal-student .page a:not(.btn) { color: var(--g-link); }
+html.portal-student .page .strong { color: #fff; }
+
+/* Light surfaces keep dark text */
+html.portal-student :is(.card, .opp-card, .table-wrap, .modal, .menu-list, .cal, .suggest-list, .mini-card, .stat, .alert, .tag-input) { color: var(--text); }
+html.portal-student .page :is(.card, .opp-card, .table-wrap, .cal, .mini-card, .stat, .alert) :is(h1, h2, h3, .strong, .title) { color: var(--ink); }
+html.portal-student .page :is(.card, .opp-card, .table-wrap, .cal, .mini-card, .stat) :is(.muted, .small.muted, .xs.muted) { color: var(--muted); }
+html.portal-student .page :is(.card, .opp-card, .table-wrap, .cal, .mini-card, .alert) a:not(.btn) { color: var(--cobalt); }
+html.portal-student .modal :is(h1, h2, h3, .strong) { color: var(--ink); }
+
+/* Cards: soft lavender-white with deeper shadows */
+html.portal-student :is(.card, .opp-card, .table-wrap, .cal, .mini-card, .stat) {
+  background-color: var(--g-card); border-color: rgba(255, 255, 255, .35); box-shadow: 0 10px 30px rgba(2, 6, 24, .45);
+}
+html.portal-student .opp-card:hover { box-shadow: 0 18px 44px rgba(2, 6, 24, .6); }
+html.portal-student .opp-card .reason { background: #E8ECF9; }
+html.portal-student .opp-card .meta { color: #4A5378; }
+html.portal-student .table th { background: #E9EDF9; }
+html.portal-student .cal .dow { background: #E9EDF9; }
+html.portal-student .cal .day.other { background: #EBEEF8; }
+
+/* ---------- Home hero: open on the galaxy with a glass stats panel ---------- */
+html.portal-student .home-hero { background: transparent; box-shadow: none; padding-left: 4px; padding-right: 0; }
+html.portal-student .home-hero::before, html.portal-student .home-hero::after { display: none; }
+html.portal-student .home-hero__hello { color: #E6EBFF; font-weight: 600; }
+html.portal-student .home-hero h1 { color: #fff; text-shadow: 0 4px 30px rgba(2, 6, 24, .6); }
+html.portal-student .home-hero__sub { color: #D2DAF8; }
+html.portal-student .btn.hero-ghost { background: rgba(255, 255, 255, .06); border-color: rgba(200, 212, 255, .4); }
+html.portal-student .home-hero__stats {
+  gap: 0; padding: 16px 6px; border-radius: 22px; background: var(--g-glass);
+  border: 1px solid rgba(160, 180, 255, .3); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 20px 50px rgba(2, 6, 24, .45);
+}
+html.portal-student .home-hero__stats div { background: none; border: none; border-radius: 0; backdrop-filter: none; padding: 6px 24px; min-width: 120px; }
+html.portal-student .home-hero__stats div + div { border-left: 1px solid rgba(160, 180, 255, .25); }
+html.portal-student .home-hero__stats div::before {
+  content: ""; display: block; width: 26px; height: 26px; margin-bottom: 8px; background: var(--amber);
+  -webkit-mask: var(--ico) center / contain no-repeat; mask: var(--ico) center / contain no-repeat;
+}
+html.portal-student .home-hero__stats div:nth-child(1) { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 3h10v6a5 5 0 0 1-10 0z'/%3E%3Cpath d='M7 5H3.5a3.5 3.5 0 0 0 4 4.4M17 5h3.5a3.5 3.5 0 0 1-4 4.4' fill='none' stroke='%23000' stroke-width='2'/%3E%3Cpath d='M10.5 14.5h3V18h-3zM7 19.5h10V22H7z'/%3E%3C/svg%3E"); }
+html.portal-student .home-hero__stats div:nth-child(2) { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 2h12v20l-6-4.5L6 22z'/%3E%3C/svg%3E"); }
+html.portal-student .home-hero__stats div:nth-child(3) { --ico: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm2 5v9h14v-9zM7 2h2v4H7zm8 0h2v4h-2z'/%3E%3C/svg%3E"); }
+html.portal-student .home-hero__stats dt { color: #D2DAF8; }
+html.portal-student .home-hero__stats dd { color: #fff; }
+
+/* Section headings on the galaxy */
+html.portal-student .home-head p, html.portal-student .page-head p, html.portal-student .section-head p { color: var(--g-muted); }
+html.portal-student .home-head .btn.outline, html.portal-student .page-head .btn.outline { background: rgba(255, 255, 255, .06); color: #fff; border-color: rgba(200, 212, 255, .4); }
+html.portal-student .home-head .btn.outline:hover, html.portal-student .page-head .btn.outline:hover { background: rgba(255, 255, 255, .14); }
+
+/* Tabs on the galaxy (explore, saved, notifications) */
+html.portal-student .page > .tabs .tab, html.portal-student .page .tabs .tab { color: #C3CCEE; }
+html.portal-student .tabs .tab:hover { color: #fff; background: rgba(255, 255, 255, .07); }
+html.portal-student .tabs .tab.active { background: rgba(255, 255, 255, .1); border-color: rgba(160, 180, 255, .35); color: #fff; }
+html.portal-student .tabs .tab .count { background: rgba(255, 255, 255, .12); color: #D2DAF8; }
+html.portal-student .tabs .tab.active .count { background: var(--amber); color: var(--ink); }
+
+/* Calendar header + legend, profile save bar */
+html.portal-student .legend { color: var(--g-muted); }
+html.portal-student .page .check { color: var(--g-text); }
+html.portal-student .page .sticky-actions { background: rgba(6, 12, 38, .85) !important; border-top-color: rgba(160, 180, 255, .2) !important; }
+html.portal-student .page .card .check { color: var(--text); }
+
+/* Small screens: keep the glass stats panel inside the viewport */
+@media (max-width: 720px) {
+  html.portal-student .home-hero__stats { width: 100%; padding: 14px 4px; }
+  html.portal-student .home-hero__stats div { min-width: 0; flex: 1 1 0; padding: 4px 12px; }
+}

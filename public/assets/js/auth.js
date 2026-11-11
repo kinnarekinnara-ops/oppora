@@ -4,31 +4,54 @@
 
 function initLogin() {
   const form = $('#loginForm');
+  const ticket = $('#ticket');
+  const btn = form.querySelector('[type=submit]');
+  const label = btn.querySelector('.label');
+
   // If already logged in, skip straight to the right portal
   api('/api/auth/me', { redirectOn401: false })
     .then((me) => { location.href = me.user.role === 'student' ? '/student/dashboard.html' : '/admin/dashboard.html'; })
     .catch(() => {});
 
+  // Demo stickers: fill the form with a little "stamp"
   $$('.demo-logins [data-e]').forEach((b) => b.addEventListener('click', () => {
     form.email.value = b.dataset.e;
     form.password.value = b.dataset.p;
-    form.querySelector('[type=submit]').focus();
+    $$('.sticker.picked').forEach((s) => s.classList.remove('picked'));
+    b.classList.add('picked');
+    btn.focus();
   }));
+
+  // Show / hide password
+  $('#peek').addEventListener('click', (e) => {
+    const show = form.password.type === 'password';
+    form.password.type = show ? 'text' : 'password';
+    e.currentTarget.textContent = show ? 'hide' : 'show';
+    e.currentTarget.setAttribute('aria-pressed', String(show));
+    e.currentTarget.setAttribute('aria-label', show ? 'Hide password' : 'Show password');
+  });
+
+  const fail = (msg) => {
+    $('#formAlert').innerHTML = `<div class="t-alert">😬 ${esc(msg)}</div>`;
+    ticket.classList.remove('shake'); void ticket.offsetWidth; ticket.classList.add('shake');
+    btn.disabled = false; btn.classList.remove('is-loading'); label.textContent = 'Take off';
+  };
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const btn = form.querySelector('[type=submit]');
-    btn.disabled = true; btn.textContent = 'Logging in…';
     $('#formAlert').innerHTML = '';
+    if (!form.email.value.trim() || !form.password.value) { fail('Pop in your email and password first.'); return; }
+    btn.disabled = true; btn.classList.add('is-loading'); label.textContent = 'Fuelling up…';
     try {
       const res = await api('/api/auth/login', { method: 'POST', body: { email: form.email.value, password: form.password.value }, redirectOn401: false });
       const next = new URLSearchParams(location.search).get('next');
       const allowed = next && next.startsWith('/') && !next.startsWith('//')
         && (res.user.role === 'student' ? next.startsWith('/student/') : next.startsWith('/admin/'));
-      location.href = allowed ? next : res.redirect;
+      label.textContent = 'Lift-off!';
+      // The fun part: 3D launch + hyperspace into the next page
+      OpporaTransition.leave(allowed ? next : res.redirect, { sky: window.__sky, card: ticket });
     } catch (err) {
-      $('#formAlert').innerHTML = `<div class="alert error">${esc(err.message)}</div>`;
-      btn.disabled = false; btn.textContent = 'Log in';
+      fail(err.message);
     }
   });
 }
@@ -46,15 +69,21 @@ async function initRegister() {
   const skills = createSkillInput($('#skillsInput'), meta.skills.map((s) => s.name));
   const exp = createExperienceEditor($('#expList'), $('#addExp'));
 
+  const SHORT = ['Account', 'Studies', 'Skills', 'Goals'];
+  const label = () => $('#nextBtn .label');
   const draw = () => {
     $$('[data-step]', form).forEach((s) => s.classList.toggle('hidden', Number(s.dataset.step) !== step));
-    $('#stepper').innerHTML = STEPS.map((s, i) => `<div class="st ${i + 1 < step ? 'done' : i + 1 === step ? 'current' : ''}"><div class="bar"></div><div class="lbl">${i + 1}. ${s}</div></div>`).join('');
+    // Stepper drawn as a little flight path: stops joined by dashed lines
+    $('#stepper').innerHTML = SHORT.map((s, i) => `${i ? '<span class="path"></span>' : ''}
+      <span class="stop ${i + 1 < step ? 'done' : i + 1 === step ? 'current' : ''}"><span class="dot">${i + 1 < step ? '✓' : i + 1}</span><span class="lbl">${s}</span></span>`).join('');
     $('#stepTitle').textContent = TITLES[step - 1];
+    $('#stepCount').textContent = `Step ${step} of 4`;
     $('#backBtn').style.visibility = step === 1 ? 'hidden' : 'visible';
-    $('#nextBtn').textContent = step === 4 ? 'Create account & find matches ✨' : 'Continue →';
+    label().textContent = step === 4 ? 'Launch my matches' : 'Next stop';
+    $('#nextBtn .rocket').textContent = step === 4 ? '🚀' : '✈️';
     $('#formAlert').innerHTML = '';
     const first = $(`[data-step="${step}"] input, [data-step="${step}"] select`, form);
-    if (first) first.focus();
+    if (first) first.focus({ preventScroll: true });
   };
 
   // Client-side checks per step (the server validates again)
@@ -72,6 +101,7 @@ async function initRegister() {
       if (!$$('[name=interests]:checked', form).length) errors.interests = 'Pick at least one interest.';
     }
     showFieldErrors(form, Object.keys(errors).length ? errors : null);
+    if (Object.keys(errors).length) { const t = $('#ticket'); t.classList.remove('shake'); void t.offsetWidth; t.classList.add('shake'); }
     return !Object.keys(errors).length;
   };
 
@@ -83,7 +113,7 @@ async function initRegister() {
     if (step < 4) { step++; draw(); return; }
 
     const btn = $('#nextBtn');
-    btn.disabled = true; btn.textContent = 'Finding your matches…';
+    btn.disabled = true; btn.classList.add('is-loading'); label().textContent = 'Matching you…';
     try {
       const body = {
         name: form.name.value.trim(), email: form.email.value.trim(), password: form.password.value, university: form.university.value.trim(),
@@ -92,16 +122,17 @@ async function initRegister() {
         careerGoals: form.careerGoals.value, experience: exp.get(),
       };
       const res = await api('/api/auth/register', { method: 'POST', body, redirectOn401: false });
-      location.href = `${res.redirect}?welcome=1`;
+      label().textContent = 'Lift-off!';
+      OpporaTransition.leave(`${res.redirect}?welcome=1`, { sky: window.__sky, card: $('#ticket') });
     } catch (err) {
-      btn.disabled = false; btn.textContent = 'Create account & find matches ✨';
+      btn.disabled = false; btn.classList.remove('is-loading'); label().textContent = 'Launch my matches';
       if (err.fields) {
         // Jump back to the step that has the problem
         step = err.fields.name || err.fields.email || err.fields.password || err.fields.university ? 1 : step;
         draw();
         showFieldErrors(form, err.fields);
       }
-      $('#formAlert').innerHTML = `<div class="alert error">${esc(err.message)}</div>`;
+      $('#formAlert').innerHTML = `<div class="t-alert">😬 ${esc(err.message)}</div>`;
     }
   });
 

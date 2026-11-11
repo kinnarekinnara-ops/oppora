@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260" preserveAspectRatio="xMidYMax slice">
+    <style>.win{animation:g 5s ease-in-out infinite}.b{animation-delay:-1.7s}.c{animation-delay:-3.1s}@keyframes g{0%,100%{opacity:.35}50%{opacity:.6}}@media (prefers-reduced-motion:reduce){.win{animation:none}}</style>
+    <defs>
+      <pattern id="win" width="13" height="12" patternUnits="userSpaceOnUse"><rect x="4" y="4" width="5" height="4" rx="1" fill="#FFB81C"/></pattern>
+      <pattern id="win2" width="15" height="13" patternUnits="userSpaceOnUse"><rect x="5" y="5" width="6" height="4" rx="1" fill="#FFD3C4"/></pattern>
+    </defs>
+    <g fill="#081128">
+      <rect x="40" y="128" width="200" height="132"/>
+      <rect x="250" y="100" width="70" height="160"/>
+      <rect x="1080" y="96" width="190" height="164"/>
+      <rect x="1280" y="140" width="160" height="120"/>
+      <!-- Main building: big curved cantilever roof on round columns -->
+      <path d="M352 86 C 470 40, 690 34, 860 70 C 884 75, 886 92, 862 92 C 690 62, 480 66, 366 106 C 342 114, 330 94, 352 86 Z"/>
+      <rect x="390" y="96" width="460" height="164"/>
+      <rect x="860" y="118" width="190" height="142"/>
+    </g>
+    <!-- Lit windows and glowing floor strips -->
+    <rect class="win" x="52" y="140" width="176" height="105" fill="url(#win)" opacity=".7"/>
+    <rect class="win c" x="258" y="112" width="54" height="130" fill="url(#win2)" opacity=".5"/>
+    <rect class="win b" x="1092" y="108" width="166" height="140" fill="url(#win)" opacity=".7"/>
+    <rect class="win c" x="1290" y="152" width="140" height="95" fill="url(#win2)" opacity=".55"/>
+    <rect class="win b" x="872" y="130" width="166" height="118" fill="url(#win)" opacity=".6"/>
+    <g fill="#FFB81C">
+      <rect class="win" x="404" y="122" width="432" height="3" rx="1.5"/>
+      <rect class="win b" x="404" y="160" width="432" height="3" rx="1.5"/>
+      <rect class="win c" x="404" y="198" width="432" height="3" rx="1.5"/>
+    </g>
+    <g fill="#0E1A3A"><rect x="430" y="110" width="12" height="150"/><rect x="520" y="110" width="12" height="150"/><rect x="610" y="110" width="12" height="150"/><rect x="700" y="110" width="12" height="150"/><rect x="790" y="110" width="12" height="150"/></g>
+    <!-- Trees + ground -->
+    <g fill="#071B22">
+      <circle cx="330" cy="236" r="26"/><circle cx="360" cy="228" r="20"/><circle cx="880" cy="238" r="24"/><circle cx="905" cy="230" r="18"/>
+      <circle cx="1060" cy="236" r="22"/><circle cx="20" cy="240" r="24"/><circle cx="1420" cy="236" r="26"/>
+    </g>
+    <rect y="246" width="1440" height="14" fill="#060C1F"/>
+  </svg>

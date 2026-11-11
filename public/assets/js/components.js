@@ -68,17 +68,19 @@ function icon(name, size = 19) {
 }
 
 // ---------- Categories ----------
+// Bold flat colours + halftone dots (no gradients). `dark` = use light text on top.
+const HALFTONE = 'radial-gradient(rgba(255,255,255,.24) 1.3px, transparent 1.6px) 0 0/11px 11px';
 const CATEGORY_STYLE = {
-  academic: { color: '#0754B8', bg: 'linear-gradient(120deg,#0754B8,#1677E8)', emoji: '🎓' },
-  technical: { color: '#0754B8', bg: 'linear-gradient(120deg,#071D49,#0754B8)', emoji: '💻' },
-  professional: { color: '#10B956', bg: 'linear-gradient(120deg,#08783B,#10B956)', emoji: '💼' },
-  activities: { color: '#F2AD00', bg: 'linear-gradient(120deg,#F2AD00,#FFD52A)', emoji: '🎉' },
-  volunteering: { color: '#10B956', bg: 'linear-gradient(120deg,#0F8F8A,#10B956)', emoji: '🤝' },
-  general: { color: '#0F8F8A', bg: 'linear-gradient(120deg,#0F8F8A,#1677E8)', emoji: '📢' },
+  academic: { color: '#2D5BE3', bg: `${HALFTONE}, #2D5BE3`, emoji: '🎓', dark: true },
+  technical: { color: '#0E1A3A', bg: `${HALFTONE}, #0E1A3A`, emoji: '💻', dark: true },
+  professional: { color: '#22B573', bg: `${HALFTONE}, #22B573`, emoji: '💼', dark: false },
+  activities: { color: '#FFB81C', bg: `${HALFTONE}, #FFB81C`, emoji: '🎉', dark: false },
+  volunteering: { color: '#12B5CB', bg: `${HALFTONE}, #12B5CB`, emoji: '🤝', dark: false },
+  general: { color: '#FF5A3C', bg: `${HALFTONE}, #FF5A3C`, emoji: '📢', dark: false },
 };
 function catStyle(id) { return CATEGORY_STYLE[id] || CATEGORY_STYLE.general; }
 function categoryBadges(opp) {
-  return (opp.categories || []).map((c, i) => `<span class="badge cat" style="background:${catStyle(c).color}">${catStyle(c).emoji} ${esc((opp.categoryNames || [])[i] || c)}</span>`).join(' ');
+  return (opp.categories || []).map((c, i) => `<span class="badge cat" style="background:${catStyle(c).color};color:${catStyle(c).dark ? '#fff' : '#161A2E'}">${catStyle(c).emoji} ${esc((opp.categoryNames || [])[i] || c)}</span>`).join(' ');
 }
 
 // ---------- Match + status badges ----------
@@ -95,17 +97,28 @@ const STATUS_LABEL = {
 };
 function statusPill(s) { return `<span class="status ${esc(s)}">${esc(STATUS_LABEL[s] || s)}</span>`; }
 
+// ---------- Cover image: the uploaded photo, or a designed placeholder ----------
+// extraClass: 'thumb' for small table thumbnails. `inner` = extra markup layered on top.
+function coverHtml(o, { extraClass = '', inner = '' } = {}) {
+  const cat = (o.categories || [])[0];
+  const st = catStyle(cat);
+  const label = (o.categoryNames || [])[0] || 'Opportunity';
+  const media = o.imageUrl
+    ? `<img src="${esc(o.imageUrl)}" alt="" loading="lazy" decoding="async">`
+    : `<div class="cover-ph ${st.dark ? '' : 'light'}" style="--c:${st.color}"><span class="ph-icon" aria-hidden="true">${st.emoji}</span><span class="ph-label">${esc(label)}</span></div>`;
+  return `<div class="cover ${extraClass}">${media}${inner}</div>`;
+}
+
 // ---------- Opportunity card ----------
 function oppCard(o, { showReason = true } = {}) {
-  const st = catStyle((o.categories || [])[0]);
   const urgent = o.daysLeft !== null && o.daysLeft >= 0 && o.daysLeft <= 3;
+  const badges = categoryBadges(o).replace(/class="badge cat" style="[^"]+"/g, 'class="badge"');
+  const heart = o.saved !== undefined
+    ? `<button class="heart ${o.saved ? 'on' : ''}" data-save="${esc(o.id)}" aria-label="${o.saved ? 'Remove from saved' : 'Save opportunity'}" aria-pressed="${!!o.saved}">${o.saved ? '♥' : '♡'}</button>`
+    : '';
   return `
   <article class="opp-card" data-id="${esc(o.id)}" tabindex="0" role="link" aria-label="${esc(o.title)}">
-    <div class="banner" style="background:${st.bg}">
-      <div class="row wrap" style="gap:6px">${categoryBadges(o).replace(/class="badge cat" style="background:[^"]+"/g, 'class="badge" style="background:rgba(255,255,255,.92)"')}</div>
-      ${o.saved !== undefined ? `<button class="heart ${o.saved ? 'on' : ''}" data-save="${esc(o.id)}" aria-label="${o.saved ? 'Remove from saved' : 'Save opportunity'}" aria-pressed="${!!o.saved}">${o.saved ? '♥' : '♡'}</button>` : ''}
-      <span class="emoji" aria-hidden="true">${st.emoji}</span>
-    </div>
+    ${coverHtml(o, { inner: `<div class="cover-top"><div class="row wrap" style="gap:6px">${badges}</div>${heart}</div>` })}
     <div class="body">
       <div class="row wrap" style="gap:6px">${matchBadge(o.match)}${o.match && o.match.crossDisciplinary ? '<span class="badge yellow">✦ Beyond your programme</span>' : ''}</div>
       <h3>${esc(o.title)}</h3>

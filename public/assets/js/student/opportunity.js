@@ -69,8 +69,8 @@
 
   page.innerHTML = `
     <a href="/student/opportunities.html" class="small strong">← Back to explore</a>
-    <section class="detail-hero" style="background:${st.bg};margin-top:12px">
-      <span class="emoji" aria-hidden="true">${st.emoji}</span>
+    <section class="detail-hero ${o.imageUrl ? 'has-image' : st.dark ? '' : 'on-light'}" style="${o.imageUrl ? `background-color:var(--night)` : `background:${st.bg}`};margin-top:12px">
+      ${o.imageUrl ? `<img class="hero-img" src="${esc(o.imageUrl)}" alt="">` : `<span class="emoji" aria-hidden="true">${st.emoji}</span>`}
       <div class="row wrap" style="gap:6px">${categoryBadges(o).replace(/class="badge cat" style="background:[^"]+"/g, 'class="badge" style="background:rgba(255,255,255,.92)"')} ${statusPill(o.availability)}</div>
       <h1>${esc(o.title)}</h1>
       <div class="meta">

@@ -2,89 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0E1A3A">
   <title>OPPORA — Opportunities find their people</title>
-  <meta name="description" content="OPPORA is a campus opportunity discovery platform that matches students with competitions, research, mentorships and activities based on their skills and interests.">
+  <meta name="description" content="OPPORA matches students with competitions, research, mentorships and activities based on their skills and interests — and tells them why.">
   <link rel="icon" href="/assets/images/logo.svg">
   <link rel="stylesheet" href="/assets/css/tokens.css">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/student.css">
+  <script src="/assets/js/transition.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="inner">
-      <a class="brand" href="/"><img src="/assets/images/logo.svg" alt=""><span><span class="name">OPPOR<span>A</span></span><span class="tag">Opportunities find their people</span></span></a>
-      <nav class="nav" aria-label="Main">
-        <a class="nav-link" href="#how">How it works</a>
-        <a class="nav-link" href="#categories">Categories</a>
-        <a class="nav-link" href="#demo">Demo accounts</a>
-      </nav>
-      <div class="header-actions">
-        <a class="btn ghost sm" href="/login.html">Log in</a>
-        <a class="btn green sm" href="/register.html">Join OPPORA</a>
-      </div>
-    </div>
-  </header>
+  <section class="hero night-panel">
+    <canvas id="sky" aria-hidden="true"></canvas>
 
-  <section class="hero">
+    <header class="landing-header">
+      <div class="inner">
+        <a class="lockup" href="/" aria-label="OPPORA home">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8.4 46.7 A 28 9 -28 0 1 52.6 18.6" fill="none" stroke="#FFB81C" stroke-width="3.6" stroke-linecap="round"/><circle cx="30" cy="34" r="16" fill="none" stroke="currentColor" stroke-width="7.4"/><circle cx="30" cy="34" r="5.8" fill="#FF5A3C"/><circle cx="51.8" cy="19" r="5.2" fill="#22B573" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span><span class="word">oppor<i>a</i></span><span class="tag">opportunities find their people</span></span>
+        </a>
+        <nav aria-label="Sections">
+          <a href="#categories">Categories</a>
+          <a href="#how">How it works</a>
+          <a href="#demo">Demo</a>
+        </nav>
+        <a class="btn yellow sm" href="/login.html">Log in</a>
+        <a class="btn coral sm" href="/register.html">Join ✦</a>
+      </div>
+    </header>
+
     <div class="inner">
       <div>
-        <span class="badge" style="background:rgba(255,255,255,.14);color:#fff">✦ AI-powered campus opportunity matching</span>
-        <h1 style="margin-top:16px"><em>Opportunities</em> find their people.</h1>
-        <p class="lead">Hackathons, research roles, mentorships, club posts and volunteering — all in one place. OPPORA reads every opportunity, compares it with your skills and interests, and tells you <b>why</b> it fits you.</p>
-        <form class="hero-search" id="heroSearch" role="search">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-          <input type="search" name="q" placeholder="Search hackathons, Linux, mentorship, research…" aria-label="Search opportunities">
-          <button class="btn green" type="submit">Search →</button>
-        </form>
-        <div class="hero-tags">Popular:
-          <a href="/student/opportunities.html?q=Linux">Linux</a>
-          <a href="/student/opportunities.html?q=AI">AI</a>
-          <a href="/student/opportunities.html?category=professional">Mentorship</a>
-          <a href="/student/opportunities.html?category=volunteering">Volunteering</a>
-        </div>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="float-card"><div class="ic" style="background:var(--tint-green)">🎯</div><div><h4>84% Strong Match</h4><p class="small muted">Linux Systems Challenge 2026</p></div></div>
-        <div class="float-card"><div class="ic" style="background:var(--tint-yellow)">💡</div><div><h4>Why it fits you</h4><p class="small muted">Your Linux & Networking skills are directly relevant.</p></div></div>
-        <div class="float-card"><div class="ic" style="background:var(--tint-blue)">⏳</div><div><h4>Deadline in 3 days</h4><p class="small muted">Industry Mentorship Programme</p></div></div>
+        <h1>Opportunities <span class="hl">find<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 13 C 40 4, 70 18, 104 9 S 168 4, 196 11"/></svg></span> their people.</h1>
+        <p class="lead">Hackathons, research roles, mentorships, club posts, volunteering — all in one sky. OPPORA reads every opportunity, compares it with <b>your</b> skills and interests, and tells you <b>why</b> it fits.</p>
       </div>
     </div>
   </section>
 
-  <main class="page">
+  <main class="landing-main">
     <section id="categories">
-      <div class="section-head"><div><h2>Explore by category</h2><p>Every opportunity across campus, in one place.</p></div></div>
+      <div class="big-head">
+        <h2>Pick your <em>orbit.</em></h2>
+        <span class="hand">every club, lab & department — finally in one place ↓</span>
+      </div>
       <div class="cat-grid" id="catGrid">
-        <div class="skeleton" style="height:150px"></div><div class="skeleton" style="height:150px"></div><div class="skeleton" style="height:150px"></div>
-        <div class="skeleton" style="height:150px"></div><div class="skeleton" style="height:150px"></div><div class="skeleton" style="height:150px"></div>
+        <div class="skeleton" style="grid-column:span 2;grid-row:span 2"></div><div class="skeleton"></div><div class="skeleton"></div>
+        <div class="skeleton" style="grid-column:span 2"></div><div class="skeleton"></div><div class="skeleton"></div>
       </div>
     </section>
 
-    <section class="section" id="how">
-      <div class="section-head"><div><h2>How OPPORA works</h2><p>From announcement to the right students — automatically.</p></div></div>
+    <section class="section" id="how" style="margin-top:80px">
+      <div class="big-head">
+        <h2>The flight plan.</h2>
+        <span class="hand">from announcement → to the right students, automatically</span>
+      </div>
       <div class="steps">
-        <div class="step"><h3>Admins publish once</h3><p>Clubs, lecturers and departments submit opportunities through one standard form.</p></div>
-        <div class="step"><h3>AI extracts the details</h3><p>Skills, category and experience level are suggested automatically — the admin reviews and confirms.</p></div>
-        <div class="step"><h3>The engine matches</h3><p>Eligibility rules first, then a weighted score: skills 50%, interests 25%, academics 15%, experience 10%.</p></div>
-        <div class="step"><h3>Students get told why</h3><p>A clear match explanation, skill gaps to grow, and reminders before deadlines.</p></div>
+        <div class="step"><h3>Clubs post once</h3><p>Lecturers, clubs and departments fill in one friendly form. No more 40 WhatsApp groups.</p></div>
+        <div class="step"><h3>AI reads it</h3><p>Skills, category and level are suggested automatically — a human always reviews before it goes live.</p></div>
+        <div class="step"><h3>The engine matches</h3><p>Eligibility rules first, then a score: skills 50%, interests 25%, academics 15%, experience 10%.</p></div>
+        <div class="step"><h3>You get told why</h3><p>Plain-English reasons, skills to grow, and a nudge before the deadline closes.</p></div>
       </div>
     </section>
 
-    <section class="section" id="stats">
-      <div class="grid cols-3" id="statGrid"></div>
+    <section class="section" style="margin-top:80px">
+      <div class="sticker-stats" id="statGrid"></div>
     </section>
 
-    <section class="section" id="demo">
+    <section class="section" id="demo" style="margin-top:80px">
       <div class="demo-box">
         <div>
-          <h2>Try the demo</h2>
-          <p style="margin-top:8px">Log in as a student to see personalised matches, or as an admin to publish an opportunity and watch the matching engine notify students.</p>
-          <a class="btn yellow" style="margin-top:18px" href="/login.html">Go to login →</a>
+          <span class="hand" style="color:var(--amber);font-size:26px">judges, start here ✦</span>
+          <h2 style="margin-top:6px">Take it for a spin</h2>
+          <p style="margin-top:10px">Log in as a student to see personalised matches, or as an admin to publish an opportunity and watch the matching engine notify students.</p>
+          <a class="btn yellow" style="margin-top:20px" href="/login.html">Board now →</a>
         </div>
         <table>
           <tr><td>🎓 Student (Cybersecurity)</td><td><code>alex@student.oppora.edu</code> / <code>student123</code></td></tr>
-          <tr><td>🎓 Student (AI)</td><td><code>priya@student.oppora.edu</code> / <code>student123</code></td></tr>
+          <tr><td>🤖 Student (AI)</td><td><code>priya@student.oppora.edu</code> / <code>student123</code></td></tr>
           <tr><td>🛡 Super Admin</td><td><code>admin@oppora.edu</code> / <code>admin123</code></td></tr>
           <tr><td>🗂 Opportunity Admin</td><td><code>staff@oppora.edu</code> / <code>staff123</code></td></tr>
           <tr><td>🏛 Club Representative</td><td><code>club@oppora.edu</code> / <code>club123</code></td></tr>
@@ -92,10 +87,11 @@
       </div>
     </section>
   </main>
-  <footer class="footer">OPPORA · Opportunities find their people · Hackathon prototype</footer>
+  <footer class="footer">made with <span class="hand">late nights & teh tarik</span> for the GDG on Campus APU hackathon · <a href="/brand.html">brand board</a></footer>
 
   <script src="/assets/js/api.js"></script>
   <script src="/assets/js/components.js"></script>
+  <script src="/assets/js/sky.js"></script>
   <script src="/assets/js/landing.js"></script>
 </body>
 </html>

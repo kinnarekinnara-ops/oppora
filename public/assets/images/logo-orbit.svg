@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OPPORA orbit mark">
+  <!-- Direction A · "Orbit O": the O is a campus planet; a coral core is YOU, a leaf-green comet is the opportunity heading your way -->
+  <path d="M8.4 46.7 A 28 9 -28 0 1 52.6 18.6" fill="none" stroke="#FFB81C" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="30" cy="34" r="16.5" fill="none" stroke="#161A2E" stroke-width="7"/>
+  <circle cx="30" cy="34" r="5.6" fill="#FF5A3C"/>
+  <path d="M52.6 18.6 A 28 9 -28 0 1 15 52" fill="none" stroke="#FFB81C" stroke-width="3.4" stroke-linecap="round" stroke-dasharray="0 2 60 100"/>
+  <circle cx="51.8" cy="19" r="5" fill="#22B573" stroke="#161A2E" stroke-width="1.6"/>
+  <path d="M10 9 l1.6 4.2 4.2 1.6 -4.2 1.6 -1.6 4.2 -1.6 -4.2 -4.2 -1.6 4.2 -1.6z" fill="#12B5CB"/>
+</svg>

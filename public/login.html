@@ -2,63 +2,152 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0E1A3A">
   <title>Log in · OPPORA</title>
   <link rel="icon" href="/assets/images/logo.svg">
   <link rel="stylesheet" href="/assets/css/tokens.css">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/student.css">
+  <link rel="stylesheet" href="/assets/css/auth.css">
+  <link rel="stylesheet" href="/assets/css/login.css">
+  <script src="/assets/js/transition.js"></script>
 </head>
-<body>
-  <div class="auth">
-    <aside class="auth-side">
-      <a class="brand" href="/"><img src="/assets/images/logo.svg" alt=""><span><span class="name">OPPOR<span>A</span></span><span class="tag">Opportunities find their people</span></span></a>
-      <div>
-        <h1>Welcome <em>back.</em></h1>
-        <p>Your personalised opportunities, match explanations and deadlines are waiting.</p>
-        <ul class="benefits">
-          <li><span>✨</span>Personalised recommendations</li>
-          <li><span>🎯</span>Explainable match scores</li>
-          <li><span>⏳</span>Never miss a deadline</li>
-        </ul>
-      </div>
-      <p class="small" style="color:#9FB6DE">Students and administrators use the same login.</p>
-    </aside>
+<body class="login-night">
+  <!-- APU campus at night (decorative) -->
+  <div class="lg-bg" aria-hidden="true"></div>
+  <!-- Twinkling stars in the sky; also used for the login warp -->
+  <canvas id="sky" aria-hidden="true"></canvas>
 
-    <main class="auth-main">
-      <div class="auth-card narrow">
-        <h1>Log in</h1>
-        <p class="muted" style="margin-top:6px">New student? <a href="/register.html">Create an account</a></p>
-        <div id="formAlert" style="margin-top:16px"></div>
-        <form id="loginForm" class="stack" style="margin-top:18px" novalidate>
-          <div class="field">
+  <div class="lg-stage">
+    <header class="auth-top">
+      <a class="lockup" href="/" aria-label="OPPORA home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8.4 46.7 A 28 9 -28 0 1 52.6 18.6" fill="none" stroke="#FFB81C" stroke-width="3.6" stroke-linecap="round"/><circle cx="30" cy="34" r="16" fill="none" stroke="currentColor" stroke-width="7.4"/><circle cx="30" cy="34" r="5.8" fill="#FF5A3C"/><circle cx="51.8" cy="19" r="5.2" fill="#22B573" stroke="currentColor" stroke-width="1.6"/></svg>
+        <span><span class="word">oppor<i>a</i></span><span class="tag">opportunities find their people</span></span>
+      </a>
+      <a class="lg-back" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back to home page</a>
+    </header>
+
+    <!-- Left: headline with the animated "opportunity orbit" -->
+    <section class="lg-hero">
+      <svg class="lg-orbit" viewBox="0 0 700 160" aria-hidden="true">
+        <defs>
+          <linearGradient id="orbitGlow" x1="0" x2="1">
+            <stop offset="0" stop-color="#FFB81C" stop-opacity="0"/>
+            <stop offset=".25" stop-color="#FFB81C" stop-opacity=".85"/>
+            <stop offset=".7" stop-color="#FFD36A" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#FFB81C" stop-opacity="0"/>
+          </linearGradient>
+          <radialGradient id="halo"><stop offset="0" stop-color="#7F9CFF" stop-opacity=".45"/><stop offset="1" stop-color="#7F9CFF" stop-opacity="0"/></radialGradient>
+          <radialGradient id="bloom"><stop offset="0" stop-color="#FFD36A" stop-opacity=".9"/><stop offset=".35" stop-color="#FFB81C" stop-opacity=".45"/><stop offset="1" stop-color="#FFB81C" stop-opacity="0"/></radialGradient>
+          <!-- Orbit sits above the headline: upper arc (left → over the top → right) and the full orbit -->
+          <path id="orbitTop" d="M30 95 A 320 50 0 0 1 670 95"/>
+          <path id="orbitFull" d="M30 95 A 320 50 0 0 1 670 95 A 320 50 0 0 1 30 95"/>
+        </defs>
+
+        <!-- Faint full orbit + glowing upper arc -->
+        <use href="#orbitFull" fill="none" stroke="#FFB81C" stroke-opacity=".16" stroke-width="1.2"/>
+        <use href="#orbitTop" fill="none" stroke="url(#orbitGlow)" stroke-width="7" opacity=".14"/>
+        <use href="#orbitTop" fill="none" stroke="url(#orbitGlow)" stroke-width="3.5" opacity=".25"/>
+        <use href="#orbitTop" fill="none" stroke="url(#orbitGlow)" stroke-width="1.6"/>
+
+        <!-- Opportunity icons drifting along the orbit -->
+        <g class="lg-ico">
+          <circle r="38" fill="url(#halo)"/><circle r="25" class="ico-badge"/>
+          <g transform="translate(-11 -11) scale(.92)" class="ico-line"><path d="M1 9l11-5 11 5-11 5z"/><path d="M5.5 11v5.2c3.5 2.4 9.5 2.4 13 0V11"/><path d="M23 9v5.5"/></g>
+          <animateMotion dur="26s" repeatCount="indefinite" begin="0s"><mpath href="#orbitTop"/></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.88;1" dur="26s" repeatCount="indefinite" begin="0s"/>
+        </g>
+        <g class="lg-ico">
+          <circle r="38" fill="url(#halo)"/><circle r="25" class="ico-badge"/>
+          <g transform="translate(-11 -11) scale(.92)" class="ico-fill"><path d="M7 3h10v6a5 5 0 0 1-10 0z"/><path d="M7 5H3.5a3.5 3.5 0 0 0 4 4.4M17 5h3.5a3.5 3.5 0 0 1-4 4.4" fill="none" stroke="#FFB81C" stroke-width="2"/><path d="M10.5 14.5h3V18h-3z"/><path d="M7 19.5h10V22H7z"/></g>
+          <animateMotion dur="26s" repeatCount="indefinite" begin="-6.5s"><mpath href="#orbitTop"/></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.88;1" dur="26s" repeatCount="indefinite" begin="-6.5s"/>
+        </g>
+        <g class="lg-ico">
+          <circle r="38" fill="url(#halo)"/><circle r="25" class="ico-badge"/>
+          <g transform="translate(-11 -11) scale(.92)" class="ico-solid"><circle cx="12" cy="7" r="3.6"/><path d="M5 20c.6-4 3.4-6.2 7-6.2s6.4 2.2 7 6.2z"/><circle cx="4.6" cy="9" r="2.6"/><path d="M0 18.5c.3-2.8 1.8-4.5 4.4-4.7-1 1.3-1.6 2.9-1.9 4.7z"/><circle cx="19.4" cy="9" r="2.6"/><path d="M24 18.5c-.3-2.8-1.8-4.5-4.4-4.7 1 1.3 1.6 2.9 1.9 4.7z"/></g>
+          <animateMotion dur="26s" repeatCount="indefinite" begin="-13s"><mpath href="#orbitTop"/></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.88;1" dur="26s" repeatCount="indefinite" begin="-13s"/>
+        </g>
+        <g class="lg-ico">
+          <circle r="38" fill="url(#halo)"/><circle r="25" class="ico-badge"/>
+          <g transform="translate(-11 -11) scale(.92)" class="ico-solid"><path d="M8 6V4.5A1.5 1.5 0 0 1 9.5 3h5A1.5 1.5 0 0 1 16 4.5V6"/><rect x="1.5" y="6" width="21" height="14.5" rx="2.2"/><path d="M1.5 12.2h21" stroke="#0E1A3A" stroke-width="1.6"/><rect x="10" y="10.6" width="4" height="3.2" rx=".6" fill="#0E1A3A"/></g>
+          <animateMotion dur="26s" repeatCount="indefinite" begin="-19.5s"><mpath href="#orbitTop"/></animateMotion>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.12;.88;1" dur="26s" repeatCount="indefinite" begin="-19.5s"/>
+        </g>
+
+        <!-- Glowing yellow particle travelling the whole orbit -->
+        <g class="lg-spark">
+          <circle r="22" fill="url(#bloom)"/>
+          <path d="M0 -11 L2.2 -2.2 L11 0 L2.2 2.2 L0 11 L-2.2 2.2 L-11 0 L-2.2 -2.2 Z" fill="#FFE29A"/>
+          <circle r="2.6" fill="#fff"/>
+          <animateMotion dur="11s" repeatCount="indefinite"><mpath href="#orbitFull"/></animateMotion>
+        </g>
+      </svg>
+
+      <h1 class="lg-title">
+        <span class="w">Opportunities</span>
+        <span class="w hl">find<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 13 C 40 4, 70 18, 104 9 S 168 4, 196 11"/></svg></span><br>
+        <span class="w">their</span> <span class="w">people.</span>
+      </h1>
+      <p class="lg-lead">Discover <b>hackathons, research roles</b>, internships, mentorships, clubs and volunteering — matched to <em>your</em> skills and interests.</p>
+    </section>
+
+    <!-- Right: translucent navy glass login card -->
+    <div class="lg-card-wrap">
+      <main class="lg-card" id="ticket">
+        <p class="lg-eyebrow">Student &amp; staff login</p>
+        <h2 class="lg-welcome">Welcome back!</h2>
+        <p class="lg-sub">New here? <a class="lg-link" href="/register.html">Grab your ticket</a></p>
+        <div id="formAlert" role="alert"></div>
+
+        <form id="loginForm" class="lg-form" novalidate>
+          <div class="lg-field">
             <label for="email">Email</label>
-            <input class="input" id="email" name="email" type="email" autocomplete="username" required>
+            <div class="lg-input-wrap">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+              <input class="lg-input" id="email" name="email" type="email" autocomplete="username" placeholder="you@student.apu.edu.my" required>
+            </div>
           </div>
-          <div class="field">
+          <div class="lg-field">
             <label for="password">Password</label>
-            <input class="input" id="password" name="password" type="password" autocomplete="current-password" required>
+            <div class="lg-input-wrap">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="solid"><rect x="4.5" y="10.5" width="15" height="11" rx="2.2"/><path d="M8 10.5V7.6a4 4 0 0 1 8 0v2.9" fill="none"/></svg>
+              <input class="lg-input" id="password" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required>
+              <button type="button" class="lg-peek" id="peek" aria-label="Show password" aria-pressed="false">show</button>
+            </div>
           </div>
-          <button class="btn primary block lg" type="submit" style="margin-top:20px">Log in</button>
+          <button class="lg-submit" type="submit"><span class="label">Take off</span> <span class="rocket" aria-hidden="true">🚀</span></button>
         </form>
 
-        <div class="demo-logins">
-          <b class="strong">Demo accounts</b> — click to fill in:
-          <div class="row wrap" style="margin-top:8px;gap:6px">
-            <button type="button" data-e="alex@student.oppora.edu" data-p="student123">🎓 Alex (student)</button>
-            <button type="button" data-e="priya@student.oppora.edu" data-p="student123">🎓 Priya (student)</button>
-            <button type="button" data-e="mei@student.oppora.edu" data-p="student123">🎓 Mei (new profile)</button>
-            <button type="button" data-e="admin@oppora.edu" data-p="admin123">🛡 Super admin</button>
-            <button type="button" data-e="staff@oppora.edu" data-p="staff123">🗂 Staff admin</button>
-            <button type="button" data-e="club@oppora.edu" data-p="club123">🏛 Club rep</button>
+        <div class="lg-demo">
+          <p class="lg-divider"><span>Demo accounts — tap one to fill in the form</span></p>
+          <div class="lg-chips demo-logins">
+            <button type="button" class="sticker lg-chip" data-e="alex@student.oppora.edu" data-p="student123"><svg viewBox="0 0 24 24" class="c-solid"><path d="M1 9l11-5 11 5-11 5z"/><path d="M5.5 11.5v4.7c3.5 2.4 9.5 2.4 13 0v-4.7L12 14.6z"/></svg>Alex - student</button>
+            <button type="button" class="sticker lg-chip" data-e="priya@student.oppora.edu" data-p="student123"><span class="emo">🤖</span>Priya - AI</button>
+            <button type="button" class="sticker lg-chip" data-e="mei@student.oppora.edu" data-p="student123"><span class="emo">🌱</span>Mei - new</button>
+            <button type="button" class="sticker lg-chip" data-e="admin@oppora.edu" data-p="admin123"><svg viewBox="0 0 24 24" class="c-solid"><path d="M12 2 4 5.2v6.3c0 5 3.4 8.8 8 10.5 4.6-1.7 8-5.5 8-10.5V5.2z"/></svg>Super admin</button>
+            <button type="button" class="sticker lg-chip" data-e="staff@oppora.edu" data-p="staff123"><svg viewBox="0 0 24 24" class="c-solid"><path d="M8 6V4.5A1.5 1.5 0 0 1 9.5 3h5A1.5 1.5 0 0 1 16 4.5V6" fill="none" stroke="currentColor" stroke-width="2"/><rect x="2" y="6" width="20" height="14" rx="2.2"/></svg>Staff</button>
+            <button type="button" class="sticker lg-chip" data-e="club@oppora.edu" data-p="club123"><svg viewBox="0 0 24 24" class="c-solid"><circle cx="12" cy="7" r="3.6"/><path d="M5 20c.6-4 3.4-6.2 7-6.2s6.4 2.2 7 6.2z"/><circle cx="4.6" cy="9" r="2.6"/><path d="M0 18.5c.3-2.8 1.8-4.5 4.4-4.7-1 1.3-1.6 2.9-1.9 4.7z"/><circle cx="19.4" cy="9" r="2.6"/><path d="M24 18.5c-.3-2.8-1.8-4.5-4.4-4.7 1 1.3 1.6 2.9 1.9 4.7z"/></svg>Club rep</button>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </div>
+
   <script src="/assets/js/api.js"></script>
   <script src="/assets/js/components.js"></script>
+  <script src="/assets/js/sky.js"></script>
   <script src="/assets/js/auth.js"></script>
-  <script>initLogin();</script>
+  <script>
+    // Gently pulsing stars in the sky (also powers the warp after login)
+    window.__sky = OpporaSky.mount(document.getElementById('sky'), { drones: 0, shapes: [], stars: 170, parallax: false, speed: 0.004 });
+    // Respect reduced-motion: freeze the orbit with the icons spread along it
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const orbit = document.querySelector('.lg-orbit');
+      orbit.setCurrentTime(10); orbit.pauseAnimations();
+    }
+    initLogin();
+  </script>
 </body>
 </html>

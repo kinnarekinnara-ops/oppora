@@ -15,7 +15,8 @@
       <div class="page-head"><div><h1>${me.staff ? 'Approval queue' : 'My submissions'}</h1>
         <p>${me.staff ? 'Opportunities submitted by clubs and organizations. Approving publishes them and runs matching immediately.' : 'Opportunities you submitted for approval, and drafts returned with feedback.'}</p></div></div>
       ${pending.items.length ? `<div class="stack">${pending.items.map((o) => `
-        <div class="card">
+        <div class="card approval-card">
+          ${coverHtml(o, { extraClass: 'approval-cover' })}
           <div class="row between wrap">
             <div><div class="row wrap" style="gap:6px">${categoryBadges(o)} ${statusPill(o.status)}</div>
               <h2 style="margin-top:8px">${esc(o.title)}</h2>

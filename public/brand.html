@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OPPORA brand board</title>
+  <link rel="icon" href="/assets/images/logo.svg">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/student.css">
+  <style>
+    .board { max-width: 1180px; margin: 0 auto; padding: 48px 20px 80px; }
+    .board-hero { padding: 54px 40px; border: 2.5px solid var(--ink); border-radius: var(--r-panel); box-shadow: 8px 8px 0 var(--coral); }
+    .board-hero h1 { font-size: clamp(40px, 6vw, 76px); line-height: .95; }
+    .board-hero h1 em { font-style: normal; color: var(--amber); }
+    .board-hero p { color: #DCE4FF; max-width: 640px; margin-top: 14px; font-size: 17px; }
+    .board h2 { font-size: 34px; margin: 64px 0 6px; letter-spacing: -.03em; }
+    .board .lede { color: var(--muted); max-width: 720px; }
+    .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 18px; margin-top: 22px; }
+    .sw { border: 2px solid var(--ink); border-radius: var(--r-card); overflow: hidden; background: #fff; box-shadow: var(--shadow); transition: transform .35s var(--bounce); }
+    .sw:nth-child(odd) { transform: rotate(-1deg); } .sw:nth-child(even) { transform: rotate(1deg); }
+    .sw:hover { transform: rotate(0) translateY(-5px); }
+    .sw .c { height: 96px; border-bottom: 2px solid var(--ink); }
+    .sw .m { padding: 10px 12px; font-size: 13px; }
+    .sw b { display: block; font-family: var(--font-display); font-size: 16px; color: var(--ink); }
+    .sw code { font-weight: 800; color: var(--ink); }
+    .type-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 20px; margin-top: 22px; }
+    .type-card { background: #fff; border: 2px solid var(--ink); border-radius: var(--r-card); padding: 22px; box-shadow: var(--shadow); }
+    .type-card .big { font-size: 64px; line-height: 1; color: var(--ink); margin: 10px 0; }
+    .logos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 22px; }
+    .logo-card { background: #fff; border: 2px solid var(--ink); border-radius: var(--r-card); overflow: hidden; box-shadow: var(--shadow); }
+    .logo-card.pick { box-shadow: 8px 8px 0 var(--coral); transform: rotate(-.8deg); }
+    .logo-card .stage { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid var(--ink); }
+    .logo-card .stage div { height: 150px; display: grid; place-items: center; }
+    .logo-card .stage div:first-child { background: var(--cream); border-right: 2px solid var(--ink); }
+    .logo-card .stage div:last-child { background: var(--night); }
+    .logo-card .stage img { width: 92px; height: 92px; transition: transform .6s var(--bounce); }
+    .logo-card:hover .stage img { transform: rotate(-14deg) scale(1.08); }
+    .logo-card .txt { padding: 18px 20px 22px; }
+    .logo-card h3 { font-size: 21px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .logo-card p { font-size: 14px; margin-top: 8px; }
+    .lockups { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 22px; }
+    .lockups > div { padding: 22px 28px; border: 2px solid var(--ink); border-radius: var(--r-card); box-shadow: var(--shadow); }
+    .rules { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 22px; }
+    @media (max-width: 860px) { .type-grid, .logos, .rules { grid-template-columns: 1fr; } .board-hero { padding: 34px 22px; } }
+  </style>
+</head>
+<body>
+  <div class="board">
+    <section class="board-hero night-panel">
+      <span class="hand" style="color:var(--amber);font-size:28px">brand board ✦ v2</span>
+      <h1>Campus <em>After Dark.</em></h1>
+      <p>OPPORA feels like launch night on campus: a deep cobalt sky, sodium-amber windows, a coral sunset on the horizon and a few hundred drones drawing shapes overhead. Up close it's warm paper, ink outlines and stickers — handmade, a bit cheeky, never corporate.</p>
+    </section>
+
+    <h2>Palette</h2>
+    <p class="lede">Pulled straight from the APU campus photo at dusk and the crest's red, yellow, blue and green. Coral is the action colour; amber is for highlights; ink draws every outline.</p>
+    <div class="swatches">
+      <div class="sw"><div class="c" style="background:#0E1A3A"></div><div class="m"><b>Night</b><code>#0E1A3A</code><br>campus sky at dusk</div></div>
+      <div class="sw"><div class="c" style="background:#2D5BE3"></div><div class="m"><b>Cobalt</b><code>#2D5BE3</code><br>globe blue · links</div></div>
+      <div class="sw"><div class="c" style="background:#FF5A3C"></div><div class="m"><b>Coral</b><code>#FF5A3C</code><br>sunset · main buttons</div></div>
+      <div class="sw"><div class="c" style="background:#FFB81C"></div><div class="m"><b>Amber</b><code>#FFB81C</code><br>window lights · highlights</div></div>
+      <div class="sw"><div class="c" style="background:#22B573"></div><div class="m"><b>Leaf</b><code>#22B573</code><br>campus trees · success</div></div>
+      <div class="sw"><div class="c" style="background:#12B5CB"></div><div class="m"><b>Lagoon</b><code>#12B5CB</code><br>glass & pool · info</div></div>
+      <div class="sw"><div class="c" style="background:#FFD3C4"></div><div class="m"><b>Blush</b><code>#FFD3C4</code><br>sunset clouds · notes</div></div>
+      <div class="sw"><div class="c" style="background:#FFF7EC"></div><div class="m"><b>Cream</b><code>#FFF7EC</code><br>warm concrete · page</div></div>
+      <div class="sw"><div class="c" style="background:#161A2E"></div><div class="m"><b>Ink</b><code>#161A2E</code><br>text & outlines</div></div>
+    </div>
+
+    <h2>Type</h2>
+    <p class="lede">Three voices: a quirky display face for shouting, a friendly sans for reading, and handwriting for the little asides a real designer scribbles in the margin.</p>
+    <div class="type-grid">
+      <div class="type-card"><span class="badge yellow">Headings</span><div class="big" style="font-family:var(--font-display);font-weight:800;letter-spacing:-.04em">Bricolage Grotesque</div><p class="small">Chunky, slightly wonky letterforms with real personality — fun at 80px, still clean at 18px. Its optical sizes keep big headlines tight.</p></div>
+      <div class="type-card"><span class="badge blue">Body</span><div class="big" style="font-family:var(--font);font-size:48px;font-weight:700">Figtree</div><p class="small">Round, open and very readable on phones. Friendly enough to sit next to Bricolage without fighting it.</p></div>
+      <div class="type-card"><span class="badge red">Accents</span><div class="big" style="font-family:var(--font-hand);font-size:58px;color:var(--coral)">Caveat</div><p class="small">Handwritten notes, arrows and labels — used sparingly so it feels like a human touch, not a theme.</p></div>
+    </div>
+
+    <h2>Logo directions</h2>
+    <p class="lede">Three routes. <b>A is used across the prototype</b>; B and C are ready to swap in. None of them copies the APU crest — A only nods to its orbit, so the two sit happily side by side.</p>
+    <div class="logos">
+      <div class="logo-card pick">
+        <div class="stage"><div><img src="/assets/images/logo-orbit.svg" alt="Orbit O logo on cream"></div><div><img src="/assets/images/logo.svg" alt="Orbit O logo on night"></div></div>
+        <div class="txt"><h3>A · Orbit O <span class="badge yellow">in use</span></h3>
+          <p>The O of OPPORA is a little planet. The coral core is <b>you</b>; the green comet on the amber orbit is an opportunity heading your way. A playful nod to the orbit around the APU globe, and it animates naturally — the drones draw it in the sky.</p></div>
+      </div>
+      <div class="logo-card">
+        <div class="stage"><div><img src="/assets/images/logo-spark.svg" alt="Spark Pin logo on cream"></div><div><img src="/assets/images/logo-spark.svg" alt="Spark Pin logo on night"></div></div>
+        <div class="txt"><h3>B · Spark Pin</h3>
+          <p>A hand-cut map pin with a spark inside: the opportunity lands right where you are. The most "app icon" of the three — bold coral, readable at 16px, great as a favicon and on merch stickers.</p></div>
+      </div>
+      <div class="logo-card">
+        <div class="stage"><div><img src="/assets/images/logo-constellation.svg" alt="Constellation logo on cream"></div><div><img src="/assets/images/logo-constellation.svg" alt="Constellation logo on night"></div></div>
+        <div class="txt"><h3>C · Constellation O</h3>
+          <p>Students as stars joined into an O; the big amber star is you. Mirrors the drone show and the matching idea (connecting people) — the most poetic option, best on dark backgrounds.</p></div>
+      </div>
+    </div>
+    <div class="lockups">
+      <div style="background:var(--cream)"><span class="lockup"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8.4 46.7 A 28 9 -28 0 1 52.6 18.6" fill="none" stroke="#FFB81C" stroke-width="3.6" stroke-linecap="round"/><circle cx="30" cy="34" r="16" fill="none" stroke="currentColor" stroke-width="7.4"/><circle cx="30" cy="34" r="5.8" fill="#FF5A3C"/><circle cx="51.8" cy="19" r="5.2" fill="#22B573" stroke="currentColor" stroke-width="1.6"/></svg><span><span class="word">oppor<i>a</i></span><span class="tag">opportunities find their people</span></span></span></div>
+      <div style="background:var(--night)"><span class="lockup" style="color:var(--cream)"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8.4 46.7 A 28 9 -28 0 1 52.6 18.6" fill="none" stroke="#FFB81C" stroke-width="3.6" stroke-linecap="round"/><circle cx="30" cy="34" r="16" fill="none" stroke="currentColor" stroke-width="7.4"/><circle cx="30" cy="34" r="5.8" fill="#FF5A3C"/><circle cx="51.8" cy="19" r="5.2" fill="#22B573" stroke="currentColor" stroke-width="1.6"/></svg><span><span class="word">oppor<i>a</i></span><span class="tag" style="color:var(--amber)">opportunities find their people</span></span></span></div>
+    </div>
+
+    <h2>House rules</h2>
+    <div class="rules">
+      <div class="card"><h3>✓ Do</h3><ul class="list-check" style="margin-top:12px"><li>Ink outlines + hard offset shadows (stickers, not glows)</li><li>Tilt things a degree or two — nothing perfectly square</li><li>Halftone dots instead of gradients on colour blocks</li><li>Bouncy hover, satisfying press-down on click</li><li>One handwritten note per screen, max</li></ul></div>
+      <div class="card"><h3>✕ Don't</h3><ul class="list-check bad" style="margin-top:12px"><li>Purple-to-blue gradients or soft glassy cards</li><li>Plain centred boxes on a white page</li><li>Animations that block typing or clicking</li><li>Motion for people who asked for reduced motion</li><li>Copying the APU crest — keep it as a partner mark</li></ul></div>
+    </div>
+  </div>
+</body>
+</html>

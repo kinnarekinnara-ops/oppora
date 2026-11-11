@@ -1,68 +1,102 @@
 /* =============================================================
-   tokens.css — OPPORA design tokens (from the UI/UX spec)
-   Blue = trust & navigation · Green = growth & success
-   Yellow = opportunities & highlights · White = clean surfaces
+   tokens.css — OPPORA "Campus After Dark" design tokens
+   Palette pulled from the APU campus at dusk: cobalt night sky,
+   sodium-amber building lights, coral sunset, leafy trees,
+   lagoon-teal glass, warm cream concrete.
    ============================================================= */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap');
 
 :root {
-  /* Brand */
-  --navy: #071D49;
-  --blue: #0754B8;
-  --blue-bright: #1677E8;
-  --green: #10B956;
-  --green-dark: #08783B;
-  --yellow: #FFD52A;
-  --amber: #F2AD00;
-  --teal: #0F8F8A;
-  --red: #DC2626;
+  /* ---- Core palette ---- */
+  --night: #0E1A3A;        /* campus night sky */
+  --night-2: #16285A;      /* twilight band */
+  --cobalt: #2D5BE3;       /* globe blue */
+  --coral: #FF5A3C;        /* sunset + crest red — primary action */
+  --amber: #FFB81C;        /* building lights + orbit yellow */
+  --leaf: #22B573;         /* campus greenery */
+  --lagoon: #12B5CB;       /* glass + pool teal */
+  --blush: #FFD3C4;        /* sunset clouds */
+  --cream: #FFF7EC;        /* warm concrete — page background */
+  --ink: #161A2E;          /* text + chunky outlines */
+
+  /* ---- Legacy names (used across the app) mapped to the new palette ---- */
+  --navy: var(--ink);
+  --blue: var(--cobalt);
+  --blue-bright: var(--lagoon);
+  --green: var(--leaf);
+  --green-dark: #128352;
+  --yellow: var(--amber);
+  --teal: var(--lagoon);
+  --red: #E0402A;
 
   /* Surfaces */
   --white: #FFFFFF;
-  --bg: #F6F9FD;
-  --border: #E2EAF3;
-  --border-strong: #CBD5E1;
-  --tint-blue: #E8F2FF;
-  --tint-green: #E8F8EE;
-  --tint-green-2: #F0FBF5;
-  --tint-yellow: #FFF5D6;
-  --tint-red: #FDECEC;
+  --bg: var(--cream);
+  --border: #E7DECF;
+  --border-soft: #EFE8DC;
+  --border-strong: #C9BBA2;
+  --tint-blue: #E7EDFF;
+  --tint-green: #DDF5E8;
+  --tint-green-2: #EEFAF3;
+  --tint-yellow: #FFF0C7;
+  --tint-red: #FFE3DB;
+  --tint-coral: #FFE3DB;
 
   /* Text */
-  --text: #334767;
-  --text-strong: var(--navy);
-  --muted: #64748B;
+  --text: #2A2F45;
+  --text-strong: var(--ink);
+  --muted: #6B6F82;
 
   /* Match tones */
-  --tone-strong: var(--green);
-  --tone-good: var(--blue-bright);
-  --tone-potential: var(--amber);
-  --tone-low: #94A3B8;
+  --tone-strong: var(--leaf);
+  --tone-good: var(--cobalt);
+  --tone-potential: #F29A00;
+  --tone-low: #9A9CAB;
 
-  /* Type */
-  --font: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --fs-xs: 11px;
+  /* ---- Type ---- */
+  --font-display: 'Bricolage Grotesque', 'Figtree', system-ui, sans-serif;
+  --font: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-hand: 'Caveat', 'Comic Sans MS', cursive;
+  --fs-xs: 12px;
   --fs-sm: 13px;
   --fs-base: 15px;
   --fs-md: 17px;
   --fs-lg: 22px;
-  --fs-xl: 28px;
-  --fs-hero: 48px;
+  --fs-xl: 32px;
+  --fs-hero: clamp(40px, 6.2vw, 84px);
 
-  /* Shape & depth */
-  --r-sm: 8px;
-  --r: 12px;
-  --r-card: 16px;
-  --r-panel: 20px;
+  /* ---- Shape: slightly irregular radii feel hand-cut ---- */
+  --r-sm: 10px;
+  --r: 14px;
+  --r-card: 18px;
+  --r-panel: 24px;
   --r-pill: 999px;
-  --shadow-sm: 0 2px 8px rgba(7, 29, 73, 0.06);
-  --shadow: 0 4px 16px rgba(7, 29, 73, 0.08);
-  --shadow-lg: 0 12px 30px rgba(7, 29, 73, 0.12);
+  --line: 2px solid var(--ink);
+
+  /* ---- Depth: hard offset "sticker" shadows, not blurry glows ---- */
+  --shadow-sm: 0 1px 2px rgba(22, 26, 46, .08);
+  --shadow: 0 1px 2px rgba(22, 26, 46, .05), 0 8px 24px rgba(22, 26, 46, .07);
+  --shadow-lg: 0 2px 6px rgba(22, 26, 46, .06), 0 18px 44px rgba(22, 26, 46, .13);
+  --ring: 0 0 0 4px rgba(45, 91, 227, .16);
+  --shadow-soft: 0 10px 30px rgba(22, 26, 46, 0.12);
 
   /* Spacing */
   --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 20px; --s6: 24px; --s8: 32px; --s10: 40px; --s12: 48px;
 
-  --header-h: 72px;
+  --header-h: 74px;
   --max-w: 1320px;
-  --brand-gradient: linear-gradient(90deg, var(--blue), var(--green), var(--yellow));
+
+  /* Striped (not gradient) brand band: coral · amber · leaf · lagoon */
+  --brand-gradient: linear-gradient(90deg, var(--coral) 0 25%, var(--amber) 25% 50%, var(--leaf) 50% 75%, var(--lagoon) 75%);
+
+  /* Motion */
+  --bounce: cubic-bezier(.34, 1.56, .64, 1);
+  --swift: cubic-bezier(.2, .9, .25, 1);
+
+  /* Textures */
+  --halftone: radial-gradient(rgba(255, 255, 255, .22) 1.3px, transparent 1.6px) 0 0 / 11px 11px;
+  --halftone-ink: radial-gradient(rgba(22, 26, 46, .10) 1.2px, transparent 1.5px) 0 0 / 12px 12px;
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  /* Hand-drawn squiggle used as underline */
+  --squiggle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 C 18 2, 30 12, 46 6 S 76 2, 90 7 S 112 9, 118 4' fill='none' stroke='%23FF5A3C' stroke-width='3.2' stroke-linecap='round'/%3E%3C/svg%3E");
 }

@@ -42,7 +42,26 @@
           </section>
 
           <section class="form-section">
-            <h2><span class="num">2</span>Category & organizer</h2>
+            <h2><span class="num">2</span>Cover image</h2>
+            <p class="sub">Shown on student cards and the event page. JPG, PNG or WEBP, up to 3 MB — a landscape (16:9) image works best.</p>
+            <div class="uploader" id="uploader" data-field="imageUrl">
+              <div class="uploader__preview" id="upPreview"></div>
+              <div class="uploader__body">
+                <p class="uploader__title" id="upTitle"></p>
+                <p class="small muted" id="upStatus"></p>
+                <div class="row wrap" style="margin-top:12px">
+                  <button type="button" class="btn primary sm" id="upPick">${icon('plus', 16)} <span id="upPickLabel">Upload image</span></button>
+                  <button type="button" class="btn danger sm" id="upRemove">Remove</button>
+                </div>
+                <p class="xs muted" style="margin-top:10px">…or drag & drop an image onto this box.</p>
+                <p class="up-error" id="upError" role="alert"></p>
+                <input type="file" id="upFile" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" hidden>
+              </div>
+            </div>
+          </section>
+
+          <section class="form-section">
+            <h2><span class="num">3</span>Category & organizer</h2>
             <p class="sub">An opportunity can belong to more than one category.</p>
             <div class="field" data-field="categories"><span class="label">Categories *</span>
               <div class="toggle-group" id="catGroup">${meta.categories.map((c) => `<label><input type="checkbox" name="categories" value="${c.id}" ${v('categories', []).includes(c.id) ? 'checked' : ''}><span>${c.icon} ${esc(c.name)}</span></label>`).join('')}</div></div>
@@ -56,8 +75,8 @@
           </section>
 
           <section class="form-section">
-            <h2><span class="num">3</span>Skills & knowledge</h2>
-            <p class="sub">Used for matching. Missing skills never disqualify students — only mandatory requirements (step 5) do.</p>
+            <h2><span class="num">4</span>Skills & knowledge</h2>
+            <p class="sub">Used for matching. Missing skills never disqualify students — only mandatory requirements (step 6) do.</p>
             <div class="field"><span class="label">Required / core skills</span><div id="reqSkills"></div></div>
             <div class="field" style="margin-top:14px"><span class="label">Preferred (nice-to-have) skills</span><div id="prefSkills"></div></div>
             <div class="form-grid" style="margin-top:14px">
@@ -67,7 +86,7 @@
           </section>
 
           <section class="form-section">
-            <h2><span class="num">4</span>Dates & registration</h2>
+            <h2><span class="num">5</span>Dates & registration</h2>
             <p class="sub">Opportunities close automatically after the registration deadline.</p>
             <div class="form-grid">
               <div class="field"><label for="eventDate">Event / start date *</label><input class="input" type="date" id="eventDate" name="eventDate" value="${esc(v('eventDate'))}"></div>
@@ -82,7 +101,7 @@
           </section>
 
           <section class="form-section">
-            <h2><span class="num">5</span>Audience & eligibility</h2>
+            <h2><span class="num">6</span>Audience & eligibility</h2>
             <p class="sub">Target programmes guide recommendations. Only rules you mark as <b>mandatory</b> can exclude a student.</p>
             <label class="check"><input type="checkbox" name="openToAll" id="openToAll" ${v('openToAll', false) ? 'checked' : ''}> <span><b class="strong">Open to all students</b><br><span class="small muted">No programme targeting.</span></span></label>
             <div id="targetBox" style="margin-top:14px">
@@ -100,7 +119,7 @@
           </section>
 
           <section class="form-section">
-            <h2><span class="num">6</span>Supporting documents <span class="muted small">(optional)</span></h2>
+            <h2><span class="num">7</span>Supporting documents <span class="muted small">(optional)</span></h2>
             <p class="sub">Links to posters, rulebooks or briefs.</p>
             <div id="docRows"></div>
             <button type="button" class="btn outline sm" id="addDoc" style="margin-top:10px">+ Add document link</button>
@@ -175,6 +194,66 @@
     $('#aiBtn').focus();
   };
 
+  // ================= Cover image upload =================
+  const UP_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
+  const UP_MAX = 3 * 1024 * 1024;
+  let imageUrl = v('imageUrl', '');
+  let localPreview = null; // shown instantly while the upload runs
+  let uploading = false;
+
+  function previewOpp() {
+    const cats = $$('[name=categories]:checked', form).map((c) => c.value);
+    return {
+      imageUrl: localPreview || imageUrl,
+      categories: cats.length ? cats : ['general'],
+      categoryNames: cats.map((c) => (meta.categories.find((x) => x.id === c) || {}).name),
+    };
+  }
+  function drawUploader(status) {
+    $('#upPreview').innerHTML = coverHtml(previewOpp());
+    const has = !!(localPreview || imageUrl);
+    $('#upTitle').textContent = uploading ? 'Uploading…' : has ? 'Cover image ready' : 'No image yet';
+    $('#upStatus').textContent = status || (has
+      ? 'This image will appear on student cards and the event page.'
+      : 'Students will see the default placeholder for this category (shown on the left).');
+    $('#upPickLabel').textContent = has ? 'Replace image' : 'Upload image';
+    $('#upRemove').hidden = !has || uploading;
+    $('#upPick').disabled = uploading;
+    $('#uploader').classList.toggle('has-image', has);
+  }
+  function upError(msg) {
+    $('#upError').textContent = msg || '';
+    $('#uploader').classList.toggle('invalid', !!msg);
+  }
+  function readAsDataUrl(file) {
+    return new Promise((resolve, reject) => { const r = new FileReader(); r.onload = () => resolve(r.result); r.onerror = () => reject(new Error('Could not read that file.')); r.readAsDataURL(file); });
+  }
+  async function handleFile(file) {
+    upError('');
+    if (!file) return;
+    const ext = (file.name.split('.').pop() || '').toLowerCase();
+    if (!UP_TYPES.includes(file.type) && !['jpg', 'jpeg', 'png', 'webp'].includes(ext)) { upError('Please choose a JPG, PNG or WEBP image.'); return; }
+    if (file.size > UP_MAX) { upError(`That image is ${(file.size / 1048576).toFixed(1)} MB. Please use one under 3 MB.`); return; }
+    try {
+      const dataUrl = await readAsDataUrl(file);
+      localPreview = dataUrl; uploading = true; drawUploader();
+      const res = await api('/api/admin/uploads', { method: 'POST', body: { dataUrl, filename: file.name } });
+      imageUrl = res.url; localPreview = null; uploading = false;
+      drawUploader(`Uploaded ${file.name} (${Math.round(res.size / 1024)} KB). It's saved with the opportunity when you save or publish.`);
+    } catch (err) {
+      localPreview = null; uploading = false; drawUploader(); upError(err.message);
+    }
+  }
+  $('#upPick').onclick = () => $('#upFile').click();
+  $('#upFile').onchange = (e) => { handleFile(e.target.files[0]); e.target.value = ''; };
+  $('#upRemove').onclick = () => { imageUrl = ''; localPreview = null; upError(''); drawUploader('Image removed — the default placeholder will be shown. Save to apply.'); };
+  const up = $('#uploader');
+  ['dragenter', 'dragover'].forEach((ev) => up.addEventListener(ev, (e) => { e.preventDefault(); up.classList.add('drag'); }));
+  ['dragleave', 'drop'].forEach((ev) => up.addEventListener(ev, (e) => { e.preventDefault(); up.classList.remove('drag'); }));
+  up.addEventListener('drop', (e) => handleFile(e.dataTransfer.files[0]));
+  $('#catGroup').addEventListener('change', () => drawUploader());
+  drawUploader();
+
   // ================= AI suggestions =================
   let aiState = null; // { source, suggestions }
   $('#aiBtn').onclick = async () => {
@@ -211,7 +290,7 @@
       <div class="ai-suggestion"><div class="k">Experience level</div>${chipList([s.experienceLevel], null, 'level')}</div>
       <div class="ai-suggestion"><div class="k">Academic fields</div>${chipList(s.academicFields, fields, 'field')}</div>
       <div class="ai-suggestion"><div class="k">Knowledge areas</div>${chipList(s.knowledgeAreas, areas, 'area')}</div>
-      ${s.audienceHint ? `<div class="ai-suggestion"><div class="k">Audience hint</div><p class="small">${esc(s.audienceHint)}</p><p class="xs muted" style="margin-top:4px">Set eligibility yourself in step 5 — AI never decides eligibility.</p></div>` : ''}
+      ${s.audienceHint ? `<div class="ai-suggestion"><div class="k">Audience hint</div><p class="small">${esc(s.audienceHint)}</p><p class="xs muted" style="margin-top:4px">Set eligibility yourself in step 6 — AI never decides eligibility.</p></div>` : ''}
       <p class="xs muted" style="margin-top:12px">AI suggestions may be wrong. Review everything before publishing.</p>`;
 
     $('#acceptAll').onclick = () => {
@@ -256,6 +335,7 @@
         const [type, value, minLevel] = [...r.querySelectorAll('select, input')].map((x) => x.value);
         return { type, value, minLevel: type === 'skill' ? minLevel : '' };
       }).filter((r) => r.value.trim()),
+      imageUrl,
       attachments: $$('#docRows .row').map((r) => { const [label, url] = $$('input', r).map((i) => i.value.trim()); return { label, url }; }).filter((a) => a.url),
       aiAssisted: !!aiState || v('aiAssisted', false),
       aiSource: aiState ? aiState.source : v('aiSource', null),
@@ -263,6 +343,7 @@
   }
 
   async function save(action) {
+    if (uploading) throw new Error('Please wait for the image to finish uploading.');
     const body = { ...collect(), action };
     $('#formAlert').innerHTML = '';
     showFieldErrors(form, null);

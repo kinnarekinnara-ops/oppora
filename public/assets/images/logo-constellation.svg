@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OPPORA constellation mark">
+  <!-- Direction C · "Constellation O": students as stars joined into an O; the big amber star is you. Mirrors the drone show -->
+  <circle cx="32" cy="32" r="31" fill="#0E1A3A"/>
+  <path d="M32 9 L49 15.5 L55 33 L46 50.5 L27 55 L11.5 42 L13 20.5 Z" fill="none" stroke="#12B5CB" stroke-width="1.7" stroke-linejoin="round" opacity=".9"/>
+  <path d="M13 20.5 L32 32 L46 50.5" fill="none" stroke="#12B5CB" stroke-width="1.1" stroke-dasharray="2 3" opacity=".7"/>
+  <g fill="#FFF7EC"><circle cx="32" cy="9" r="2.6"/><circle cx="49" cy="15.5" r="2.2"/><circle cx="55" cy="33" r="2.6"/><circle cx="27" cy="55" r="2.2"/><circle cx="11.5" cy="42" r="2.6"/><circle cx="13" cy="20.5" r="2.2"/></g>
+  <circle cx="32" cy="32" r="2" fill="#22B573"/>
+  <circle cx="46" cy="50.5" r="9" fill="#FFB81C" opacity=".25"/>
+  <circle cx="46" cy="50.5" r="5" fill="#FFB81C"/>
+  <circle cx="44.6" cy="49" r="1.4" fill="#FFF7EC"/>
+</svg>
