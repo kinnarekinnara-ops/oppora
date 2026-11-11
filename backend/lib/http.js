@@ -84,13 +84,15 @@ function parseCookies(header = '') {
 function readBody(req, limit = 1024 * 1024) {
   return new Promise((resolve, reject) => {
     let size = 0;
+    let tooBig = false;
     const chunks = [];
     req.on('data', (c) => {
       size += c.length;
-      if (size > limit) { reject(new HttpError(413, 'Request is too large.')); req.destroy(); return; }
+      if (size > limit) { tooBig = true; chunks.length = 0; return; } // keep draining so we can still reply
       chunks.push(c);
     });
     req.on('end', () => {
+      if (tooBig) return reject(new HttpError(413, 'That file is too large. Images must be 3 MB or smaller.'));
       const raw = Buffer.concat(chunks).toString('utf8');
       if (!raw) return resolve({});
       try { resolve(JSON.parse(raw)); } catch { reject(new HttpError(400, 'Invalid JSON body.')); }

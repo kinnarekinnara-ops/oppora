@@ -15,6 +15,7 @@ const { presentOpp, profileCompletion } = require('../services/present');
 const { normalize, normalizeList } = require('../services/skillNormalizer');
 const { daysUntil, isPast } = require('../lib/dates');
 const C = require('../config/constants');
+const { isValidUpload, removeIfUnused } = require('./uploadRoutes');
 
 const isStaff = (u) => u.role === C.ROLES.SUPER_ADMIN || u.role === C.ROLES.OPP_ADMIN;
 
@@ -82,6 +83,7 @@ function cleanOpportunity(body, user) {
       .filter((a) => a && URL_RE.test(a.url || ''))
       .map((a) => ({ label: String(a.label || 'Document').slice(0, 80), url: a.url }))
       .slice(0, 5),
+    imageUrl: isValidUpload(body.imageUrl) ? body.imageUrl : '',
     aiAssisted: !!body.aiAssisted,
     aiSource: body.aiSource || null,
   };
@@ -158,7 +160,28 @@ function register(router) {
     const logs = db.read('activity_logs').filter((l) => isStaff(req.user) || (l.targetId && ids.has(l.targetId)) || l.actorId === req.user.id);
     const p = (list) => list.map((o) => ({ ...presentOpp(o), stats: oppStats(o) }));
 
+    // Real growth for the KPI cards: a 6-week cumulative sparkline + how many were added in the last 30 days
+    const now = Date.now();
+    const trend = (dates) => {
+      const t = dates.filter(Boolean).map((d) => new Date(d).getTime()).filter((n) => !Number.isNaN(n));
+      const series = [];
+      for (let w = 5; w >= 0; w--) { const end = now - w * 7 * 864e5; series.push(t.filter((n) => n <= end).length); }
+      return { series, last30: t.filter((n) => n > now - 30 * 864e5).length };
+    };
+    const oppPublished = new Map(opps.map((o) => [o.id, o.publishedAt]));
+    const notifs = db.read('notifications').filter((n) => ids.has(n.opportunityId));
+    const activeOpps = published.filter((o) => (daysUntil(o.deadline) ?? -1) >= 0);
+    const pendingOpps = opps.filter((o) => o.status === 'pending_approval');
+    const trends = {
+      students: trend(db.read('students').map((x) => x.createdAt)),
+      active: trend(activeOpps.map((o) => o.publishedAt)),
+      matches: trend(matches.filter(engine.isRecommendable).map((m) => oppPublished.get(m.opportunityId) || m.computedAt)),
+      notifications: trend(notifs.map((n) => n.createdAt)),
+      pending: trend(pendingOpps.map((o) => o.updatedAt || o.createdAt)),
+    };
+
     return {
+      trends,
       stats: {
         students: db.read('students').length,
         published: published.length,
@@ -231,6 +254,7 @@ function register(router) {
     if (Object.keys(errors).length) throw new HttpError(400, 'Please fix the highlighted fields.', { fields: errors });
 
     const after = db.update('opportunities', before.id, { ...data, updatedAt: new Date().toISOString() });
+    if (before.imageUrl && before.imageUrl !== after.imageUrl) removeIfUnused(before.imageUrl); // replaced or removed
     log(req.user, 'opportunity.updated', { type: 'opportunity', id: after.id, name: after.title });
 
     if (before.status === 'published') {
@@ -290,6 +314,7 @@ function register(router) {
     const opp = getManageable(req);
     if (opp.status === 'draft' && !opp.publishedAt) {
       db.remove('opportunities', (o) => o.id === opp.id);
+      if (opp.imageUrl) removeIfUnused(opp.imageUrl);
       log(req.user, 'opportunity.deleted', { type: 'opportunity', id: opp.id, name: opp.title });
       return { message: 'Draft deleted.' };
     }

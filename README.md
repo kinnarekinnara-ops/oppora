@@ -33,6 +33,30 @@ If Gemini fails during the demo, OPPORA automatically falls back to the keyword 
 
 ---
 
+## 🎨 Design: "Campus After Dark"
+
+Open **http://localhost:3000/brand.html** for the brand board (palette, fonts, the three logo directions, house rules).
+
+- **Palette** (from the APU campus at dusk): Night `#0E1A3A` · Cobalt `#2D5BE3` · Coral `#FF5A3C` · Amber `#FFB81C` · Leaf `#22B573` · Lagoon `#12B5CB` · Blush `#FFD3C4` · Cream `#FFF7EC` · Ink `#161A2E`
+- **Fonts** (Google Fonts): Bricolage Grotesque (headings), Figtree (body), Caveat (handwritten notes)
+- **Drone show + starfield**: `public/assets/js/sky.js`. It's one canvas with no libraries, it pauses when it's off-screen, and it respects reduced-motion settings
+- **Login → dashboard warp**: `public/assets/js/transition.js` + the arrival CSS at the bottom of `main.css`
+- To change what the drones draw, edit the `shapes` list where `OpporaSky.mount(...)` is called. It accepts `'logo'`, `'star'`, `'heart'`, `'rocket'`, or any text like `'text:GDG 2026'`
+
+### Images and backgrounds (v3)
+- **Login and registration** use the APU building photo (`public/assets/images/backgrounds/apu-campus.*`). The 3D effect is a blurred depth layer behind the photo, a light sweep in front, and a pointer tilt (`public/assets/js/campus.js`).
+- **Portal backgrounds** use the network artwork on a separate fixed layer (`.portal-bg` in `main.css`, mounted by `navbar.js`):
+  - Students: original colours, drift, glow and pointer parallax.
+  - Admins: muted slate with a slower drift.
+  - Only this background layer is transparent; page content keeps full opacity.
+- **Cover images:** admins upload them in the Create/Edit Opportunity form (JPG, PNG or WEBP, up to 3 MB).
+  - They're saved to `data/uploads/`, recorded in `data/uploads.json`, and served at `/uploads/<file>`.
+  - The server checks the real file type from the file's contents, not its name.
+  - Replacing or removing an image deletes the old file.
+  - Opportunities without an image show a placeholder based on their category.
+
+---
+
 ## 🔑 Demo accounts
 
 | Role | Email | Password | Shows |

@@ -18,7 +18,7 @@ function daysAgoIso(n, hour = 10) {
 function seed() {
   db.clearCache();
   require('../backend/services/skillNormalizer').reload();
-  for (const name of ['users', 'students', 'opportunities', 'organizations', 'matches', 'saved', 'notifications', 'activity_logs', 'sessions']) {
+  for (const name of ['users', 'students', 'opportunities', 'organizations', 'matches', 'saved', 'notifications', 'activity_logs', 'sessions', 'uploads']) {
     db.write(name, []);
   }
 
@@ -250,6 +250,22 @@ function seed() {
       o.clickedBy = ids.filter((_, j) => (i + j) % 4 === 0);
     }
   });
+  // Demo cover images: copy into data/uploads as if an admin had uploaded them
+  const fs = require('fs');
+  const path = require('path');
+  const upDir = path.join(db.DATA_DIR, 'uploads');
+  fs.mkdirSync(upDir, { recursive: true });
+  for (const f of fs.readdirSync(upDir)) fs.unlinkSync(path.join(upDir, f));
+  const uploads = [];
+  for (const o of opportunities) {
+    const src = path.join(__dirname, 'seed-images', `${o.id}.jpg`);
+    if (!fs.existsSync(src)) { o.imageUrl = ''; continue; }
+    const file = `img_seed_${o.id.replace('opp_', '')}.jpg`;
+    fs.copyFileSync(src, path.join(upDir, file));
+    o.imageUrl = `/uploads/${file}`;
+    uploads.push({ id: file.replace('.jpg', ''), file, url: o.imageUrl, type: 'image/jpeg', size: fs.statSync(src).size, originalName: `${o.id}.jpg`, uploadedBy: o.createdBy, createdAt: o.createdAt });
+  }
+  db.write('uploads', uploads);
   db.write('opportunities', opportunities);
 
   // ---------------- Run the real matching engine ----------------

@@ -52,16 +52,17 @@
       "Troubleshooting"
     ],
     "experienceLevel": "Beginner",
-    "eventDate": "2026-11-21",
-    "deadline": "2026-11-14",
+    "eventDate": "2026-11-22",
+    "deadline": "2026-11-15",
     "location": "Lab 4-02, Block B",
     "registrationLink": "https://forms.example.com/linux-challenge",
     "status": "published",
-    "publishedAt": "2026-11-04T02:00:00.000Z",
+    "publishedAt": "2026-11-05T02:00:00.000Z",
     "createdBy": "usr_club",
     "organizer": "Cybersecurity & Linux Club",
-    "createdAt": "2026-11-04T02:00:00.000Z",
-    "updatedAt": "2026-11-04T02:00:00.000Z",
+    "createdAt": "2026-11-05T02:00:00.000Z",
+    "updatedAt": "2026-11-05T02:00:00.000Z",
+    "imageUrl": "",
     "lastMatchStats": {
       "evaluated": 8,
       "eligible": 8,
@@ -70,7 +71,7 @@
       "strong": 1,
       "crossDisciplinary": 2,
       "notified": 2,
-      "at": "2026-11-04T02:00:00.000Z"
+      "at": "2026-11-05T02:00:00.000Z"
     }
   },
   {
@@ -122,7 +123,7 @@
     "applicationInstructions": "",
     "aiAssisted": false,
     "aiSource": null,
-    "eventEndDate": "2026-11-28",
+    "eventEndDate": "2026-11-29",
     "id": "opp_ai",
     "title": "AI Innovation Challenge",
     "organizationId": "org_ai",
@@ -136,16 +137,17 @@
       "Data Analysis"
     ],
     "experienceLevel": "Intermediate",
-    "eventDate": "2026-11-26",
-    "deadline": "2026-11-17",
+    "eventDate": "2026-11-27",
+    "deadline": "2026-11-18",
     "location": "Innovation Hub",
     "registrationLink": "https://forms.example.com/ai-challenge",
     "status": "published",
-    "publishedAt": "2026-11-02T02:00:00.000Z",
+    "publishedAt": "2026-11-03T02:00:00.000Z",
     "createdBy": "usr_staff",
     "organizer": "AI & Data Society",
-    "createdAt": "2026-11-02T02:00:00.000Z",
-    "updatedAt": "2026-11-02T02:00:00.000Z",
+    "createdAt": "2026-11-03T02:00:00.000Z",
+    "updatedAt": "2026-11-03T02:00:00.000Z",
+    "imageUrl": "",
     "lastMatchStats": {
       "evaluated": 8,
       "eligible": 3,
@@ -154,7 +156,7 @@
       "strong": 1,
       "crossDisciplinary": 0,
       "notified": 1,
-      "at": "2026-11-02T02:00:00.000Z"
+      "at": "2026-11-03T02:00:00.000Z"
     }
   },
   {
@@ -215,16 +217,17 @@
       "Data Analysis"
     ],
     "experienceLevel": "Intermediate",
-    "eventDate": "2026-12-10",
-    "deadline": "2026-11-25",
+    "eventDate": "2026-12-11",
+    "deadline": "2026-11-26",
     "location": "IoT Lab, Engineering Block",
     "registrationLink": "https://forms.example.com/ra-iot",
     "status": "published",
-    "publishedAt": "2026-10-31T02:00:00.000Z",
+    "publishedAt": "2026-11-01T02:00:00.000Z",
     "createdBy": "usr_staff",
     "organizer": "Faculty of Computing",
-    "createdAt": "2026-10-31T02:00:00.000Z",
-    "updatedAt": "2026-10-31T02:00:00.000Z",
+    "createdAt": "2026-11-01T02:00:00.000Z",
+    "updatedAt": "2026-11-01T02:00:00.000Z",
+    "imageUrl": "/uploads/img_seed_ra.jpg",
     "lastMatchStats": {
       "evaluated": 8,
       "eligible": 2,
@@ -233,7 +236,7 @@
       "strong": 0,
       "crossDisciplinary": 0,
       "notified": 1,
-      "at": "2026-10-31T02:00:00.000Z"
+      "at": "2026-11-01T02:00:00.000Z"
     }
   },
   {
@@ -276,16 +279,17 @@
       "Communication"
     ],
     "experienceLevel": "Any",
-    "eventDate": "2026-11-19",
-    "deadline": "2026-11-09",
+    "eventDate": "2026-11-20",
+    "deadline": "2026-11-10",
     "location": "Online + Career Centre",
     "registrationLink": "https://forms.example.com/mentorship",
     "status": "published",
-    "publishedAt": "2026-10-30T02:00:00.000Z",
+    "publishedAt": "2026-10-31T02:00:00.000Z",
     "createdBy": "usr_staff",
     "organizer": "Career Development Centre",
-    "createdAt": "2026-10-30T02:00:00.000Z",
-    "updatedAt": "2026-10-30T02:00:00.000Z",
+    "createdAt": "2026-10-31T02:00:00.000Z",
+    "updatedAt": "2026-10-31T02:00:00.000Z",
+    "imageUrl": "/uploads/img_seed_mentor.jpg",
     "lastMatchStats": {
       "evaluated": 8,
       "eligible": 8,
@@ -294,7 +298,7 @@
       "strong": 0,
       "crossDisciplinary": 0,
       "notified": 2,
-      "at": "2026-10-30T02:00:00.000Z"
+      "at": "2026-10-31T02:00:00.000Z"
     }
   },
   {
@@ -342,16 +346,17 @@
       "Teamwork"
     ],
     "experienceLevel": "Any",
-    "eventDate": "2026-11-23",
-    "deadline": "2026-11-16",
+    "eventDate": "2026-11-24",
+    "deadline": "2026-11-17",
     "location": "Student Centre",
     "registrationLink": "https://forms.example.com/council",
     "status": "published",
-    "publishedAt": "2026-11-03T02:00:00.000Z",
+    "publishedAt": "2026-11-04T02:00:00.000Z",
     "createdBy": "usr_staff",
     "organizer": "Student Affairs Office",
-    "createdAt": "2026-11-03T02:00:00.000Z",
-    "updatedAt": "2026-11-03T02:00:00.000Z",
+    "createdAt": "2026-11-04T02:00:00.000Z",
+    "updatedAt": "2026-11-04T02:00:00.000Z",
+    "imageUrl": "/uploads/img_seed_council.jpg",
     "lastMatchStats": {
       "evaluated": 8,
       "eligible": 8,
@@ -360,7 +365,7 @@
       "strong": 1,
       "crossDisciplinary": 0,
       "notified": 2,
-      "at": "2026-11-03T02:00:00.000Z"
+      "at": "2026-11-04T02:00:00.000Z"
     }
   },
   {
@@ -402,16 +407,17 @@
       "Teamwork"
     ],
     "experienceLevel": "Beginner",
-    "eventDate": "2026-11-11",
-    "deadline": "2026-11-08",
+    "eventDate": "2026-11-12",
+    "deadline": "2026-11-09",
     "location": "Main Campus Lawn",
     "registrationLink": "https://forms.example.com/green-day",
     "status": "published",
-    "publishedAt": "2026-11-01T02:00:00.000Z",
+    "publishedAt": "2026-11-02T02:00:00.000Z",
     "createdBy": "usr_staff",
     "organizer": "Green Campus Volunteers",
-    "createdAt": "2026-11-01T02:00:00.000Z",
-    "updatedAt": "2026-11-01T02:00:00.000Z",
+    "createdAt": "2026-11-02T02:00:00.000Z",
+    "updatedAt": "2026-11-02T02:00:00.000Z",
+    "imageUrl": "/uploads/img_seed_green.jpg",
     "lastMatchStats": {
       "evaluated": 8,
       "eligible": 8,
@@ -420,7 +426,7 @@
       "strong": 0,
       "crossDisciplinary": 0,
       "notified": 1,
-      "at": "2026-11-01T02:00:00.000Z"
+      "at": "2026-11-02T02:00:00.000Z"
     }
   },
   {
@@ -465,16 +471,17 @@
       "Cloud Computing"
     ],
     "experienceLevel": "Any",
-    "eventDate": "2026-11-13",
-    "deadline": "2026-11-12",
+    "eventDate": "2026-11-14",
+    "deadline": "2026-11-13",
     "location": "Auditorium 1",
     "registrationLink": "https://forms.example.com/cloud-talk",
     "status": "published",
-    "publishedAt": "2026-11-05T02:00:00.000Z",
+    "publishedAt": "2026-11-06T02:00:00.000Z",
     "createdBy": "usr_staff",
     "organizer": "Faculty of Computing",
-    "createdAt": "2026-11-05T02:00:00.000Z",
-    "updatedAt": "2026-11-05T02:00:00.000Z",
+    "createdAt": "2026-11-06T02:00:00.000Z",
+    "updatedAt": "2026-11-06T02:00:00.000Z",
+    "imageUrl": "/uploads/img_seed_cloud.jpg",
     "lastMatchStats": {
       "evaluated": 8,
       "eligible": 8,
@@ -483,7 +490,7 @@
       "strong": 1,
       "crossDisciplinary": 0,
       "notified": 8,
-      "at": "2026-11-05T02:00:00.000Z"
+      "at": "2026-11-06T02:00:00.000Z"
     }
   },
   {
@@ -535,16 +542,17 @@
       "Linux"
     ],
     "experienceLevel": "Beginner",
-    "eventDate": "2026-12-01",
-    "deadline": "2026-11-20",
+    "eventDate": "2026-12-02",
+    "deadline": "2026-11-21",
     "location": "Cyber Range Lab",
     "registrationLink": "https://forms.example.com/ctf-bootcamp",
     "status": "published",
-    "publishedAt": "2026-10-28T02:00:00.000Z",
+    "publishedAt": "2026-10-29T02:00:00.000Z",
     "createdBy": "usr_club",
     "organizer": "Cybersecurity & Linux Club",
-    "createdAt": "2026-10-28T02:00:00.000Z",
-    "updatedAt": "2026-10-28T02:00:00.000Z",
+    "createdAt": "2026-10-29T02:00:00.000Z",
+    "updatedAt": "2026-10-29T02:00:00.000Z",
+    "imageUrl": "",
     "lastMatchStats": {
       "evaluated": 8,
       "eligible": 8,
@@ -553,7 +561,7 @@
       "strong": 1,
       "crossDisciplinary": 0,
       "notified": 1,
-      "at": "2026-10-28T02:00:00.000Z"
+      "at": "2026-10-29T02:00:00.000Z"
     }
   },
   {
@@ -607,16 +615,17 @@
       "Database Management"
     ],
     "experienceLevel": "Intermediate",
-    "eventDate": "2026-12-05",
-    "deadline": "2026-11-24",
+    "eventDate": "2026-12-06",
+    "deadline": "2026-11-25",
     "location": "Innovation Hub",
     "registrationLink": "https://forms.example.com/webhack",
     "status": "published",
-    "publishedAt": "2026-10-27T02:00:00.000Z",
+    "publishedAt": "2026-10-28T02:00:00.000Z",
     "createdBy": "usr_staff",
     "organizer": "Student Affairs Office",
-    "createdAt": "2026-10-27T02:00:00.000Z",
-    "updatedAt": "2026-10-27T02:00:00.000Z",
+    "createdAt": "2026-10-28T02:00:00.000Z",
+    "updatedAt": "2026-10-28T02:00:00.000Z",
+    "imageUrl": "",
     "lastMatchStats": {
       "evaluated": 8,
       "eligible": 8,
@@ -625,7 +634,7 @@
       "strong": 1,
       "crossDisciplinary": 1,
       "notified": 2,
-      "at": "2026-10-27T02:00:00.000Z"
+      "at": "2026-10-28T02:00:00.000Z"
     }
   },
   {
@@ -659,16 +668,17 @@
       "IoT"
     ],
     "experienceLevel": "Beginner",
-    "eventDate": "2026-11-18",
-    "deadline": "2026-11-17",
+    "eventDate": "2026-11-19",
+    "deadline": "2026-11-18",
     "location": "Engineering Workshop",
     "registrationLink": "https://forms.example.com/robotics-open-day",
     "status": "pending_approval",
-    "submittedAt": "2026-11-04T02:00:00.000Z",
+    "submittedAt": "2026-11-05T02:00:00.000Z",
     "createdBy": "usr_robot",
     "organizer": "Robotics Club",
-    "createdAt": "2026-11-02T02:00:00.000Z",
-    "updatedAt": "2026-11-02T02:00:00.000Z"
+    "createdAt": "2026-11-03T02:00:00.000Z",
+    "updatedAt": "2026-11-03T02:00:00.000Z",
+    "imageUrl": ""
   },
   {
     "viewedBy": [],
@@ -707,8 +717,9 @@
     "status": "draft",
     "createdBy": "usr_staff",
     "organizer": "AI & Data Society",
-    "createdAt": "2026-11-02T02:00:00.000Z",
-    "updatedAt": "2026-11-02T02:00:00.000Z"
+    "createdAt": "2026-11-03T02:00:00.000Z",
+    "updatedAt": "2026-11-03T02:00:00.000Z",
+    "imageUrl": ""
   },
   {
     "viewedBy": [
@@ -749,16 +760,17 @@
       "Programming"
     ],
     "experienceLevel": "Any",
-    "eventDate": "2026-11-02",
-    "deadline": "2026-10-30",
+    "eventDate": "2026-11-03",
+    "deadline": "2026-10-31",
     "location": "Auditorium 2",
     "registrationLink": "https://forms.example.com/orientation",
     "status": "closed",
-    "publishedAt": "2026-10-16T02:00:00.000Z",
-    "closedAt": "2026-10-30T02:00:00.000Z",
+    "publishedAt": "2026-10-17T02:00:00.000Z",
+    "closedAt": "2026-10-31T02:00:00.000Z",
     "createdBy": "usr_staff",
     "organizer": "Student Affairs Office",
-    "createdAt": "2026-10-16T02:00:00.000Z",
-    "updatedAt": "2026-10-16T02:00:00.000Z"
+    "createdAt": "2026-10-17T02:00:00.000Z",
+    "updatedAt": "2026-10-17T02:00:00.000Z",
+    "imageUrl": ""
   }
 ]

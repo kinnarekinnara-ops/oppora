@@ -40,6 +40,7 @@ require('./backend/routes/opportunityRoutes').register(router);
 require('./backend/routes/savedRoutes').register(router);
 require('./backend/routes/notificationRoutes').register(router);
 require('./backend/routes/adminRoutes').register(router);
+require('./backend/routes/uploadRoutes').register(router);
 
 // ---------- 4. Static file serving for /public ----------
 const PUBLIC_DIR = path.join(__dirname, 'public');
@@ -49,8 +50,20 @@ const MIME = {
   '.jpeg': 'image/jpeg', '.ico': 'image/x-icon', '.webp': 'image/webp', '.woff2': 'font/woff2',
 };
 
+const UPLOAD_DIR = path.join(__dirname, 'data', 'uploads');
+
 function serveStatic(req, res) {
   let rel = decodeURIComponent(req.pathname);
+  // Uploaded cover images live next to the JSON database, not in /public
+  if (rel.startsWith('/uploads/')) {
+    const name = path.basename(rel);
+    if (!/^[a-z0-9_]+\.(jpg|png|webp)$/.test(name)) { res.writeHead(404); return res.end(); }
+    return fs.readFile(path.join(UPLOAD_DIR, name), (err, data) => {
+      if (err) { res.writeHead(404); return res.end(); }
+      res.writeHead(200, { 'Content-Type': MIME[path.extname(name)] || 'application/octet-stream', 'Cache-Control': 'public, max-age=86400' });
+      res.end(data);
+    });
+  }
   if (rel === '/') rel = '/index.html';
   if (rel === '/student' || rel === '/student/') rel = '/student/dashboard.html';
   if (rel === '/admin' || rel === '/admin/') rel = '/admin/dashboard.html';

@@ -1,6 +1,6 @@
 [
   {
-    "id": "log_mw3bliymf212b7",
+    "id": "log_mw4kkfpx0ee03b",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -9,10 +9,10 @@
     "targetId": "opp_cloud",
     "targetName": "Tech Talk: Careers in Cloud Computing",
     "details": "",
-    "at": "2026-11-05T02:00:00.000Z"
+    "at": "2026-11-06T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliym99968a",
+    "id": "log_mw4kkfpx0f1263",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -21,10 +21,10 @@
     "targetId": "opp_cloud",
     "targetName": "Tech Talk: Careers in Cloud Computing",
     "details": "Matched 3 students",
-    "at": "2026-11-05T02:00:00.000Z"
+    "at": "2026-11-06T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliym0b5a6c",
+    "id": "log_mw4kkfpxcfe809",
     "actorId": "usr_club",
     "actorName": "Aiman Hakim",
     "actorRole": "org_rep",
@@ -33,10 +33,10 @@
     "targetId": "opp_linux",
     "targetName": "Linux Systems Challenge 2026",
     "details": "AI-assisted (rules)",
-    "at": "2026-11-04T02:00:00.000Z"
+    "at": "2026-11-05T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliym5f31ce",
+    "id": "log_mw4kkfpx033e69",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -45,10 +45,10 @@
     "targetId": "opp_linux",
     "targetName": "Linux Systems Challenge 2026",
     "details": "Matched 3 students",
-    "at": "2026-11-04T02:00:00.000Z"
+    "at": "2026-11-05T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliym269030",
+    "id": "log_mw4kkfpxf03bb1",
     "actorId": "usr_robot",
     "actorName": "Grace Chen",
     "actorRole": "org_rep",
@@ -57,22 +57,22 @@
     "targetId": "opp_robotics",
     "targetName": "Robotics Club Open Day",
     "details": "Submitted for approval",
+    "at": "2026-11-05T02:00:00.000Z"
+  },
+  {
+    "id": "log_mw4kkfpxcee735",
+    "actorId": "usr_staff",
+    "actorName": "Mr. Kevin Raj",
+    "actorRole": "opportunity_admin",
+    "action": "opportunity.created",
+    "targetType": "opportunity",
+    "targetId": "opp_council",
+    "targetName": "Student Council Committee Recruitment",
+    "details": "",
     "at": "2026-11-04T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliymca8b24",
-    "actorId": "usr_staff",
-    "actorName": "Mr. Kevin Raj",
-    "actorRole": "opportunity_admin",
-    "action": "opportunity.created",
-    "targetType": "opportunity",
-    "targetId": "opp_council",
-    "targetName": "Student Council Committee Recruitment",
-    "details": "",
-    "at": "2026-11-03T02:00:00.000Z"
-  },
-  {
-    "id": "log_mw3bliym266cd4",
+    "id": "log_mw4kkfpx3b39b1",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -81,10 +81,10 @@
     "targetId": "opp_council",
     "targetName": "Student Council Committee Recruitment",
     "details": "Matched 3 students",
-    "at": "2026-11-03T02:00:00.000Z"
+    "at": "2026-11-04T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliymb92117",
+    "id": "log_mw4kkfpxa661ae",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -93,10 +93,10 @@
     "targetId": "opp_ai",
     "targetName": "AI Innovation Challenge",
     "details": "",
-    "at": "2026-11-02T02:00:00.000Z"
+    "at": "2026-11-03T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliym1bb916",
+    "id": "log_mw4kkfpx64fa9f",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -105,10 +105,10 @@
     "targetId": "opp_ai",
     "targetName": "AI Innovation Challenge",
     "details": "Matched 3 students",
-    "at": "2026-11-02T02:00:00.000Z"
+    "at": "2026-11-03T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliym1d36bb",
+    "id": "log_mw4kkfpx17884f",
     "actorId": "usr_robot",
     "actorName": "Grace Chen",
     "actorRole": "org_rep",
@@ -117,10 +117,10 @@
     "targetId": "opp_robotics",
     "targetName": "Robotics Club Open Day",
     "details": "",
-    "at": "2026-11-02T02:00:00.000Z"
+    "at": "2026-11-03T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliymb103b7",
+    "id": "log_mw4kkfpx86623a",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -129,10 +129,10 @@
     "targetId": "opp_datasci",
     "targetName": "Data Science Workshop Series",
     "details": "",
-    "at": "2026-11-02T02:00:00.000Z"
+    "at": "2026-11-03T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliymae740a",
+    "id": "log_mw4kkfpx7741fa",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -141,10 +141,10 @@
     "targetId": "opp_green",
     "targetName": "Campus Green Volunteering Day",
     "details": "",
-    "at": "2026-11-01T02:00:00.000Z"
+    "at": "2026-11-02T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliyma7f83f",
+    "id": "log_mw4kkfpx62f76d",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -153,10 +153,10 @@
     "targetId": "opp_green",
     "targetName": "Campus Green Volunteering Day",
     "details": "Matched 2 students",
-    "at": "2026-11-01T02:00:00.000Z"
+    "at": "2026-11-02T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliymb768d7",
+    "id": "log_mw4kkfpx031327",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -165,10 +165,10 @@
     "targetId": "opp_ra",
     "targetName": "Research Assistant — Smart Campus IoT Lab",
     "details": "",
-    "at": "2026-10-31T02:00:00.000Z"
+    "at": "2026-11-01T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliymff7146",
+    "id": "log_mw4kkfpx435a1d",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -177,10 +177,10 @@
     "targetId": "opp_ra",
     "targetName": "Research Assistant — Smart Campus IoT Lab",
     "details": "Matched 1 students",
-    "at": "2026-10-31T02:00:00.000Z"
+    "at": "2026-11-01T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliym5202d5",
+    "id": "log_mw4kkfpx56097b",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -189,10 +189,10 @@
     "targetId": "opp_mentor",
     "targetName": "Industry Mentorship Programme",
     "details": "",
-    "at": "2026-10-30T02:00:00.000Z"
+    "at": "2026-10-31T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliymac5098",
+    "id": "log_mw4kkfpx8ccff4",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -201,10 +201,10 @@
     "targetId": "opp_mentor",
     "targetName": "Industry Mentorship Programme",
     "details": "Matched 3 students",
-    "at": "2026-10-30T02:00:00.000Z"
+    "at": "2026-10-31T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliyn8c3a67",
+    "id": "log_mw4kkfpx7d8f8d",
     "actorId": "system",
     "actorName": "OPPORA System",
     "actorRole": "system",
@@ -213,10 +213,10 @@
     "targetId": "opp_orient",
     "targetName": "Hackathon Orientation Night",
     "details": "Registration deadline passed",
-    "at": "2026-10-30T02:00:00.000Z"
+    "at": "2026-10-31T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliym81048c",
+    "id": "log_mw4kkfpxbd0ed6",
     "actorId": "usr_club",
     "actorName": "Aiman Hakim",
     "actorRole": "org_rep",
@@ -225,10 +225,10 @@
     "targetId": "opp_ctf",
     "targetName": "Capture The Flag (CTF) Beginner Bootcamp",
     "details": "",
-    "at": "2026-10-28T02:00:00.000Z"
+    "at": "2026-10-29T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliym42a6f4",
+    "id": "log_mw4kkfpxa4f5e4",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -237,10 +237,10 @@
     "targetId": "opp_ctf",
     "targetName": "Capture The Flag (CTF) Beginner Bootcamp",
     "details": "Matched 2 students",
-    "at": "2026-10-28T02:00:00.000Z"
+    "at": "2026-10-29T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliym7cbc45",
+    "id": "log_mw4kkfpx397fb8",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -249,10 +249,10 @@
     "targetId": "opp_webhack",
     "targetName": "Web Dev Hackathon: Build for Good",
     "details": "",
-    "at": "2026-10-27T02:00:00.000Z"
+    "at": "2026-10-28T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliym18a970",
+    "id": "log_mw4kkfpxe8cf89",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -261,10 +261,10 @@
     "targetId": "opp_webhack",
     "targetName": "Web Dev Hackathon: Build for Good",
     "details": "Matched 5 students",
-    "at": "2026-10-27T02:00:00.000Z"
+    "at": "2026-10-28T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliymbb6b84",
+    "id": "log_mw4kkfpxcdcaee",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -273,10 +273,10 @@
     "targetId": "opp_orient",
     "targetName": "Hackathon Orientation Night",
     "details": "",
-    "at": "2026-10-16T02:00:00.000Z"
+    "at": "2026-10-17T02:00:00.000Z"
   },
   {
-    "id": "log_mw3bliyn2baaaf",
+    "id": "log_mw4kkfpx0001aa",
     "actorId": "usr_staff",
     "actorName": "Mr. Kevin Raj",
     "actorRole": "opportunity_admin",
@@ -285,6 +285,6 @@
     "targetId": "opp_orient",
     "targetName": "Hackathon Orientation Night",
     "details": "Matched 0 students",
-    "at": "2026-10-16T02:00:00.000Z"
+    "at": "2026-10-17T02:00:00.000Z"
   }
 ]

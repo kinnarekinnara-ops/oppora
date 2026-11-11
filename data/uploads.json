@@ -1,0 +1,52 @@
+[
+  {
+    "id": "img_seed_ra",
+    "file": "img_seed_ra.jpg",
+    "url": "/uploads/img_seed_ra.jpg",
+    "type": "image/jpeg",
+    "size": 149800,
+    "originalName": "opp_ra.jpg",
+    "uploadedBy": "usr_staff",
+    "createdAt": "2026-11-01T02:00:00.000Z"
+  },
+  {
+    "id": "img_seed_mentor",
+    "file": "img_seed_mentor.jpg",
+    "url": "/uploads/img_seed_mentor.jpg",
+    "type": "image/jpeg",
+    "size": 178731,
+    "originalName": "opp_mentor.jpg",
+    "uploadedBy": "usr_staff",
+    "createdAt": "2026-10-31T02:00:00.000Z"
+  },
+  {
+    "id": "img_seed_council",
+    "file": "img_seed_council.jpg",
+    "url": "/uploads/img_seed_council.jpg",
+    "type": "image/jpeg",
+    "size": 157177,
+    "originalName": "opp_council.jpg",
+    "uploadedBy": "usr_staff",
+    "createdAt": "2026-11-04T02:00:00.000Z"
+  },
+  {
+    "id": "img_seed_green",
+    "file": "img_seed_green.jpg",
+    "url": "/uploads/img_seed_green.jpg",
+    "type": "image/jpeg",
+    "size": 148724,
+    "originalName": "opp_green.jpg",
+    "uploadedBy": "usr_staff",
+    "createdAt": "2026-11-02T02:00:00.000Z"
+  },
+  {
+    "id": "img_seed_cloud",
+    "file": "img_seed_cloud.jpg",
+    "url": "/uploads/img_seed_cloud.jpg",
+    "type": "image/jpeg",
+    "size": 149607,
+    "originalName": "opp_cloud.jpg",
+    "uploadedBy": "usr_staff",
+    "createdAt": "2026-11-06T02:00:00.000Z"
+  }
+]

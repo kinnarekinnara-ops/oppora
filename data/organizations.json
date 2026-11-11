@@ -6,7 +6,7 @@
     "email": "cyberclub@oppora.edu",
     "description": "",
     "status": "active",
-    "createdAt": "2026-09-06T02:00:00.000Z"
+    "createdAt": "2026-09-07T02:00:00.000Z"
   },
   {
     "id": "org_sca",
@@ -15,7 +15,7 @@
     "email": "studentaffairs@oppora.edu",
     "description": "",
     "status": "active",
-    "createdAt": "2026-09-06T02:00:00.000Z"
+    "createdAt": "2026-09-07T02:00:00.000Z"
   },
   {
     "id": "org_fcs",
@@ -24,7 +24,7 @@
     "email": "computing@oppora.edu",
     "description": "",
     "status": "active",
-    "createdAt": "2026-09-06T02:00:00.000Z"
+    "createdAt": "2026-09-07T02:00:00.000Z"
   },
   {
     "id": "org_career",
@@ -33,7 +33,7 @@
     "email": "careers@oppora.edu",
     "description": "",
     "status": "active",
-    "createdAt": "2026-09-06T02:00:00.000Z"
+    "createdAt": "2026-09-07T02:00:00.000Z"
   },
   {
     "id": "org_ai",
@@ -42,7 +42,7 @@
     "email": "aidata@oppora.edu",
     "description": "",
     "status": "active",
-    "createdAt": "2026-09-06T02:00:00.000Z"
+    "createdAt": "2026-09-07T02:00:00.000Z"
   },
   {
     "id": "org_green",
@@ -51,7 +51,7 @@
     "email": "green@oppora.edu",
     "description": "",
     "status": "active",
-    "createdAt": "2026-09-06T02:00:00.000Z"
+    "createdAt": "2026-09-07T02:00:00.000Z"
   },
   {
     "id": "org_robotics",
@@ -60,6 +60,6 @@
     "email": "robotics@oppora.edu",
     "description": "",
     "status": "active",
-    "createdAt": "2026-09-06T02:00:00.000Z"
+    "createdAt": "2026-09-07T02:00:00.000Z"
   }
 ]

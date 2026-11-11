@@ -5,10 +5,10 @@
     "email": "admin@oppora.edu",
     "role": "super_admin",
     "organizationId": null,
-    "salt": "10e5d087b7c6dbf92810cffc64a98836",
-    "passwordHash": "0c7eb4e196cff6f5e9fd46cfbe67360bc0ec7ff11b428cf78a5e87e80f8422e2e8620c0005a6acb4f56f49f8538842df262d6510d6563166da65e467915dbd39",
+    "salt": "c90ccf9b4b78dd14e4a894555025e13c",
+    "passwordHash": "0466b04a243acc438823122a6f6a1f35b2f98ca39f8d489b76567ac93d5a3350bdc2782be1a03e947596f3f849ba10057b46af8e33a86c626577fd0135c3e7fd",
     "status": "active",
-    "createdAt": "2026-09-21T02:00:00.000Z"
+    "createdAt": "2026-09-22T02:00:00.000Z"
   },
   {
     "id": "usr_staff",
@@ -16,10 +16,10 @@
     "email": "staff@oppora.edu",
     "role": "opportunity_admin",
     "organizationId": null,
-    "salt": "3bfdbbbb873b876630f7f1c2e8a9e907",
-    "passwordHash": "11e45bce2f3f100c899e98eeb27820d867648e4672f4ef69486a97ea94c337b38b826c2fd5ca363cd155628109b387edcc3a02cc8b04db7317821e750424c99c",
+    "salt": "bf59c0faa749fac0c1481829b23f4ac1",
+    "passwordHash": "82dd369f0b0a503df25be686b310749ea13832796c9ccba7754ca6d624997e7feb2f03f6163e95b8217ce0fd7efd3d80ce0f1492de50fd6d05ff489ae4136954",
     "status": "active",
-    "createdAt": "2026-09-21T02:00:00.000Z"
+    "createdAt": "2026-09-22T02:00:00.000Z"
   },
   {
     "id": "usr_club",
@@ -27,10 +27,10 @@
     "email": "club@oppora.edu",
     "role": "org_rep",
     "organizationId": "org_cyber",
-    "salt": "ceb782a30cfbafe6c05e44334e13115f",
-    "passwordHash": "ed3cc9448e29b057ff589a79eb63d0ddfd172f88d132e0e5926b0c50524be8ede6b3743a2b8690a9bf3ef83386946d9daa3c59526314893cdcc777af021546fd",
+    "salt": "8d25ebd946c0bbe4c6d3ba5e62ec5474",
+    "passwordHash": "cec34370f3f306c12a77ea6bc387881664151c79116a5629fba2ba0db2e3391d91357500cc0a9c497942bf4536015266d874ecb57ce1425f0c0e8e1808b1f6cf",
     "status": "active",
-    "createdAt": "2026-09-21T02:00:00.000Z"
+    "createdAt": "2026-09-22T02:00:00.000Z"
   },
   {
     "id": "usr_robot",
@@ -38,10 +38,10 @@
     "email": "robotics@oppora.edu",
     "role": "org_rep",
     "organizationId": "org_robotics",
-    "salt": "fd41e1dbeb2cbb4626395106f857ffb3",
-    "passwordHash": "6d199725fa49895c44d47a3d4e6518a320368a7316698e6ff51370b29e97ac361f6a7be57675bb5c523cce09ea21649a268d645a12467ca9baf11f9c17e9539f",
+    "salt": "dc42f2748a90832435d278935bf90d6c",
+    "passwordHash": "b6caa0473a542264ff6785e98a685ab2eeb956574082768278bed98e5256bb84f1772864f8a9245334d70fc13d22eca917409cfbcebba79af02171172ae64048",
     "status": "active",
-    "createdAt": "2026-09-21T02:00:00.000Z"
+    "createdAt": "2026-09-22T02:00:00.000Z"
   },
   {
     "id": "stu_alex",
@@ -49,10 +49,10 @@
     "email": "alex@student.oppora.edu",
     "role": "student",
     "organizationId": null,
-    "salt": "fde3660504f36fc61fcfc57e670abcec",
-    "passwordHash": "548ca3365eb67ce895d418440fcfc420fd28af303f664c552476b7ce97c7edba57cb9f293ac446c627ce445d804bfdc296fd130e515f34dc4f3c950ea4a20b45",
+    "salt": "b9645ceb0a46c3ff4999d17b67c7e4f7",
+    "passwordHash": "e07122c3a96dc06dac51e0990df69b41502ebe50cf49cf1f1b104cae939a4c62a141f21c2bbb9a0284e7c4aa83d4f83cdc91f2681c6d65361d1b210d2201d099",
     "status": "active",
-    "createdAt": "2026-09-21T02:00:00.000Z"
+    "createdAt": "2026-09-22T02:00:00.000Z"
   },
   {
     "id": "stu_priya",
@@ -60,10 +60,10 @@
     "email": "priya@student.oppora.edu",
     "role": "student",
     "organizationId": null,
-    "salt": "0710a9f22657200afefdf23f5c2deb87",
-    "passwordHash": "de764e5a0115f622e765dd0e6af32db6e68ce40be27ba58346117c151e9a921fdc1a35289d6cc123ba944fa0d4b6327606caa1b563cdd9d29dd79948f0b0775f",
+    "salt": "66b67b62f2f9ca6edc6e09f4203c35ae",
+    "passwordHash": "02009e5d304be867adf761d3d64467d146a116847eaa0d5266063e4864d2d074a0cf614abf99672fb522f3888dfb4691a3bf432171a0fe8cfe7b4678df90c243",
     "status": "active",
-    "createdAt": "2026-09-21T02:00:00.000Z"
+    "createdAt": "2026-09-22T02:00:00.000Z"
   },
   {
     "id": "stu_daniel",
@@ -71,10 +71,10 @@
     "email": "daniel@student.oppora.edu",
     "role": "student",
     "organizationId": null,
-    "salt": "4069c0ae812597067f530200a0a80410",
-    "passwordHash": "e6e8d114845751ed67c110e4e972d3da1366ec2d74b4dd986c16151a46a5cf7bad09b42907b157d636f27920d45bcad24af46f8eb1ff274d71e3b7a08968dad2",
+    "salt": "47fd97521fef3f00d672be0f21b5a8b5",
+    "passwordHash": "e20e2ba0bf79c64718f645d999a6ca97f0b3e98f8faba5db9d5ff450aa23fcb108e1d49cb67e373c4f00b9c4ba9b39f2b42b99da28ea369190f7a57c428a823b",
     "status": "active",
-    "createdAt": "2026-09-21T02:00:00.000Z"
+    "createdAt": "2026-09-22T02:00:00.000Z"
   },
   {
     "id": "stu_siti",
@@ -82,10 +82,10 @@
     "email": "siti@student.oppora.edu",
     "role": "student",
     "organizationId": null,
-    "salt": "64e1e2b1ad16e80f9ec34f0189523bd6",
-    "passwordHash": "40151fce2140284daf55ff114432f6c471bb863b3cd840dff02499f90fe1aabc47f9633753bf129adbe6129d5e181e42d351cb4cccd0fe01a0040a525bcf9af7",
+    "salt": "e01712fbaef2b0b563c3ee330c264727",
+    "passwordHash": "ca18b121820c95aa00dbdd70410432665221307db8eedfa788554bca0c2654140f589f127b82548baea622042ea74c299157ba5353db1f7ebbe0b8797b4cae8a",
     "status": "active",
-    "createdAt": "2026-09-21T02:00:00.000Z"
+    "createdAt": "2026-09-22T02:00:00.000Z"
   },
   {
     "id": "stu_marcus",
@@ -93,10 +93,10 @@
     "email": "marcus@student.oppora.edu",
     "role": "student",
     "organizationId": null,
-    "salt": "7677af9d3753b4a681560bb3d6ed6473",
-    "passwordHash": "70d9b6846732c9f5a90526f6204d7c57376433339d084890b73024dcba21f440f206febec7f2a758d42100b9a46e9275323d3b8373d12d8cb07e19a72c258a62",
+    "salt": "f059ff2ea729500476c7a4e229eb0caf",
+    "passwordHash": "3515d1591b794528f470e94181c201e13927ed0d6dff7dc8fbeb0d50fbbbd151ff803877a4a707ed6fe117d93acf58d000bf6beeefd7125ae8856ca53426720b",
     "status": "active",
-    "createdAt": "2026-09-21T02:00:00.000Z"
+    "createdAt": "2026-09-22T02:00:00.000Z"
   },
   {
     "id": "stu_iman",
@@ -104,10 +104,10 @@
     "email": "iman@student.oppora.edu",
     "role": "student",
     "organizationId": null,
-    "salt": "84c08a9736645ad49dfd6200691d29c0",
-    "passwordHash": "34d1732f5dd745351fd43dacf1b684fa923b8ea83ffb11403ee6c49fa8df22b0598f96e1b9b007877bdbf3cb2c4695fb6aab0a1ce024062550c0c8f16c8da55a",
+    "salt": "305ef82db5b3eb18d6fdd1dd7ea3d671",
+    "passwordHash": "361f2d73611f30877cacbf4229c4de9853146971ad7e2a465239119913dbeb0ed4ee0f4e815693abee087aa7a526bd5027fd10f878c56379498200cbfba5dc9e",
     "status": "active",
-    "createdAt": "2026-09-21T02:00:00.000Z"
+    "createdAt": "2026-09-22T02:00:00.000Z"
   },
   {
     "id": "stu_jason",
@@ -115,10 +115,10 @@
     "email": "jason@student.oppora.edu",
     "role": "student",
     "organizationId": null,
-    "salt": "5c1c5544bc0f457081ab361475aa4c76",
-    "passwordHash": "65b2577f371c45d502fce1708ac0a87568d434d40feb295a1c8e69a11bb6ee3519450edff180497da655fd1e3fb871d4ad15aa109b02e098cd6183039640c167",
+    "salt": "cf2d003ce9f46699e671a78cfbdc7eeb",
+    "passwordHash": "618bd9f593d3a7496dbba356a635e8cdc4856960e1088a949df3649af37af785b5b8e1ee9cabd5cbd10a7fcd383c1b6bc563e2409459f337af937544d4f67341",
     "status": "active",
-    "createdAt": "2026-09-21T02:00:00.000Z"
+    "createdAt": "2026-09-22T02:00:00.000Z"
   },
   {
     "id": "stu_mei",
@@ -126,9 +126,9 @@
     "email": "mei@student.oppora.edu",
     "role": "student",
     "organizationId": null,
-    "salt": "0c60c10feec008ecc3adc8421bdf338d",
-    "passwordHash": "43566f1be87394c2cf441d5c8d11d4bd42db077641dc3e503b79aefd4636142b019f88610486db51ec60bb071f9b87a2ca854a23d2fdef9f8eab52025cff6075",
+    "salt": "5b3a1921d788d986447f2d36dd718086",
+    "passwordHash": "a94b04905eee75e6de8689e0a65dc0ff695c383c1f1283a36147274e43b7ffb4ac2daa20af9d6a785e5bf7bcb464ac5bdc9ec29fcc955e93a5f4a720794c3f78",
     "status": "active",
-    "createdAt": "2026-09-21T02:00:00.000Z"
+    "createdAt": "2026-09-22T02:00:00.000Z"
   }
 ]

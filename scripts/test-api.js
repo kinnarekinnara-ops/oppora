@@ -131,6 +131,27 @@ async function run() {
   check('dashboard stats', dash.stats.students === 8 && dash.stats.published >= 10);
   check('analytics', (await admin.get('/api/admin/analytics')).data.rows.length >= 10);
   check('activity logged', (await admin.get('/api/admin/logs')).data.items.some((l) => l.action === 'opportunity.approved'));
+  console.log('\n9. Cover image uploads');
+  const PNG = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==';
+  const up1 = await admin.post('/api/admin/uploads', { dataUrl: PNG, filename: 'cover.png' });
+  check('valid PNG uploads', up1.status === 200 && /^\/uploads\/img_[a-z0-9]+\.png$/.test(up1.data.url), JSON.stringify(up1.data));
+  const fake = await admin.post('/api/admin/uploads', { dataUrl: 'data:image/png;base64,' + Buffer.from('this is not an image, honest').toString('base64') });
+  check('fake image rejected (checked by bytes, not name)', fake.status === 400);
+  const big = await admin.post('/api/admin/uploads', { dataUrl: 'data:image/jpeg;base64,' + Buffer.concat([Buffer.from([0xff, 0xd8, 0xff]), Buffer.alloc(3.2 * 1024 * 1024)]).toString('base64') });
+  check('image over 3 MB rejected', big.status === 400 || big.status === 413);
+  check('students cannot upload', (await alex.post('/api/admin/uploads', { dataUrl: PNG })).status === 403);
+  const served = await fetch(BASE + up1.data.url);
+  check('uploaded file is served back', served.status === 200 && served.headers.get('content-type') === 'image/png');
+  await admin.put('/api/admin/opportunities/opp_ai', { imageUrl: up1.data.url });
+  const withImg = (await alex.get('/api/opportunities/opp_ai')).data.opportunity;
+  check('image linked to the right opportunity', withImg.imageUrl === up1.data.url);
+  const up2 = (await admin.post('/api/admin/uploads', { dataUrl: PNG })).data;
+  await admin.put('/api/admin/opportunities/opp_ai', { imageUrl: up2.url });
+  check('replacing deletes the old file', (await fetch(BASE + up1.data.url)).status === 404);
+  await admin.put('/api/admin/opportunities/opp_ai', { imageUrl: '/uploads/../../users.json' });
+  check('bogus image paths are ignored', (await alex.get('/api/opportunities/opp_ai')).data.opportunity.imageUrl === '');
+  check('seeded covers exist', (await alex.get('/api/opportunities/opp_green')).data.opportunity.imageUrl.startsWith('/uploads/'));
+
   const reg = await new Client().post('/api/auth/register', { name: 'Test User', email: 'test@x.edu', password: 'secret1', university: 'Demo U', programme: 'Data Science', year: 2, studyLevel: 'Undergraduate', skills: [{ name: 'python', level: 'Intermediate' }], interests: ['Data Science'] });
   check('registration creates student + matches', reg.status === 200 && reg.data.matches.evaluated > 0);
 }

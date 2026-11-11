@@ -129,6 +129,15 @@ function register(router) {
 
     const notifications = db.read('notifications').filter((n) => n.studentId === req.user.id);
 
+    // Events happening in the next 30 days that are saved or recommended for this student
+    const relevant = new Set([...savedIds, ...recommended.map((r) => r.id)]);
+    const upcomingEvents = opps
+      .filter((o) => relevant.has(o.id) && ['published', 'closed'].includes(o.status) && o.eventDate)
+      .filter((o) => { const d = daysUntil(o.eventDate); return d !== null && d >= 0 && d <= 30; })
+      .sort((a, b) => a.eventDate.localeCompare(b.eventDate))
+      .slice(0, 5)
+      .map((o) => ({ ...presentOpp(o), saved: savedIds.has(o.id), eventDaysLeft: daysUntil(o.eventDate) }));
+
     return {
       user: auth.publicUser(req.user),
       profile,
@@ -137,6 +146,7 @@ function register(router) {
       crossDisciplinary: recommended.filter((r) => r.match.crossDisciplinary).slice(0, 3),
       newOpportunities: newOpps,
       upcomingDeadlines,
+      upcomingEvents,
       savedCount: savedRows.length,
       notifications: notifications.slice(0, 5),
       unread: notifications.filter((n) => !n.read).length,

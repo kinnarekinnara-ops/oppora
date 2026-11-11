@@ -1,12 +1,13 @@
 {
   "name": "oppora",
   "version": "1.0.0",
-  "description": "OPPORA — Opportunities find their people. Campus opportunity discovery with explainable student matching.",
+  "description": "OPPORA \u2014 Opportunities find their people. Campus opportunity discovery with explainable student matching.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "seed": "node scripts/seed.js",
-    "test": "node scripts/test-api.js"
+    "test": "node scripts/test-api.js",
+    "check-ai": "node scripts/check-gemini.js"
   },
   "engines": {
     "node": ">=18"
